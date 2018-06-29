@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseDirectoryRoleTemplate extends DirectoryObject implements IJsonB
 
     /**
      * The Description.
-     * The description to set for the directory role. Read-only.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -41,7 +37,7 @@ public class BaseDirectoryRoleTemplate extends DirectoryObject implements IJsonB
 
     /**
      * The Display Name.
-     * The display name to set for the directory role. Read-only.
+     * 
      */
     @SerializedName("displayName")
     @Expose

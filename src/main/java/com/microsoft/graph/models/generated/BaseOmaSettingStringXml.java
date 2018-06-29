@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.OmaSetting;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseOmaSettingStringXml extends OmaSetting implements IJsonBackedOb
 
     /**
      * The File Name.
-     * File name associated with the Value property (.xml).
+     * 
      */
     @SerializedName("fileName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseOmaSettingStringXml extends OmaSetting implements IJsonBackedOb
 
     /**
      * The Value.
-     * Value. (UTF8 encoded byte array)
+     * 
      */
     @SerializedName("value")
     @Expose

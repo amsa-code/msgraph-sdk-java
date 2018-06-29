@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DomainDnsRecord;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Name Target.
-     * Value to use when configuring the Target property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("nameTarget")
     @Expose
@@ -41,7 +37,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Port.
-     * Value to use when configuring the port property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("port")
     @Expose
@@ -49,7 +45,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Priority.
-     * Value to use when configuring the priority property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("priority")
     @Expose
@@ -57,7 +53,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Protocol.
-     * Value to use when configuring the protocol property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("protocol")
     @Expose
@@ -65,7 +61,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Service.
-     * Value to use when configuring the service property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("service")
     @Expose
@@ -73,7 +69,7 @@ public class BaseDomainDnsSrvRecord extends DomainDnsRecord implements IJsonBack
 
     /**
      * The Weight.
-     * Value to use when configuring the weight property of the SRV record at the DNS host.
+     * 
      */
     @SerializedName("weight")
     @Expose

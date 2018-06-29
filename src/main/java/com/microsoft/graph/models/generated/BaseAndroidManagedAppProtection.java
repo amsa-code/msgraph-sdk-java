@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedMobileApp;
+import com.microsoft.graph.models.extensions.ManagedAppPolicyDeploymentSummary;
+import com.microsoft.graph.models.extensions.TargetedManagedAppProtection;
+import com.microsoft.graph.requests.generated.BaseManagedMobileAppCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedMobileAppCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Screen Capture Blocked.
-     * Indicates whether a managed user can take screen captures of managed apps
+     * 
      */
     @SerializedName("screenCaptureBlocked")
     @Expose
@@ -41,7 +41,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Disable App Encryption If Device Encryption Is Enabled.
-     * When this setting is enabled, app level encryption is disabled if device level encryption is enabled
+     * 
      */
     @SerializedName("disableAppEncryptionIfDeviceEncryptionIsEnabled")
     @Expose
@@ -49,7 +49,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Encrypt App Data.
-     * Indicates whether application data for managed apps should be encrypted
+     * 
      */
     @SerializedName("encryptAppData")
     @Expose
@@ -57,7 +57,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Deployed App Count.
-     * Count of apps to which the current policy is deployed.
+     * 
      */
     @SerializedName("deployedAppCount")
     @Expose
@@ -65,7 +65,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Minimum Required Patch Version.
-     * Define the oldest required Android security patch level a user can have to gain secure access to the app.
+     * 
      */
     @SerializedName("minimumRequiredPatchVersion")
     @Expose
@@ -73,7 +73,7 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Minimum Warning Patch Version.
-     * Define the oldest recommended Android security patch level a user can have for secure access to the app.
+     * 
      */
     @SerializedName("minimumWarningPatchVersion")
     @Expose
@@ -81,13 +81,13 @@ public class BaseAndroidManagedAppProtection extends TargetedManagedAppProtectio
 
     /**
      * The Apps.
-     * List of apps to which the policy is deployed.
+     * 
      */
     public ManagedMobileAppCollectionPage apps;
 
     /**
      * The Deployment Summary.
-     * Navigation property to deployment summary of the configuration.
+     * 
      */
     @SerializedName("deploymentSummary")
     @Expose

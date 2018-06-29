@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.ItemReference;
+import com.microsoft.graph.models.extensions.User;
+import com.microsoft.graph.models.extensions.User;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Created By.
-     * Identity of the user, device, or application which created the item. Read-only.
+     * 
      */
     @SerializedName("createdBy")
     @Expose
@@ -41,7 +42,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Created Date Time.
-     * Date and time of item creation. Read-only.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -57,7 +58,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The ETag.
-     * ETag for the item. Read-only.
+     * 
      */
     @SerializedName("eTag")
     @Expose
@@ -65,7 +66,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Modified By.
-     * Identity of the user, device, and application which last modified the item. Read-only.
+     * 
      */
     @SerializedName("lastModifiedBy")
     @Expose
@@ -73,7 +74,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * Date and time the item was last modified. Read-only.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -81,7 +82,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Name.
-     * The name of the item. Read-write.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -89,7 +90,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Parent Reference.
-     * Parent information, if the item has a parent. Read-write.
+     * 
      */
     @SerializedName("parentReference")
     @Expose
@@ -97,7 +98,7 @@ public class BaseBaseItem extends Entity implements IJsonBackedObject {
 
     /**
      * The Web Url.
-     * URL that displays the resource in the browser. Read-only.
+     * 
      */
     @SerializedName("webUrl")
     @Expose

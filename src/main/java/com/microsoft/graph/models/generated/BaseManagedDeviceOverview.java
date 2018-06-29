@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceOperatingSystemSummary;
+import com.microsoft.graph.models.extensions.DeviceExchangeAccessStateSummary;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseManagedDeviceOverview extends Entity implements IJsonBackedObje
 
     /**
      * The Enrolled Device Count.
-     * Total enrolled device count. Does not include PC devices managed via Intune PC Agent
+     * 
      */
     @SerializedName("enrolledDeviceCount")
     @Expose
@@ -41,7 +39,7 @@ public class BaseManagedDeviceOverview extends Entity implements IJsonBackedObje
 
     /**
      * The Mdm Enrolled Count.
-     * The number of devices enrolled in MDM
+     * 
      */
     @SerializedName("mdmEnrolledCount")
     @Expose
@@ -49,7 +47,7 @@ public class BaseManagedDeviceOverview extends Entity implements IJsonBackedObje
 
     /**
      * The Dual Enrolled Device Count.
-     * The number of devices enrolled in both MDM and EAS
+     * 
      */
     @SerializedName("dualEnrolledDeviceCount")
     @Expose
@@ -57,7 +55,7 @@ public class BaseManagedDeviceOverview extends Entity implements IJsonBackedObje
 
     /**
      * The Device Operating System Summary.
-     * Device operating system summary.
+     * 
      */
     @SerializedName("deviceOperatingSystemSummary")
     @Expose
@@ -65,7 +63,7 @@ public class BaseManagedDeviceOverview extends Entity implements IJsonBackedObje
 
     /**
      * The Device Exchange Access State Summary.
-     * Distribution of Exchange Access State in Intune
+     * 
      */
     @SerializedName("deviceExchangeAccessStateSummary")
     @Expose

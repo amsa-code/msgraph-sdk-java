@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DeviceManagementExchangeConnectorStatus;
+import com.microsoft.graph.models.generated.DeviceManagementExchangeConnectorType;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Last Sync Date Time.
-     * Last sync time for the Exchange Connector
+     * 
      */
     @SerializedName("lastSyncDateTime")
     @Expose
@@ -41,7 +39,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Status.
-     * Exchange Connector Status Possible values are: none, connectionPending, connected, disconnected.
+     * 
      */
     @SerializedName("status")
     @Expose
@@ -49,7 +47,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Primary Smtp Address.
-     * Email address used to configure the Service To Service Exchange Connector.
+     * 
      */
     @SerializedName("primarySmtpAddress")
     @Expose
@@ -57,7 +55,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Server Name.
-     * The name of the server hosting the Exchange Connector.
+     * 
      */
     @SerializedName("serverName")
     @Expose
@@ -65,7 +63,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Exchange Connector Type.
-     * The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated.
+     * 
      */
     @SerializedName("exchangeConnectorType")
     @Expose
@@ -73,7 +71,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Version.
-     * The version of the ExchangeConnectorAgent
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -81,7 +79,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Exchange Alias.
-     * An alias assigned to the Exchange server
+     * 
      */
     @SerializedName("exchangeAlias")
     @Expose
@@ -89,7 +87,7 @@ public class BaseDeviceManagementExchangeConnector extends Entity implements IJs
 
     /**
      * The Exchange Organization.
-     * Exchange Organization to the Exchange server
+     * 
      */
     @SerializedName("exchangeOrganization")
     @Expose

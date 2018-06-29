@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.generated.AppListType;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Compliant Apps List.
-     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
+     * 
      */
     @SerializedName("compliantAppsList")
     @Expose
@@ -41,7 +40,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Compliant App List Type.
-     * List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
+     * 
      */
     @SerializedName("compliantAppListType")
     @Expose
@@ -49,7 +48,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Email In Domain Suffixes.
-     * An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
+     * 
      */
     @SerializedName("emailInDomainSuffixes")
     @Expose
@@ -57,7 +56,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Block Simple.
-     * Block simple passwords.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -65,7 +64,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Expiration Days.
-     * Number of days before the password expires.
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -73,7 +72,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Minimum Character Set Count.
-     * Number of character sets a password must contain. Valid values 0 to 4
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -81,7 +80,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Minimum Length.
-     * Minimum length of passwords.
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -89,7 +88,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Minutes Of Inactivity Before Lock.
-     * Minutes of inactivity required before a password is required.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeLock")
     @Expose
@@ -97,7 +96,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Minutes Of Inactivity Before Screen Timeout.
-     * Minutes of inactivity required before the screen times out.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeScreenTimeout")
     @Expose
@@ -105,7 +104,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Previous Password Block Count.
-     * Number of previous passwords to block.
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -113,7 +112,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Required Type.
-     * Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -121,7 +120,7 @@ public class BaseMacOSGeneralDeviceConfiguration extends DeviceConfiguration imp
 
     /**
      * The Password Required.
-     * Whether or not to require a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose

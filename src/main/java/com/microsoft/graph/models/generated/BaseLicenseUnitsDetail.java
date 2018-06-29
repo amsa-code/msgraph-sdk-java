@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseLicenseUnitsDetail implements IJsonBackedObject {
 
     /**
      * The Enabled.
-     * The number of units that are enabled.
+     * 
      */
     @SerializedName("enabled")
     @Expose
@@ -51,7 +46,7 @@ public class BaseLicenseUnitsDetail implements IJsonBackedObject {
 
     /**
      * The Suspended.
-     * The number of units that are suspended.
+     * 
      */
     @SerializedName("suspended")
     @Expose
@@ -59,7 +54,7 @@ public class BaseLicenseUnitsDetail implements IJsonBackedObject {
 
     /**
      * The Warning.
-     * The number of units that are in warning status.
+     * 
      */
     @SerializedName("warning")
     @Expose

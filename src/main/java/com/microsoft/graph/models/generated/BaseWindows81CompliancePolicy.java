@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.extensions.DeviceCompliancePolicy;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Required.
-     * Require a password to unlock Windows device.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -41,7 +38,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Block Simple.
-     * Indicates whether or not to block simple password.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -49,7 +46,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Expiration Days.
-     * Password expiration in days.
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -57,7 +54,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Minimum Length.
-     * The minimum password length.
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -65,7 +62,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Minutes Of Inactivity Before Lock.
-     * Minutes of inactivity before a password is required.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeLock")
     @Expose
@@ -73,7 +70,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Minimum Character Set Count.
-     * The number of character sets required in the password.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -81,7 +78,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Required Type.
-     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -89,7 +86,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Password Previous Password Block Count.
-     * The number of previous passwords to prevent re-use of. Valid values 0 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -97,7 +94,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Os Minimum Version.
-     * Minimum Windows 8.1 version.
+     * 
      */
     @SerializedName("osMinimumVersion")
     @Expose
@@ -105,7 +102,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Os Maximum Version.
-     * Maximum Windows 8.1 version.
+     * 
      */
     @SerializedName("osMaximumVersion")
     @Expose
@@ -113,7 +110,7 @@ public class BaseWindows81CompliancePolicy extends DeviceCompliancePolicy implem
 
     /**
      * The Storage Require Encryption.
-     * Indicates whether or not to require encryption on a windows 8.1 device.
+     * 
      */
     @SerializedName("storageRequireEncryption")
     @Expose

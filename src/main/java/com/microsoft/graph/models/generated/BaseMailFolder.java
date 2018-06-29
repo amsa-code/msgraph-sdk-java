@@ -3,19 +3,27 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Message;
+import com.microsoft.graph.models.extensions.MailFolder;
+import com.microsoft.graph.models.extensions.SingleValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.MultiValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseMessageCollectionResponse;
+import com.microsoft.graph.requests.extensions.MessageCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMailFolderCollectionResponse;
+import com.microsoft.graph.requests.extensions.MailFolderCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSingleValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.SingleValueLegacyExtendedPropertyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMultiValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MultiValueLegacyExtendedPropertyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +41,7 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The mailFolder's display name.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +49,7 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Parent Folder Id.
-     * The unique identifier for the mailFolder's parent mailFolder.
+     * 
      */
     @SerializedName("parentFolderId")
     @Expose
@@ -49,7 +57,7 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Child Folder Count.
-     * The number of immediate child mailFolders in the current mailFolder.
+     * 
      */
     @SerializedName("childFolderCount")
     @Expose
@@ -57,7 +65,7 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Unread Item Count.
-     * The number of items in the mailFolder marked as unread.
+     * 
      */
     @SerializedName("unreadItemCount")
     @Expose
@@ -65,7 +73,7 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Total Item Count.
-     * The number of items in the mailFolder.
+     * 
      */
     @SerializedName("totalItemCount")
     @Expose
@@ -73,25 +81,25 @@ public class BaseMailFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Messages.
-     * The collection of messages in the mailFolder.
+     * 
      */
     public MessageCollectionPage messages;
 
     /**
      * The Child Folders.
-     * The collection of child folders in the mailFolder.
+     * 
      */
     public MailFolderCollectionPage childFolders;
 
     /**
      * The Single Value Extended Properties.
-     * The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
+     * 
      */
     public SingleValueLegacyExtendedPropertyCollectionPage singleValueExtendedProperties;
 
     /**
      * The Multi Value Extended Properties.
-     * The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
+     * 
      */
     public MultiValueLegacyExtendedPropertyCollectionPage multiValueExtendedProperties;
 

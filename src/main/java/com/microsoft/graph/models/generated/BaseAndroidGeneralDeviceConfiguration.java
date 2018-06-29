@@ -3,19 +3,23 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.generated.AppListType;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.generated.AndroidRequiredPasswordType;
+import com.microsoft.graph.models.generated.WebBrowserCookieSettings;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +37,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Block Clipboard Sharing.
-     * Indicates whether or not to block clipboard sharing to copy and paste between applications.
+     * 
      */
     @SerializedName("appsBlockClipboardSharing")
     @Expose
@@ -41,7 +45,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Block Copy Paste.
-     * Indicates whether or not to block copy and paste within applications.
+     * 
      */
     @SerializedName("appsBlockCopyPaste")
     @Expose
@@ -49,7 +53,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Block You Tube.
-     * Indicates whether or not to block the YouTube app.
+     * 
      */
     @SerializedName("appsBlockYouTube")
     @Expose
@@ -57,7 +61,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Bluetooth Blocked.
-     * Indicates whether or not to block Bluetooth.
+     * 
      */
     @SerializedName("bluetoothBlocked")
     @Expose
@@ -65,7 +69,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Camera Blocked.
-     * Indicates whether or not to block the use of the camera.
+     * 
      */
     @SerializedName("cameraBlocked")
     @Expose
@@ -73,7 +77,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Cellular Block Data Roaming.
-     * Indicates whether or not to block data roaming.
+     * 
      */
     @SerializedName("cellularBlockDataRoaming")
     @Expose
@@ -81,7 +85,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Cellular Block Messaging.
-     * Indicates whether or not to block SMS/MMS messaging.
+     * 
      */
     @SerializedName("cellularBlockMessaging")
     @Expose
@@ -89,7 +93,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Cellular Block Voice Roaming.
-     * Indicates whether or not to block voice roaming.
+     * 
      */
     @SerializedName("cellularBlockVoiceRoaming")
     @Expose
@@ -97,7 +101,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Cellular Block Wi Fi Tethering.
-     * Indicates whether or not to block syncing Wi-Fi tethering.
+     * 
      */
     @SerializedName("cellularBlockWiFiTethering")
     @Expose
@@ -105,7 +109,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Compliant Apps List.
-     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
+     * 
      */
     @SerializedName("compliantAppsList")
     @Expose
@@ -113,7 +117,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Compliant App List Type.
-     * Type of list that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
+     * 
      */
     @SerializedName("compliantAppListType")
     @Expose
@@ -121,7 +125,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Diagnostic Data Block Submission.
-     * Indicates whether or not to block diagnostic data submission.
+     * 
      */
     @SerializedName("diagnosticDataBlockSubmission")
     @Expose
@@ -129,7 +133,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Location Services Blocked.
-     * Indicates whether or not to block location services.
+     * 
      */
     @SerializedName("locationServicesBlocked")
     @Expose
@@ -137,7 +141,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Google Account Block Auto Sync.
-     * Indicates whether or not to block Google account auto sync.
+     * 
      */
     @SerializedName("googleAccountBlockAutoSync")
     @Expose
@@ -145,7 +149,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Google Play Store Blocked.
-     * Indicates whether or not to block the Google Play store.
+     * 
      */
     @SerializedName("googlePlayStoreBlocked")
     @Expose
@@ -153,7 +157,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Kiosk Mode Block Sleep Button.
-     * Indicates whether or not to block the screen sleep button while in Kiosk Mode.
+     * 
      */
     @SerializedName("kioskModeBlockSleepButton")
     @Expose
@@ -161,7 +165,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Kiosk Mode Block Volume Buttons.
-     * Indicates whether or not to block the volume buttons while in Kiosk Mode.
+     * 
      */
     @SerializedName("kioskModeBlockVolumeButtons")
     @Expose
@@ -169,7 +173,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Kiosk Mode Apps.
-     * A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("kioskModeApps")
     @Expose
@@ -177,7 +181,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Nfc Blocked.
-     * Indicates whether or not to block Near-Field Communication.
+     * 
      */
     @SerializedName("nfcBlocked")
     @Expose
@@ -185,7 +189,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Block Fingerprint Unlock.
-     * Indicates whether or not to block fingerprint unlock.
+     * 
      */
     @SerializedName("passwordBlockFingerprintUnlock")
     @Expose
@@ -193,7 +197,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Block Trust Agents.
-     * Indicates whether or not to block Smart Lock and other trust agents.
+     * 
      */
     @SerializedName("passwordBlockTrustAgents")
     @Expose
@@ -201,7 +205,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Expiration Days.
-     * Number of days before the password expires. Valid values 1 to 365
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -209,7 +213,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Minimum Length.
-     * Minimum length of passwords. Valid values 4 to 16
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -217,7 +221,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Minutes Of Inactivity Before Screen Timeout.
-     * Minutes of inactivity before the screen times out.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeScreenTimeout")
     @Expose
@@ -225,7 +229,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Previous Password Block Count.
-     * Number of previous passwords to block. Valid values 0 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -233,7 +237,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Sign In Failure Count Before Factory Reset.
-     * Number of sign in failures allowed before factory reset. Valid values 4 to 11
+     * 
      */
     @SerializedName("passwordSignInFailureCountBeforeFactoryReset")
     @Expose
@@ -241,7 +245,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Required Type.
-     * Type of password that is required. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -249,7 +253,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Password Required.
-     * Indicates whether or not to require a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -257,7 +261,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Power Off Blocked.
-     * Indicates whether or not to block powering off the device.
+     * 
      */
     @SerializedName("powerOffBlocked")
     @Expose
@@ -265,7 +269,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Factory Reset Blocked.
-     * Indicates whether or not to block user performing a factory reset.
+     * 
      */
     @SerializedName("factoryResetBlocked")
     @Expose
@@ -273,7 +277,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Screen Capture Blocked.
-     * Indicates whether or not to block screenshots.
+     * 
      */
     @SerializedName("screenCaptureBlocked")
     @Expose
@@ -281,7 +285,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Device Sharing Allowed.
-     * Indicates whether or not to allow device sharing mode.
+     * 
      */
     @SerializedName("deviceSharingAllowed")
     @Expose
@@ -289,7 +293,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Storage Block Google Backup.
-     * Indicates whether or not to block Google Backup.
+     * 
      */
     @SerializedName("storageBlockGoogleBackup")
     @Expose
@@ -297,7 +301,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Storage Block Removable Storage.
-     * Indicates whether or not to block removable storage usage.
+     * 
      */
     @SerializedName("storageBlockRemovableStorage")
     @Expose
@@ -305,7 +309,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Storage Require Device Encryption.
-     * Indicates whether or not to require device encryption.
+     * 
      */
     @SerializedName("storageRequireDeviceEncryption")
     @Expose
@@ -313,7 +317,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Storage Require Removable Storage Encryption.
-     * Indicates whether or not to require removable storage encryption.
+     * 
      */
     @SerializedName("storageRequireRemovableStorageEncryption")
     @Expose
@@ -321,7 +325,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Voice Assistant Blocked.
-     * Indicates whether or not to block the use of the Voice Assistant.
+     * 
      */
     @SerializedName("voiceAssistantBlocked")
     @Expose
@@ -329,7 +333,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Voice Dialing Blocked.
-     * Indicates whether or not to block voice dialing.
+     * 
      */
     @SerializedName("voiceDialingBlocked")
     @Expose
@@ -337,7 +341,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Web Browser Block Popups.
-     * Indicates whether or not to block popups within the web browser.
+     * 
      */
     @SerializedName("webBrowserBlockPopups")
     @Expose
@@ -345,7 +349,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Web Browser Block Autofill.
-     * Indicates whether or not to block the web browser's auto fill feature.
+     * 
      */
     @SerializedName("webBrowserBlockAutofill")
     @Expose
@@ -353,7 +357,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Web Browser Block Java Script.
-     * Indicates whether or not to block JavaScript within the web browser.
+     * 
      */
     @SerializedName("webBrowserBlockJavaScript")
     @Expose
@@ -361,7 +365,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Web Browser Blocked.
-     * Indicates whether or not to block the web browser.
+     * 
      */
     @SerializedName("webBrowserBlocked")
     @Expose
@@ -369,7 +373,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Web Browser Cookie Settings.
-     * Cookie settings within the web browser. Possible values are: browserDefault, blockAlways, allowCurrentWebSite, allowFromWebsitesVisited, allowAlways.
+     * 
      */
     @SerializedName("webBrowserCookieSettings")
     @Expose
@@ -377,7 +381,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Wi Fi Blocked.
-     * Indicates whether or not to block syncing Wi-Fi.
+     * 
      */
     @SerializedName("wiFiBlocked")
     @Expose
@@ -385,7 +389,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Install Allow List.
-     * List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("appsInstallAllowList")
     @Expose
@@ -393,7 +397,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Launch Block List.
-     * List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("appsLaunchBlockList")
     @Expose
@@ -401,7 +405,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Apps Hide List.
-     * List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("appsHideList")
     @Expose
@@ -409,7 +413,7 @@ public class BaseAndroidGeneralDeviceConfiguration extends DeviceConfiguration i
 
     /**
      * The Security Require Verify Apps.
-     * Require the Android Verify apps feature is turned on.
+     * 
      */
     @SerializedName("securityRequireVerifyApps")
     @Expose

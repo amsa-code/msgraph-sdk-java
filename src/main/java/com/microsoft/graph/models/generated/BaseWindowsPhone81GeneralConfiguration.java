@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AppListItem;
+import com.microsoft.graph.models.generated.AppListType;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Apply Only To Windows Phone81.
-     * Value indicating whether this policy only applies to Windows Phone 8.1. This property is read-only.
+     * 
      */
     @SerializedName("applyOnlyToWindowsPhone81")
     @Expose
@@ -41,7 +40,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Apps Block Copy Paste.
-     * Indicates whether or not to block copy paste.
+     * 
      */
     @SerializedName("appsBlockCopyPaste")
     @Expose
@@ -49,7 +48,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Bluetooth Blocked.
-     * Indicates whether or not to block bluetooth.
+     * 
      */
     @SerializedName("bluetoothBlocked")
     @Expose
@@ -57,7 +56,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Camera Blocked.
-     * Indicates whether or not to block camera.
+     * 
      */
     @SerializedName("cameraBlocked")
     @Expose
@@ -65,7 +64,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Cellular Block Wifi Tethering.
-     * Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.
+     * 
      */
     @SerializedName("cellularBlockWifiTethering")
     @Expose
@@ -73,7 +72,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Compliant Apps List.
-     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
+     * 
      */
     @SerializedName("compliantAppsList")
     @Expose
@@ -81,7 +80,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Compliant App List Type.
-     * List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
+     * 
      */
     @SerializedName("compliantAppListType")
     @Expose
@@ -89,7 +88,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Diagnostic Data Block Submission.
-     * Indicates whether or not to block diagnostic data submission.
+     * 
      */
     @SerializedName("diagnosticDataBlockSubmission")
     @Expose
@@ -97,7 +96,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Email Block Adding Accounts.
-     * Indicates whether or not to block custom email accounts.
+     * 
      */
     @SerializedName("emailBlockAddingAccounts")
     @Expose
@@ -105,7 +104,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Location Services Blocked.
-     * Indicates whether or not to block location services.
+     * 
      */
     @SerializedName("locationServicesBlocked")
     @Expose
@@ -113,7 +112,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Microsoft Account Blocked.
-     * Indicates whether or not to block using a Microsoft Account.
+     * 
      */
     @SerializedName("microsoftAccountBlocked")
     @Expose
@@ -121,7 +120,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Nfc Blocked.
-     * Indicates whether or not to block Near-Field Communication.
+     * 
      */
     @SerializedName("nfcBlocked")
     @Expose
@@ -129,7 +128,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Block Simple.
-     * Indicates whether or not to block syncing the calendar.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -137,7 +136,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Expiration Days.
-     * Number of days before the password expires.
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -145,7 +144,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Minimum Length.
-     * Minimum length of passwords.
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -153,7 +152,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Minutes Of Inactivity Before Screen Timeout.
-     * Minutes of inactivity before screen timeout.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeScreenTimeout")
     @Expose
@@ -161,7 +160,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Minimum Character Set Count.
-     * Number of character sets a password must contain.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -169,7 +168,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Previous Password Block Count.
-     * Number of previous passwords to block. Valid values 0 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -177,7 +176,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Sign In Failure Count Before Factory Reset.
-     * Number of sign in failures allowed before factory reset.
+     * 
      */
     @SerializedName("passwordSignInFailureCountBeforeFactoryReset")
     @Expose
@@ -185,7 +184,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Required Type.
-     * Password type that is required. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -193,7 +192,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Password Required.
-     * Indicates whether or not to require a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -201,7 +200,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Screen Capture Blocked.
-     * Indicates whether or not to block screenshots.
+     * 
      */
     @SerializedName("screenCaptureBlocked")
     @Expose
@@ -209,7 +208,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Storage Block Removable Storage.
-     * Indicates whether or not to block removable storage.
+     * 
      */
     @SerializedName("storageBlockRemovableStorage")
     @Expose
@@ -217,7 +216,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Storage Require Encryption.
-     * Indicates whether or not to require encryption.
+     * 
      */
     @SerializedName("storageRequireEncryption")
     @Expose
@@ -225,7 +224,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Web Browser Blocked.
-     * Indicates whether or not to block the web browser.
+     * 
      */
     @SerializedName("webBrowserBlocked")
     @Expose
@@ -233,7 +232,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Wifi Blocked.
-     * Indicates whether or not to block Wi-Fi.
+     * 
      */
     @SerializedName("wifiBlocked")
     @Expose
@@ -241,7 +240,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Wifi Block Automatic Connect Hotspots.
-     * Indicates whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
+     * 
      */
     @SerializedName("wifiBlockAutomaticConnectHotspots")
     @Expose
@@ -249,7 +248,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Wifi Block Hotspot Reporting.
-     * Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.
+     * 
      */
     @SerializedName("wifiBlockHotspotReporting")
     @Expose
@@ -257,7 +256,7 @@ public class BaseWindowsPhone81GeneralConfiguration extends DeviceConfiguration 
 
     /**
      * The Windows Store Blocked.
-     * Indicates whether or not to block the Windows Store.
+     * 
      */
     @SerializedName("windowsStoreBlocked")
     @Expose

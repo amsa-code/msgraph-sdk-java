@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Inventory.
-     * Whether inventory is managed by Intune
+     * 
      */
     @SerializedName("inventory")
     @Expose
@@ -51,7 +46,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Modern Apps.
-     * Whether modern application is managed by Intune
+     * 
      */
     @SerializedName("modernApps")
     @Expose
@@ -59,7 +54,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Resource Access.
-     * Whether resource access is managed by Intune
+     * 
      */
     @SerializedName("resourceAccess")
     @Expose
@@ -67,7 +62,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Device Configuration.
-     * Whether device configuration is managed by Intune
+     * 
      */
     @SerializedName("deviceConfiguration")
     @Expose
@@ -75,7 +70,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Compliance Policy.
-     * Whether compliance policy is managed by Intune
+     * 
      */
     @SerializedName("compliancePolicy")
     @Expose
@@ -83,7 +78,7 @@ public class BaseConfigurationManagerClientEnabledFeatures implements IJsonBacke
 
     /**
      * The Windows Update For Business.
-     * Whether Windows Update for Business is managed by Intune
+     * 
      */
     @SerializedName("windowsUpdateForBusiness")
     @Expose

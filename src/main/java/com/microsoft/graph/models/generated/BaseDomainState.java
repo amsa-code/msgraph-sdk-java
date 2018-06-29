@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDomainState implements IJsonBackedObject {
 
     /**
      * The Status.
-     * Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
+     * 
      */
     @SerializedName("status")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDomainState implements IJsonBackedObject {
 
     /**
      * The Operation.
-     * Type of asynchronous operation. The values can be ForceDelete or Verification
+     * 
      */
     @SerializedName("operation")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDomainState implements IJsonBackedObject {
 
     /**
      * The Last Action Date Time.
-     * Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
+     * 
      */
     @SerializedName("lastActionDateTime")
     @Expose

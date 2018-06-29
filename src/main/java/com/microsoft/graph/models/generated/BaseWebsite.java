@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.WebsiteType;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseWebsite implements IJsonBackedObject {
 
     /**
      * The Type.
-     * Possible values are: other, home, work, blog, profile.
+     * 
      */
     @SerializedName("type")
     @Expose
@@ -51,7 +47,7 @@ public class BaseWebsite implements IJsonBackedObject {
 
     /**
      * The Address.
-     * The URL of the website.
+     * 
      */
     @SerializedName("address")
     @Expose
@@ -59,7 +55,7 @@ public class BaseWebsite implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The display name of the web site.
+     * 
      */
     @SerializedName("displayName")
     @Expose

@@ -3,19 +3,24 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.List;
+import com.microsoft.graph.models.extensions.ListItem;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.Site;
+import com.microsoft.graph.models.extensions.BaseItem;
+import com.microsoft.graph.requests.generated.BaseDriveItemCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveItemCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +38,7 @@ public class BaseSharedDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Owner.
-     * Information about the owner of the shared item being referenced.
+     * 
      */
     @SerializedName("owner")
     @Expose
@@ -41,7 +46,7 @@ public class BaseSharedDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Drive Item.
-     * Used to access the underlying driveItem
+     * 
      */
     @SerializedName("driveItem")
     @Expose
@@ -49,13 +54,13 @@ public class BaseSharedDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Items.
-     * All driveItems contained in the sharing root. This collection cannot be enumerated.
+     * 
      */
     public DriveItemCollectionPage items;
 
     /**
      * The List.
-     * Used to access the underlying list
+     * 
      */
     @SerializedName("list")
     @Expose
@@ -63,7 +68,7 @@ public class BaseSharedDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The List Item.
-     * Used to access the underlying listItem
+     * 
      */
     @SerializedName("listItem")
     @Expose
@@ -79,7 +84,7 @@ public class BaseSharedDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Site.
-     * Used to access the underlying site
+     * 
      */
     @SerializedName("site")
     @Expose

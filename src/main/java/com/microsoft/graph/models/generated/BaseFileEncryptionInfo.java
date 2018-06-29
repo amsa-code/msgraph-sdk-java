@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The Encryption Key.
-     * The key used to encrypt the file content.
+     * 
      */
     @SerializedName("encryptionKey")
     @Expose
@@ -51,7 +46,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The Initialization Vector.
-     * The initialization vector used for the encryption algorithm.
+     * 
      */
     @SerializedName("initializationVector")
     @Expose
@@ -59,7 +54,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The Mac.
-     * The hash of the encrypted file content + IV (content hash).
+     * 
      */
     @SerializedName("mac")
     @Expose
@@ -67,7 +62,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The Mac Key.
-     * The key used to get mac.
+     * 
      */
     @SerializedName("macKey")
     @Expose
@@ -75,7 +70,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The Profile Identifier.
-     * The the profile identifier.
+     * 
      */
     @SerializedName("profileIdentifier")
     @Expose
@@ -83,7 +78,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The File Digest.
-     * The file digest prior to encryption.
+     * 
      */
     @SerializedName("fileDigest")
     @Expose
@@ -91,7 +86,7 @@ public class BaseFileEncryptionInfo implements IJsonBackedObject {
 
     /**
      * The File Digest Algorithm.
-     * The file digest algorithm.
+     * 
      */
     @SerializedName("fileDigestAlgorithm")
     @Expose

@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.SharedPCAccountManagerPolicy;
+import com.microsoft.graph.models.generated.SharedPCAllowedAccountType;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Account Manager Policy.
-     * Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.
+     * 
      */
     @SerializedName("accountManagerPolicy")
     @Expose
@@ -41,7 +39,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Allowed Accounts.
-     * Indicates which type of accounts are allowed to use on a shared PC. Possible values are: guest, domain.
+     * 
      */
     @SerializedName("allowedAccounts")
     @Expose
@@ -49,7 +47,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Allow Local Storage.
-     * Specifies whether local storage is allowed on a shared PC.
+     * 
      */
     @SerializedName("allowLocalStorage")
     @Expose
@@ -57,7 +55,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Disable Account Manager.
-     * Disables the account manager for shared PC mode.
+     * 
      */
     @SerializedName("disableAccountManager")
     @Expose
@@ -65,7 +63,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Disable Edu Policies.
-     * Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.
+     * 
      */
     @SerializedName("disableEduPolicies")
     @Expose
@@ -73,7 +71,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Disable Power Policies.
-     * Specifies whether the default shared PC power policies should be disabled.
+     * 
      */
     @SerializedName("disablePowerPolicies")
     @Expose
@@ -81,7 +79,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Disable Sign In On Resume.
-     * Disables the requirement to sign in whenever the device wakes up from sleep mode.
+     * 
      */
     @SerializedName("disableSignInOnResume")
     @Expose
@@ -89,7 +87,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Enabled.
-     * Enables shared PC mode and applies the shared pc policies.
+     * 
      */
     @SerializedName("enabled")
     @Expose
@@ -97,7 +95,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Idle Time Before Sleep In Seconds.
-     * Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.
+     * 
      */
     @SerializedName("idleTimeBeforeSleepInSeconds")
     @Expose
@@ -105,7 +103,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Kiosk App Display Name.
-     * Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.
+     * 
      */
     @SerializedName("kioskAppDisplayName")
     @Expose
@@ -113,7 +111,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Kiosk App User Model Id.
-     * Specifies the application user model ID of the app to use with assigned access.
+     * 
      */
     @SerializedName("kioskAppUserModelId")
     @Expose
@@ -121,7 +119,7 @@ public class BaseSharedPCConfiguration extends DeviceConfiguration implements IJ
 
     /**
      * The Maintenance Start Time.
-     * Specifies the daily start time of maintenance hour.
+     * 
      */
     @SerializedName("maintenanceStartTime")
     @Expose

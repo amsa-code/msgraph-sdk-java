@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Unknown Device Count.
-     * Number of unknown devices
+     * 
      */
     @SerializedName("unknownDeviceCount")
     @Expose
@@ -41,7 +37,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Not Applicable Device Count.
-     * Number of not applicable devices
+     * 
      */
     @SerializedName("notApplicableDeviceCount")
     @Expose
@@ -49,7 +45,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Compliant Device Count.
-     * Number of compliant devices
+     * 
      */
     @SerializedName("compliantDeviceCount")
     @Expose
@@ -57,7 +53,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Remediated Device Count.
-     * Number of remediated devices
+     * 
      */
     @SerializedName("remediatedDeviceCount")
     @Expose
@@ -65,7 +61,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Non Compliant Device Count.
-     * Number of NonCompliant devices
+     * 
      */
     @SerializedName("nonCompliantDeviceCount")
     @Expose
@@ -73,7 +69,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Error Device Count.
-     * Number of error devices
+     * 
      */
     @SerializedName("errorDeviceCount")
     @Expose
@@ -81,7 +77,7 @@ public class BaseDeviceConfigurationDeviceStateSummary extends Entity implements
 
     /**
      * The Conflict Device Count.
-     * Number of conflict devices
+     * 
      */
     @SerializedName("conflictDeviceCount")
     @Expose

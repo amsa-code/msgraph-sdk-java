@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseAssignedLicense implements IJsonBackedObject {
 
     /**
      * The Disabled Plans.
-     * A collection of the unique identifiers for plans that have been disabled.
+     * 
      */
     @SerializedName("disabledPlans")
     @Expose
@@ -51,7 +46,7 @@ public class BaseAssignedLicense implements IJsonBackedObject {
 
     /**
      * The Sku Id.
-     * The unique identifier for the SKU.
+     * 
      */
     @SerializedName("skuId")
     @Expose

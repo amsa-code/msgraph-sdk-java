@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ConversationThread;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseConversationThreadCollectionResponse;
+import com.microsoft.graph.requests.extensions.ConversationThreadCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Topic.
-     * The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
+     * 
      */
     @SerializedName("topic")
     @Expose
@@ -41,7 +40,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Has Attachments.
-     * Indicates whether any of the posts within this Conversation has at least one attachment.
+     * 
      */
     @SerializedName("hasAttachments")
     @Expose
@@ -49,7 +48,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Delivered Date Time.
-     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("lastDeliveredDateTime")
     @Expose
@@ -57,7 +56,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Unique Senders.
-     * All the users that sent a message to this Conversation.
+     * 
      */
     @SerializedName("uniqueSenders")
     @Expose
@@ -65,7 +64,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Preview.
-     * A short summary from the body of the latest post in this converstaion.
+     * 
      */
     @SerializedName("preview")
     @Expose
@@ -73,7 +72,7 @@ public class BaseConversation extends Entity implements IJsonBackedObject {
 
     /**
      * The Threads.
-     * A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+     * 
      */
     public ConversationThreadCollectionPage threads;
 

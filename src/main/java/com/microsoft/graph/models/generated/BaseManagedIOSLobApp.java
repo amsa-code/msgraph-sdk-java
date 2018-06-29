@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IosDeviceType;
+import com.microsoft.graph.models.extensions.IosMinimumOperatingSystem;
+import com.microsoft.graph.models.extensions.ManagedMobileLobApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Bundle Id.
-     * The Identity Name.
+     * 
      */
     @SerializedName("bundleId")
     @Expose
@@ -41,7 +39,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Applicable Device Type.
-     * The iOS architecture for which this app can run on.
+     * 
      */
     @SerializedName("applicableDeviceType")
     @Expose
@@ -49,7 +47,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Minimum Supported Operating System.
-     * The value for the minimum applicable operating system.
+     * 
      */
     @SerializedName("minimumSupportedOperatingSystem")
     @Expose
@@ -57,7 +55,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Expiration Date Time.
-     * The expiration time.
+     * 
      */
     @SerializedName("expirationDateTime")
     @Expose
@@ -65,7 +63,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Version Number.
-     * The version number of managed iOS Line of Business (LoB) app.
+     * 
      */
     @SerializedName("versionNumber")
     @Expose
@@ -73,7 +71,7 @@ public class BaseManagedIOSLobApp extends ManagedMobileLobApp implements IJsonBa
 
     /**
      * The Build Number.
-     * The build number of managed iOS Line of Business (LoB) app.
+     * 
      */
     @SerializedName("buildNumber")
     @Expose

@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.EditionUpgradeLicenseType;
+import com.microsoft.graph.models.generated.Windows10EditionType;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseEditionUpgradeConfiguration extends DeviceConfiguration impleme
 
     /**
      * The License Type.
-     * Edition Upgrade License Type. Possible values are: productKey, licenseFile.
+     * 
      */
     @SerializedName("licenseType")
     @Expose
@@ -41,7 +39,7 @@ public class BaseEditionUpgradeConfiguration extends DeviceConfiguration impleme
 
     /**
      * The Target Edition.
-     * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education, windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional, windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN, windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
+     * 
      */
     @SerializedName("targetEdition")
     @Expose
@@ -49,7 +47,7 @@ public class BaseEditionUpgradeConfiguration extends DeviceConfiguration impleme
 
     /**
      * The License.
-     * Edition Upgrade License File Content.
+     * 
      */
     @SerializedName("license")
     @Expose
@@ -57,7 +55,7 @@ public class BaseEditionUpgradeConfiguration extends DeviceConfiguration impleme
 
     /**
      * The Product Key.
-     * Edition Upgrade Product Key.
+     * 
      */
     @SerializedName("productKey")
     @Expose

@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AutomaticRepliesSetting;
+import com.microsoft.graph.models.extensions.LocaleInfo;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +40,7 @@ public class BaseMailboxSettings implements IJsonBackedObject {
 
     /**
      * The Automatic Replies Setting.
-     * Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.
+     * 
      */
     @SerializedName("automaticRepliesSetting")
     @Expose
@@ -59,7 +56,7 @@ public class BaseMailboxSettings implements IJsonBackedObject {
 
     /**
      * The Time Zone.
-     * The default time zone for the user's mailbox.
+     * 
      */
     @SerializedName("timeZone")
     @Expose
@@ -67,7 +64,7 @@ public class BaseMailboxSettings implements IJsonBackedObject {
 
     /**
      * The Language.
-     * The locale information for the user, including the preferred language and country/region.
+     * 
      */
     @SerializedName("language")
     @Expose

@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseChoiceColumn implements IJsonBackedObject {
 
     /**
      * The Allow Text Entry.
-     * If true, allows custom values that aren't in the configured choices.
+     * 
      */
     @SerializedName("allowTextEntry")
     @Expose
@@ -51,7 +46,7 @@ public class BaseChoiceColumn implements IJsonBackedObject {
 
     /**
      * The Choices.
-     * The list of values available for this column.
+     * 
      */
     @SerializedName("choices")
     @Expose
@@ -59,7 +54,7 @@ public class BaseChoiceColumn implements IJsonBackedObject {
 
     /**
      * The Display As.
-     * How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
+     * 
      */
     @SerializedName("displayAs")
     @Expose

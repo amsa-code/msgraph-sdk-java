@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.PlannerTask;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BasePlannerTaskCollectionResponse;
+import com.microsoft.graph.requests.extensions.PlannerTaskCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BasePlannerBucket extends Entity implements IJsonBackedObject {
 
     /**
      * The Name.
-     * Name of the bucket.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -41,7 +40,7 @@ public class BasePlannerBucket extends Entity implements IJsonBackedObject {
 
     /**
      * The Plan Id.
-     * Plan ID to which the bucket belongs.
+     * 
      */
     @SerializedName("planId")
     @Expose
@@ -49,7 +48,7 @@ public class BasePlannerBucket extends Entity implements IJsonBackedObject {
 
     /**
      * The Order Hint.
-     * Hint used to order items of this type in a list view. The format is defined as outlined here.
+     * 
      */
     @SerializedName("orderHint")
     @Expose
@@ -57,7 +56,7 @@ public class BasePlannerBucket extends Entity implements IJsonBackedObject {
 
     /**
      * The Tasks.
-     * Read-only. Nullable. The collection of tasks in the bucket.
+     * 
      */
     public PlannerTaskCollectionPage tasks;
 

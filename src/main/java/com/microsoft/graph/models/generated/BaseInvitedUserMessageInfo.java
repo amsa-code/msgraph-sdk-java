@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Recipient;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseInvitedUserMessageInfo implements IJsonBackedObject {
 
     /**
      * The Cc Recipients.
-     * Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.
+     * 
      */
     @SerializedName("ccRecipients")
     @Expose
@@ -51,7 +47,7 @@ public class BaseInvitedUserMessageInfo implements IJsonBackedObject {
 
     /**
      * The Message Language.
-     * The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.
+     * 
      */
     @SerializedName("messageLanguage")
     @Expose
@@ -59,7 +55,7 @@ public class BaseInvitedUserMessageInfo implements IJsonBackedObject {
 
     /**
      * The Customized Message Body.
-     * Customized message body you want to send if you don't want the default message.
+     * 
      */
     @SerializedName("customizedMessageBody")
     @Expose

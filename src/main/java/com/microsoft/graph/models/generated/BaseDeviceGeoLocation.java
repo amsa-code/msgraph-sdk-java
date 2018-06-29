@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Last Collected Date Time.
-     * Time at which location was recorded, relative to UTC
+     * 
      */
     @SerializedName("lastCollectedDateTime")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Longitude.
-     * Longitude coordinate of the device's location
+     * 
      */
     @SerializedName("longitude")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Latitude.
-     * Latitude coordinate of the device's location
+     * 
      */
     @SerializedName("latitude")
     @Expose
@@ -67,7 +62,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Altitude.
-     * Altitude, given in meters above sea level
+     * 
      */
     @SerializedName("altitude")
     @Expose
@@ -75,7 +70,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Horizontal Accuracy.
-     * Accuracy of longitude and latitude in meters
+     * 
      */
     @SerializedName("horizontalAccuracy")
     @Expose
@@ -83,7 +78,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Vertical Accuracy.
-     * Accuracy of altitude in meters
+     * 
      */
     @SerializedName("verticalAccuracy")
     @Expose
@@ -91,7 +86,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Heading.
-     * Heading in degrees from true north
+     * 
      */
     @SerializedName("heading")
     @Expose
@@ -99,7 +94,7 @@ public class BaseDeviceGeoLocation implements IJsonBackedObject {
 
     /**
      * The Speed.
-     * Speed the device is traveling in meters per second
+     * 
      */
     @SerializedName("speed")
     @Expose

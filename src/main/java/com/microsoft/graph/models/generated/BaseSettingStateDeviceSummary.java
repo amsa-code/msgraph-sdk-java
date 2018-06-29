@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Setting Name.
-     * Name of the setting
+     * 
      */
     @SerializedName("settingName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Instance Path.
-     * Name of the InstancePath for the setting
+     * 
      */
     @SerializedName("instancePath")
     @Expose
@@ -49,7 +45,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Unknown Device Count.
-     * Device Unkown count for the setting
+     * 
      */
     @SerializedName("unknownDeviceCount")
     @Expose
@@ -57,7 +53,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Not Applicable Device Count.
-     * Device Not Applicable count for the setting
+     * 
      */
     @SerializedName("notApplicableDeviceCount")
     @Expose
@@ -65,7 +61,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Compliant Device Count.
-     * Device Compliant count for the setting
+     * 
      */
     @SerializedName("compliantDeviceCount")
     @Expose
@@ -73,7 +69,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Remediated Device Count.
-     * Device Compliant count for the setting
+     * 
      */
     @SerializedName("remediatedDeviceCount")
     @Expose
@@ -81,7 +77,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Non Compliant Device Count.
-     * Device NonCompliant count for the setting
+     * 
      */
     @SerializedName("nonCompliantDeviceCount")
     @Expose
@@ -89,7 +85,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Error Device Count.
-     * Device error count for the setting
+     * 
      */
     @SerializedName("errorDeviceCount")
     @Expose
@@ -97,7 +93,7 @@ public class BaseSettingStateDeviceSummary extends Entity implements IJsonBacked
 
     /**
      * The Conflict Device Count.
-     * Device conflict error count for the setting
+     * 
      */
     @SerializedName("conflictDeviceCount")
     @Expose

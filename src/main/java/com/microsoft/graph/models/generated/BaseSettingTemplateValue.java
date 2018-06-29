@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseSettingTemplateValue implements IJsonBackedObject {
 
     /**
      * The Name.
-     * Name of the setting.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -51,7 +46,7 @@ public class BaseSettingTemplateValue implements IJsonBackedObject {
 
     /**
      * The Type.
-     * Type of the setting.
+     * 
      */
     @SerializedName("type")
     @Expose
@@ -59,7 +54,7 @@ public class BaseSettingTemplateValue implements IJsonBackedObject {
 
     /**
      * The Default Value.
-     * Default value for the setting.
+     * 
      */
     @SerializedName("defaultValue")
     @Expose
@@ -67,7 +62,7 @@ public class BaseSettingTemplateValue implements IJsonBackedObject {
 
     /**
      * The Description.
-     * Description of the setting.
+     * 
      */
     @SerializedName("description")
     @Expose

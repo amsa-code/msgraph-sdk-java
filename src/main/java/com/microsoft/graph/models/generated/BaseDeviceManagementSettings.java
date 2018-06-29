@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDeviceManagementSettings implements IJsonBackedObject {
 
     /**
      * The Device Compliance Checkin Threshold Days.
-     * The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
+     * 
      */
     @SerializedName("deviceComplianceCheckinThresholdDays")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDeviceManagementSettings implements IJsonBackedObject {
 
     /**
      * The Is Scheduled Action Enabled.
-     * Is feature enabled or not for scheduled action for rule.
+     * 
      */
     @SerializedName("isScheduledActionEnabled")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDeviceManagementSettings implements IJsonBackedObject {
 
     /**
      * The Secure By Default.
-     * Device should be noncompliant when there is no compliance policy targeted when this is true
+     * 
      */
     @SerializedName("secureByDefault")
     @Expose

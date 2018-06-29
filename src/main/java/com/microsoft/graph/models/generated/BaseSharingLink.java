@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Identity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseSharingLink implements IJsonBackedObject {
 
     /**
      * The Application.
-     * The app the link is associated with.
+     * 
      */
     @SerializedName("application")
     @Expose
@@ -51,7 +47,7 @@ public class BaseSharingLink implements IJsonBackedObject {
 
     /**
      * The Scope.
-     * The scope of the link represented by this permission. Value anonymous indicates the link is usable by anyone, organization indicates the link is only usable for users signed into the same tenant.
+     * 
      */
     @SerializedName("scope")
     @Expose
@@ -59,7 +55,7 @@ public class BaseSharingLink implements IJsonBackedObject {
 
     /**
      * The Type.
-     * The type of the link created.
+     * 
      */
     @SerializedName("type")
     @Expose
@@ -67,7 +63,7 @@ public class BaseSharingLink implements IJsonBackedObject {
 
     /**
      * The Web Url.
-     * A URL that opens the item in the browser on the OneDrive website.
+     * 
      */
     @SerializedName("webUrl")
     @Expose

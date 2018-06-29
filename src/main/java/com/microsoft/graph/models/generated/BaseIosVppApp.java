@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.VppLicensingType;
+import com.microsoft.graph.models.extensions.IosDeviceType;
+import com.microsoft.graph.models.generated.VppTokenAccountType;
+import com.microsoft.graph.models.extensions.MobileApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Used License Count.
-     * The number of VPP licenses in use.
+     * 
      */
     @SerializedName("usedLicenseCount")
     @Expose
@@ -41,7 +40,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Total License Count.
-     * The total number of VPP licenses.
+     * 
      */
     @SerializedName("totalLicenseCount")
     @Expose
@@ -49,7 +48,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Release Date Time.
-     * The VPP application release date and time.
+     * 
      */
     @SerializedName("releaseDateTime")
     @Expose
@@ -57,7 +56,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The App Store Url.
-     * The store URL.
+     * 
      */
     @SerializedName("appStoreUrl")
     @Expose
@@ -65,7 +64,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Licensing Type.
-     * The supported License Type.
+     * 
      */
     @SerializedName("licensingType")
     @Expose
@@ -73,7 +72,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Applicable Device Type.
-     * The applicable iOS Device Type.
+     * 
      */
     @SerializedName("applicableDeviceType")
     @Expose
@@ -81,7 +80,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Vpp Token Organization Name.
-     * The organization associated with the Apple Volume Purchase Program Token
+     * 
      */
     @SerializedName("vppTokenOrganizationName")
     @Expose
@@ -89,7 +88,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Vpp Token Account Type.
-     * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: business, education. Possible values are: business, education.
+     * 
      */
     @SerializedName("vppTokenAccountType")
     @Expose
@@ -97,7 +96,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Vpp Token Apple Id.
-     * The Apple Id associated with the given Apple Volume Purchase Program Token.
+     * 
      */
     @SerializedName("vppTokenAppleId")
     @Expose
@@ -105,7 +104,7 @@ public class BaseIosVppApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Bundle Id.
-     * The Identity Name.
+     * 
      */
     @SerializedName("bundleId")
     @Expose

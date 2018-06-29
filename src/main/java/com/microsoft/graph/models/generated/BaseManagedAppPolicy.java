@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseManagedAppPolicy extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Policy display name.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseManagedAppPolicy extends Entity implements IJsonBackedObject {
 
     /**
      * The Description.
-     * The policy's description.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +45,7 @@ public class BaseManagedAppPolicy extends Entity implements IJsonBackedObject {
 
     /**
      * The Created Date Time.
-     * The date and time the policy was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -57,7 +53,7 @@ public class BaseManagedAppPolicy extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * Last time the policy was modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -65,7 +61,7 @@ public class BaseManagedAppPolicy extends Entity implements IJsonBackedObject {
 
     /**
      * The Version.
-     * Version of the entity.
+     * 
      */
     @SerializedName("version")
     @Expose

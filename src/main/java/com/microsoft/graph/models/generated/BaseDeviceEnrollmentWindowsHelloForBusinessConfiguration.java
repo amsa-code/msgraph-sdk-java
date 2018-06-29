@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.WindowsHelloForBusinessPinUsage;
+import com.microsoft.graph.models.generated.WindowsHelloForBusinessPinUsage;
+import com.microsoft.graph.models.generated.WindowsHelloForBusinessPinUsage;
+import com.microsoft.graph.models.generated.Enablement;
+import com.microsoft.graph.models.generated.Enablement;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Minimum Length.
-     * Not yet documented
+     * 
      */
     @SerializedName("pinMinimumLength")
     @Expose
@@ -41,7 +42,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Maximum Length.
-     * Not yet documented
+     * 
      */
     @SerializedName("pinMaximumLength")
     @Expose
@@ -49,7 +50,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Uppercase Characters Usage.
-     * Not yet documented Possible values are: allowed, required, disallowed.
+     * 
      */
     @SerializedName("pinUppercaseCharactersUsage")
     @Expose
@@ -57,7 +58,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Lowercase Characters Usage.
-     * Not yet documented Possible values are: allowed, required, disallowed.
+     * 
      */
     @SerializedName("pinLowercaseCharactersUsage")
     @Expose
@@ -65,7 +66,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Special Characters Usage.
-     * Not yet documented Possible values are: allowed, required, disallowed.
+     * 
      */
     @SerializedName("pinSpecialCharactersUsage")
     @Expose
@@ -73,7 +74,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The State.
-     * Not yet documented Possible values are: notConfigured, enabled, disabled.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -81,7 +82,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Security Device Required.
-     * Not yet documented
+     * 
      */
     @SerializedName("securityDeviceRequired")
     @Expose
@@ -89,7 +90,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Unlock With Biometrics Enabled.
-     * Not yet documented
+     * 
      */
     @SerializedName("unlockWithBiometricsEnabled")
     @Expose
@@ -97,7 +98,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Remote Passport Enabled.
-     * Not yet documented
+     * 
      */
     @SerializedName("remotePassportEnabled")
     @Expose
@@ -105,7 +106,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Previous Block Count.
-     * Not yet documented
+     * 
      */
     @SerializedName("pinPreviousBlockCount")
     @Expose
@@ -113,7 +114,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Pin Expiration In Days.
-     * Not yet documented
+     * 
      */
     @SerializedName("pinExpirationInDays")
     @Expose
@@ -121,7 +122,7 @@ public class BaseDeviceEnrollmentWindowsHelloForBusinessConfiguration extends De
 
     /**
      * The Enhanced Biometrics State.
-     * Not yet documented Possible values are: notConfigured, enabled, disabled.
+     * 
      */
     @SerializedName("enhancedBiometricsState")
     @Expose

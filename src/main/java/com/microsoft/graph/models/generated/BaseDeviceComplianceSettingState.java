@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.ComplianceStatus;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Setting.
-     * The setting class name and property name.
+     * 
      */
     @SerializedName("setting")
     @Expose
@@ -41,7 +38,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Setting Name.
-     * The Setting Name that is being reported
+     * 
      */
     @SerializedName("settingName")
     @Expose
@@ -49,7 +46,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Device Id.
-     * The Device Id that is being reported
+     * 
      */
     @SerializedName("deviceId")
     @Expose
@@ -57,7 +54,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Device Name.
-     * The Device Name that is being reported
+     * 
      */
     @SerializedName("deviceName")
     @Expose
@@ -65,7 +62,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The User Id.
-     * The user Id that is being reported
+     * 
      */
     @SerializedName("userId")
     @Expose
@@ -73,7 +70,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The User Email.
-     * The User email address that is being reported
+     * 
      */
     @SerializedName("userEmail")
     @Expose
@@ -81,7 +78,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The User Name.
-     * The User Name that is being reported
+     * 
      */
     @SerializedName("userName")
     @Expose
@@ -89,7 +86,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The User Principal Name.
-     * The User PrincipalName that is being reported
+     * 
      */
     @SerializedName("userPrincipalName")
     @Expose
@@ -97,7 +94,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Device Model.
-     * The device model that is being reported
+     * 
      */
     @SerializedName("deviceModel")
     @Expose
@@ -105,7 +102,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The State.
-     * The compliance state of the setting Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -113,7 +110,7 @@ public class BaseDeviceComplianceSettingState extends Entity implements IJsonBac
 
     /**
      * The Compliance Grace Period Expiration Date Time.
-     * The DateTime when device compliance grace period expires
+     * 
      */
     @SerializedName("complianceGracePeriodExpirationDateTime")
     @Expose

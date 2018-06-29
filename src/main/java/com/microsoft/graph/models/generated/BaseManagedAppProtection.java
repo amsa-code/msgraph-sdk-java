@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.ManagedAppDataTransferLevel;
+import com.microsoft.graph.models.generated.ManagedAppDataTransferLevel;
+import com.microsoft.graph.models.generated.ManagedAppClipboardSharingLevel;
+import com.microsoft.graph.models.generated.ManagedAppPinCharacterSet;
+import com.microsoft.graph.models.generated.ManagedAppDataStorageLocation;
+import com.microsoft.graph.models.extensions.ManagedAppPolicy;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Period Offline Before Access Check.
-     * The period after which access is checked when the device is not connected to the internet.
+     * 
      */
     @SerializedName("periodOfflineBeforeAccessCheck")
     @Expose
@@ -41,7 +42,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Period Online Before Access Check.
-     * The period after which access is checked when the device is connected to the internet.
+     * 
      */
     @SerializedName("periodOnlineBeforeAccessCheck")
     @Expose
@@ -49,7 +50,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Allowed Inbound Data Transfer Sources.
-     * Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
+     * 
      */
     @SerializedName("allowedInboundDataTransferSources")
     @Expose
@@ -57,7 +58,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Allowed Outbound Data Transfer Destinations.
-     * Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
+     * 
      */
     @SerializedName("allowedOutboundDataTransferDestinations")
     @Expose
@@ -65,7 +66,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Organizational Credentials Required.
-     * Indicates whether organizational credentials are required for app use.
+     * 
      */
     @SerializedName("organizationalCredentialsRequired")
     @Expose
@@ -73,7 +74,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Allowed Outbound Clipboard Sharing Level.
-     * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
+     * 
      */
     @SerializedName("allowedOutboundClipboardSharingLevel")
     @Expose
@@ -81,7 +82,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Data Backup Blocked.
-     * Indicates whether the backup of a managed app's data is blocked.
+     * 
      */
     @SerializedName("dataBackupBlocked")
     @Expose
@@ -89,7 +90,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Device Compliance Required.
-     * Indicates whether device compliance is required.
+     * 
      */
     @SerializedName("deviceComplianceRequired")
     @Expose
@@ -97,7 +98,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Managed Browser To Open Links Required.
-     * Indicates whether internet links should be opened in the managed browser app.
+     * 
      */
     @SerializedName("managedBrowserToOpenLinksRequired")
     @Expose
@@ -105,7 +106,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Save As Blocked.
-     * Indicates whether users may use the "Save As" menu item to save a copy of protected files.
+     * 
      */
     @SerializedName("saveAsBlocked")
     @Expose
@@ -113,7 +114,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Period Offline Before Wipe Is Enforced.
-     * The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+     * 
      */
     @SerializedName("periodOfflineBeforeWipeIsEnforced")
     @Expose
@@ -121,7 +122,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Pin Required.
-     * Indicates whether an app-level pin is required.
+     * 
      */
     @SerializedName("pinRequired")
     @Expose
@@ -129,7 +130,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Maximum Pin Retries.
-     * Maximum number of incorrect pin retry attempts before the managed app is wiped.
+     * 
      */
     @SerializedName("maximumPinRetries")
     @Expose
@@ -137,7 +138,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Simple Pin Blocked.
-     * Indicates whether simplePin is blocked.
+     * 
      */
     @SerializedName("simplePinBlocked")
     @Expose
@@ -145,7 +146,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Minimum Pin Length.
-     * Minimum pin length required for an app-level pin if PinRequired is set to True
+     * 
      */
     @SerializedName("minimumPinLength")
     @Expose
@@ -153,7 +154,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Pin Character Set.
-     * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol.
+     * 
      */
     @SerializedName("pinCharacterSet")
     @Expose
@@ -161,7 +162,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Period Before Pin Reset.
-     * TimePeriod before the all-level pin must be reset if PinRequired is set to True.
+     * 
      */
     @SerializedName("periodBeforePinReset")
     @Expose
@@ -169,7 +170,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Allowed Data Storage Locations.
-     * Data storage locations where a user may store managed data.
+     * 
      */
     @SerializedName("allowedDataStorageLocations")
     @Expose
@@ -177,7 +178,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Contact Sync Blocked.
-     * Indicates whether contacts can be synced to the user's device.
+     * 
      */
     @SerializedName("contactSyncBlocked")
     @Expose
@@ -185,7 +186,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Print Blocked.
-     * Indicates whether printing is allowed from managed apps.
+     * 
      */
     @SerializedName("printBlocked")
     @Expose
@@ -193,7 +194,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Fingerprint Blocked.
-     * Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
+     * 
      */
     @SerializedName("fingerprintBlocked")
     @Expose
@@ -201,7 +202,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Disable App Pin If Device Pin Is Set.
-     * Indicates whether use of the app pin is required if the device pin is set.
+     * 
      */
     @SerializedName("disableAppPinIfDevicePinIsSet")
     @Expose
@@ -209,7 +210,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Minimum Required Os Version.
-     * Versions less than the specified version will block the managed app from accessing company data.
+     * 
      */
     @SerializedName("minimumRequiredOsVersion")
     @Expose
@@ -217,7 +218,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Minimum Warning Os Version.
-     * Versions less than the specified version will result in warning message on the managed app from accessing company data.
+     * 
      */
     @SerializedName("minimumWarningOsVersion")
     @Expose
@@ -225,7 +226,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Minimum Required App Version.
-     * Versions less than the specified version will block the managed app from accessing company data.
+     * 
      */
     @SerializedName("minimumRequiredAppVersion")
     @Expose
@@ -233,7 +234,7 @@ public class BaseManagedAppProtection extends ManagedAppPolicy implements IJsonB
 
     /**
      * The Minimum Warning App Version.
-     * Versions less than the specified version will result in warning message on the managed app.
+     * 
      */
     @SerializedName("minimumWarningAppVersion")
     @Expose

@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseListInfo implements IJsonBackedObject {
 
     /**
      * The Content Types Enabled.
-     * If true, indicates that content types are enabled for this list.
+     * 
      */
     @SerializedName("contentTypesEnabled")
     @Expose
@@ -51,7 +46,7 @@ public class BaseListInfo implements IJsonBackedObject {
 
     /**
      * The Hidden.
-     * If true, indicates that the list is not normally visible in the SharePoint user experience.
+     * 
      */
     @SerializedName("hidden")
     @Expose
@@ -59,7 +54,7 @@ public class BaseListInfo implements IJsonBackedObject {
 
     /**
      * The Template.
-     * An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
+     * 
      */
     @SerializedName("template")
     @Expose

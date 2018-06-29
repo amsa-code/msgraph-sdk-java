@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.OnenoteOperationError;
+import com.microsoft.graph.models.extensions.Operation;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseOnenoteOperation extends Operation implements IJsonBackedObject
 
     /**
      * The Resource Location.
-     * The resource URI for the object. For example, the resource URI for a copied page or section.
+     * 
      */
     @SerializedName("resourceLocation")
     @Expose
@@ -41,7 +38,7 @@ public class BaseOnenoteOperation extends Operation implements IJsonBackedObject
 
     /**
      * The Resource Id.
-     * The resource id.
+     * 
      */
     @SerializedName("resourceId")
     @Expose
@@ -49,7 +46,7 @@ public class BaseOnenoteOperation extends Operation implements IJsonBackedObject
 
     /**
      * The Error.
-     * The error returned by the operation.
+     * 
      */
     @SerializedName("error")
     @Expose
@@ -57,7 +54,7 @@ public class BaseOnenoteOperation extends Operation implements IJsonBackedObject
 
     /**
      * The Percent Complete.
-     * The operation percent complete if the operation is still in running status
+     * 
      */
     @SerializedName("percentComplete")
     @Expose

@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.EnrollmentConfigurationAssignment;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseEnrollmentConfigurationAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.EnrollmentConfigurationAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Display Name.
-     * Not yet documented
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +40,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Description.
-     * Not yet documented
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +48,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Priority.
-     * Not yet documented
+     * 
      */
     @SerializedName("priority")
     @Expose
@@ -57,7 +56,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Created Date Time.
-     * Not yet documented
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -65,7 +64,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Last Modified Date Time.
-     * Not yet documented
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -73,7 +72,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Version.
-     * Not yet documented
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -81,7 +80,7 @@ public class BaseDeviceEnrollmentConfiguration extends Entity implements IJsonBa
 
     /**
      * The Assignments.
-     * The list of group assignments for the device configuration profile.
+     * 
      */
     public EnrollmentConfigurationAssignmentCollectionPage assignments;
 

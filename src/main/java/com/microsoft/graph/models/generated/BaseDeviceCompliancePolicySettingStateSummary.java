@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.PolicyPlatformType;
+import com.microsoft.graph.models.extensions.DeviceComplianceSettingState;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseDeviceComplianceSettingStateCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceComplianceSettingStateCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Setting.
-     * The setting class name and property name.
+     * 
      */
     @SerializedName("setting")
     @Expose
@@ -41,7 +41,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Setting Name.
-     * Name of the setting.
+     * 
      */
     @SerializedName("settingName")
     @Expose
@@ -49,7 +49,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Platform Type.
-     * Setting platform Possible values are: android, iOS, macOS, windowsPhone81, windows81AndLater, windows10AndLater, all.
+     * 
      */
     @SerializedName("platformType")
     @Expose
@@ -57,7 +57,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Unknown Device Count.
-     * Number of unknown devices
+     * 
      */
     @SerializedName("unknownDeviceCount")
     @Expose
@@ -65,7 +65,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Not Applicable Device Count.
-     * Number of not applicable devices
+     * 
      */
     @SerializedName("notApplicableDeviceCount")
     @Expose
@@ -73,7 +73,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Compliant Device Count.
-     * Number of compliant devices
+     * 
      */
     @SerializedName("compliantDeviceCount")
     @Expose
@@ -81,7 +81,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Remediated Device Count.
-     * Number of remediated devices
+     * 
      */
     @SerializedName("remediatedDeviceCount")
     @Expose
@@ -89,7 +89,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Non Compliant Device Count.
-     * Number of NonCompliant devices
+     * 
      */
     @SerializedName("nonCompliantDeviceCount")
     @Expose
@@ -97,7 +97,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Error Device Count.
-     * Number of error devices
+     * 
      */
     @SerializedName("errorDeviceCount")
     @Expose
@@ -105,7 +105,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Conflict Device Count.
-     * Number of conflict devices
+     * 
      */
     @SerializedName("conflictDeviceCount")
     @Expose
@@ -113,7 +113,7 @@ public class BaseDeviceCompliancePolicySettingStateSummary extends Entity implem
 
     /**
      * The Device Compliance Setting States.
-     * Not yet documented
+     * 
      */
     public DeviceComplianceSettingStateCollectionPage deviceComplianceSettingStates;
 

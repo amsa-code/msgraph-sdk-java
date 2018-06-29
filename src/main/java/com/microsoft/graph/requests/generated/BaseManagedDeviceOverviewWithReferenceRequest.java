@@ -55,23 +55,6 @@ public class BaseManagedDeviceOverviewWithReferenceRequest extends BaseRequest i
        return send(HttpMethod.GET, null);
     }
 
-	public void delete(final ICallback<ManagedDeviceOverview> callback) {
-		send(HttpMethod.DELETE, callback, null);
-	}
-
-	public void delete() throws ClientException {
-		send(HttpMethod.DELETE, null);
-	}
-
-	public void patch(final ManagedDeviceOverview sourceManagedDeviceOverview, final ICallback<ManagedDeviceOverview> callback) {
-		send(HttpMethod.PATCH, callback, sourceManagedDeviceOverview);
-	}
-
-	public ManagedDeviceOverview patch(final ManagedDeviceOverview sourceManagedDeviceOverview) throws ClientException {
-		return send(HttpMethod.PATCH, sourceManagedDeviceOverview);
-	}
-
-
     /**
      * Sets the select clause for the request
      *

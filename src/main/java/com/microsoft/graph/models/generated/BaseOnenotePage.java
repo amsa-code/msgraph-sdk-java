@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.PageLinks;
+import com.microsoft.graph.models.extensions.OnenoteSection;
+import com.microsoft.graph.models.extensions.Notebook;
+import com.microsoft.graph.models.extensions.OnenoteEntitySchemaObjectModel;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Title.
-     * The title of the page.
+     * 
      */
     @SerializedName("title")
     @Expose
@@ -41,7 +40,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Created By App Id.
-     * The unique identifier of the application that created the page. Read-only.
+     * 
      */
     @SerializedName("createdByAppId")
     @Expose
@@ -49,7 +48,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Links.
-     * Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed. The oneNoteWebUrl link opens the page in OneNote Online. Read-only.
+     * 
      */
     @SerializedName("links")
     @Expose
@@ -57,7 +56,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Content Url.
-     * The URL for the page's HTML content.  Read-only.
+     * 
      */
     @SerializedName("contentUrl")
     @Expose
@@ -65,7 +64,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Last Modified Date Time.
-     * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -73,7 +72,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Level.
-     * The indentation level of the page. Read-only.
+     * 
      */
     @SerializedName("level")
     @Expose
@@ -81,7 +80,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Order.
-     * The order of the page within its parent section. Read-only.
+     * 
      */
     @SerializedName("order")
     @Expose
@@ -97,7 +96,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Parent Section.
-     * The section that contains the page. Read-only.
+     * 
      */
     @SerializedName("parentSection")
     @Expose
@@ -105,7 +104,7 @@ public class BaseOnenotePage extends OnenoteEntitySchemaObjectModel implements I
 
     /**
      * The Parent Notebook.
-     * The notebook that contains the page.  Read-only.
+     * 
      */
     @SerializedName("parentNotebook")
     @Expose

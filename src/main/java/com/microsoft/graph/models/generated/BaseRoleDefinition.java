@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.RolePermission;
+import com.microsoft.graph.models.extensions.RoleAssignment;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseRoleAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.RoleAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseRoleDefinition extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Display Name of the Role definition.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +41,7 @@ public class BaseRoleDefinition extends Entity implements IJsonBackedObject {
 
     /**
      * The Description.
-     * Description of the Role definition.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +49,7 @@ public class BaseRoleDefinition extends Entity implements IJsonBackedObject {
 
     /**
      * The Role Permissions.
-     * List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+     * 
      */
     @SerializedName("rolePermissions")
     @Expose
@@ -57,7 +57,7 @@ public class BaseRoleDefinition extends Entity implements IJsonBackedObject {
 
     /**
      * The Is Built In.
-     * Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
+     * 
      */
     @SerializedName("isBuiltIn")
     @Expose
@@ -65,7 +65,7 @@ public class BaseRoleDefinition extends Entity implements IJsonBackedObject {
 
     /**
      * The Role Assignments.
-     * List of Role assignments for this role definition.
+     * 
      */
     public RoleAssignmentCollectionPage roleAssignments;
 

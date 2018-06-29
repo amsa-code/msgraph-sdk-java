@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Thumbnail;
+import com.microsoft.graph.models.extensions.Thumbnail;
+import com.microsoft.graph.models.extensions.Thumbnail;
+import com.microsoft.graph.models.extensions.Thumbnail;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseThumbnailSet extends Entity implements IJsonBackedObject {
 
     /**
      * The Large.
-     * A 1920x1920 scaled thumbnail.
+     * 
      */
     @SerializedName("large")
     @Expose
@@ -41,7 +41,7 @@ public class BaseThumbnailSet extends Entity implements IJsonBackedObject {
 
     /**
      * The Medium.
-     * A 176x176 scaled thumbnail.
+     * 
      */
     @SerializedName("medium")
     @Expose
@@ -49,7 +49,7 @@ public class BaseThumbnailSet extends Entity implements IJsonBackedObject {
 
     /**
      * The Small.
-     * A 48x48 cropped thumbnail.
+     * 
      */
     @SerializedName("small")
     @Expose
@@ -57,7 +57,7 @@ public class BaseThumbnailSet extends Entity implements IJsonBackedObject {
 
     /**
      * The Source.
-     * A custom thumbnail image or the original image used to generate other thumbnails.
+     * 
      */
     @SerializedName("source")
     @Expose

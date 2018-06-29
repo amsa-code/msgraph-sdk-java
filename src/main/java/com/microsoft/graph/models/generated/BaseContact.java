@@ -3,19 +3,29 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.EmailAddress;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.Extension;
+import com.microsoft.graph.models.extensions.SingleValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.MultiValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.ProfilePhoto;
+import com.microsoft.graph.models.extensions.OutlookItem;
+import com.microsoft.graph.requests.generated.BaseExtensionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ExtensionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSingleValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.SingleValueLegacyExtendedPropertyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMultiValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MultiValueLegacyExtendedPropertyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +43,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Parent Folder Id.
-     * The ID of the contact's parent folder.
+     * 
      */
     @SerializedName("parentFolderId")
     @Expose
@@ -41,7 +51,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Birthday.
-     * The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("birthday")
     @Expose
@@ -49,7 +59,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The File As.
-     * The name the contact is filed under.
+     * 
      */
     @SerializedName("fileAs")
     @Expose
@@ -57,7 +67,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The contact's display name.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -65,7 +75,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Given Name.
-     * The contact's given name.
+     * 
      */
     @SerializedName("givenName")
     @Expose
@@ -73,7 +83,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Initials.
-     * The contact's initials.
+     * 
      */
     @SerializedName("initials")
     @Expose
@@ -81,7 +91,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Middle Name.
-     * The contact's middle name.
+     * 
      */
     @SerializedName("middleName")
     @Expose
@@ -89,7 +99,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Nick Name.
-     * The contact's nickname.
+     * 
      */
     @SerializedName("nickName")
     @Expose
@@ -97,7 +107,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Surname.
-     * The contact's surname.
+     * 
      */
     @SerializedName("surname")
     @Expose
@@ -105,7 +115,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Title.
-     * The contact's title.
+     * 
      */
     @SerializedName("title")
     @Expose
@@ -113,7 +123,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Yomi Given Name.
-     * The phonetic Japanese given name (first name) of the contact.
+     * 
      */
     @SerializedName("yomiGivenName")
     @Expose
@@ -121,7 +131,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Yomi Surname.
-     * The phonetic Japanese surname (last name)  of the contact.
+     * 
      */
     @SerializedName("yomiSurname")
     @Expose
@@ -129,7 +139,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Yomi Company Name.
-     * The phonetic Japanese company name of the contact.
+     * 
      */
     @SerializedName("yomiCompanyName")
     @Expose
@@ -137,7 +147,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Generation.
-     * The contact's generation.
+     * 
      */
     @SerializedName("generation")
     @Expose
@@ -145,7 +155,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Email Addresses.
-     * The contact's email addresses.
+     * 
      */
     @SerializedName("emailAddresses")
     @Expose
@@ -153,7 +163,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Im Addresses.
-     * The contact's instant messaging (IM) addresses.
+     * 
      */
     @SerializedName("imAddresses")
     @Expose
@@ -161,7 +171,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Job Title.
-     * The contact's job title.
+     * 
      */
     @SerializedName("jobTitle")
     @Expose
@@ -169,7 +179,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Company Name.
-     * The name of the contact's company.
+     * 
      */
     @SerializedName("companyName")
     @Expose
@@ -177,7 +187,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Department.
-     * The contact's department.
+     * 
      */
     @SerializedName("department")
     @Expose
@@ -185,7 +195,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Office Location.
-     * The location of the contact's office.
+     * 
      */
     @SerializedName("officeLocation")
     @Expose
@@ -193,7 +203,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Profession.
-     * The contact's profession.
+     * 
      */
     @SerializedName("profession")
     @Expose
@@ -201,7 +211,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Business Home Page.
-     * The business home page of the contact.
+     * 
      */
     @SerializedName("businessHomePage")
     @Expose
@@ -209,7 +219,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Assistant Name.
-     * The name of the contact's assistant.
+     * 
      */
     @SerializedName("assistantName")
     @Expose
@@ -217,7 +227,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Manager.
-     * The name of the contact's manager.
+     * 
      */
     @SerializedName("manager")
     @Expose
@@ -225,7 +235,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Home Phones.
-     * The contact's home phone numbers.
+     * 
      */
     @SerializedName("homePhones")
     @Expose
@@ -233,7 +243,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Mobile Phone.
-     * The contact's mobile phone number.
+     * 
      */
     @SerializedName("mobilePhone")
     @Expose
@@ -241,7 +251,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Business Phones.
-     * The contact's business phone numbers.
+     * 
      */
     @SerializedName("businessPhones")
     @Expose
@@ -249,7 +259,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Home Address.
-     * The contact's home address.
+     * 
      */
     @SerializedName("homeAddress")
     @Expose
@@ -257,7 +267,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Business Address.
-     * The contact's business address.
+     * 
      */
     @SerializedName("businessAddress")
     @Expose
@@ -265,7 +275,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Other Address.
-     * Other addresses for the contact.
+     * 
      */
     @SerializedName("otherAddress")
     @Expose
@@ -273,7 +283,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Spouse Name.
-     * The name of the contact's spouse/partner.
+     * 
      */
     @SerializedName("spouseName")
     @Expose
@@ -281,7 +291,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Personal Notes.
-     * The user's notes about the contact.
+     * 
      */
     @SerializedName("personalNotes")
     @Expose
@@ -289,7 +299,7 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Children.
-     * The names of the contact's children.
+     * 
      */
     @SerializedName("children")
     @Expose
@@ -297,25 +307,25 @@ public class BaseContact extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Extensions.
-     * The collection of open extensions defined for the contact. Read-only. Nullable.
+     * 
      */
     public ExtensionCollectionPage extensions;
 
     /**
      * The Single Value Extended Properties.
-     * The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+     * 
      */
     public SingleValueLegacyExtendedPropertyCollectionPage singleValueExtendedProperties;
 
     /**
      * The Multi Value Extended Properties.
-     * The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+     * 
      */
     public MultiValueLegacyExtendedPropertyCollectionPage multiValueExtendedProperties;
 
     /**
      * The Photo.
-     * Optional contact picture. You can get or set a photo for a contact.
+     * 
      */
     @SerializedName("photo")
     @Expose

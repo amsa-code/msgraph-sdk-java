@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.TermsAndConditions;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseTermsAndConditionsAcceptanceStatus extends Entity implements IJ
 
     /**
      * The User Display Name.
-     * Display name of the user whose acceptance the entity represents.
+     * 
      */
     @SerializedName("userDisplayName")
     @Expose
@@ -41,7 +38,7 @@ public class BaseTermsAndConditionsAcceptanceStatus extends Entity implements IJ
 
     /**
      * The Accepted Version.
-     * Most recent version number of the T&amp;C accepted by the user.
+     * 
      */
     @SerializedName("acceptedVersion")
     @Expose
@@ -49,7 +46,7 @@ public class BaseTermsAndConditionsAcceptanceStatus extends Entity implements IJ
 
     /**
      * The Accepted Date Time.
-     * DateTime when the terms were last accepted by the user.
+     * 
      */
     @SerializedName("acceptedDateTime")
     @Expose
@@ -57,7 +54,7 @@ public class BaseTermsAndConditionsAcceptanceStatus extends Entity implements IJ
 
     /**
      * The Terms And Conditions.
-     * Navigation link to the terms and conditions that are assigned.
+     * 
      */
     @SerializedName("termsAndConditions")
     @Expose

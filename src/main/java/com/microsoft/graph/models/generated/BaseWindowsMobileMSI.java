@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.MobileLobApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseWindowsMobileMSI extends MobileLobApp implements IJsonBackedObj
 
     /**
      * The Command Line.
-     * The command line.
+     * 
      */
     @SerializedName("commandLine")
     @Expose
@@ -41,7 +37,7 @@ public class BaseWindowsMobileMSI extends MobileLobApp implements IJsonBackedObj
 
     /**
      * The Product Code.
-     * The product code.
+     * 
      */
     @SerializedName("productCode")
     @Expose
@@ -49,7 +45,7 @@ public class BaseWindowsMobileMSI extends MobileLobApp implements IJsonBackedObj
 
     /**
      * The Product Version.
-     * The product version of Windows Mobile MSI Line of Business (LoB) app.
+     * 
      */
     @SerializedName("productVersion")
     @Expose
@@ -57,7 +53,7 @@ public class BaseWindowsMobileMSI extends MobileLobApp implements IJsonBackedObj
 
     /**
      * The Ignore Version Detection.
-     * A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.
+     * 
      */
     @SerializedName("ignoreVersionDetection")
     @Expose

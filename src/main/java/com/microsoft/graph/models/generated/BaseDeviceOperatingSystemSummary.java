@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Android Count.
-     * Number of android device count.
+     * 
      */
     @SerializedName("androidCount")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Ios Count.
-     * Number of iOS device count.
+     * 
      */
     @SerializedName("iosCount")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Mac OSCount.
-     * Number of Mac OS X device count.
+     * 
      */
     @SerializedName("macOSCount")
     @Expose
@@ -67,7 +62,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Windows Mobile Count.
-     * Number of Windows mobile device count.
+     * 
      */
     @SerializedName("windowsMobileCount")
     @Expose
@@ -75,7 +70,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Windows Count.
-     * Number of Windows device count.
+     * 
      */
     @SerializedName("windowsCount")
     @Expose
@@ -83,7 +78,7 @@ public class BaseDeviceOperatingSystemSummary implements IJsonBackedObject {
 
     /**
      * The Unknown Count.
-     * Number of unknown device count.
+     * 
      */
     @SerializedName("unknownCount")
     @Expose

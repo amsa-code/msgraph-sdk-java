@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.InstallState;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Device Name.
-     * Device name.
+     * 
      */
     @SerializedName("deviceName")
     @Expose
@@ -41,7 +38,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Device Id.
-     * Device Id.
+     * 
      */
     @SerializedName("deviceId")
     @Expose
@@ -49,7 +46,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Last Sync Date Time.
-     * Last sync date and time.
+     * 
      */
     @SerializedName("lastSyncDateTime")
     @Expose
@@ -57,7 +54,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Install State.
-     * The install state of the eBook. Possible values are: notApplicable, installed, failed, notInstalled, uninstallFailed, unknown.
+     * 
      */
     @SerializedName("installState")
     @Expose
@@ -65,7 +62,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Error Code.
-     * The error code for install failures.
+     * 
      */
     @SerializedName("errorCode")
     @Expose
@@ -73,7 +70,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Os Version.
-     * OS Version.
+     * 
      */
     @SerializedName("osVersion")
     @Expose
@@ -81,7 +78,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The Os Description.
-     * OS Description.
+     * 
      */
     @SerializedName("osDescription")
     @Expose
@@ -89,7 +86,7 @@ public class BaseDeviceInstallState extends Entity implements IJsonBackedObject 
 
     /**
      * The User Name.
-     * Device User Name.
+     * 
      */
     @SerializedName("userName")
     @Expose

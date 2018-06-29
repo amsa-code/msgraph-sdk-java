@@ -3,19 +3,66 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.GroupSetting;
+import com.microsoft.graph.models.extensions.Extension;
+import com.microsoft.graph.models.extensions.ConversationThread;
+import com.microsoft.graph.models.extensions.Calendar;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Conversation;
+import com.microsoft.graph.models.extensions.ProfilePhoto;
+import com.microsoft.graph.models.extensions.ProfilePhoto;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.Site;
+import com.microsoft.graph.models.extensions.PlannerGroup;
+import com.microsoft.graph.models.extensions.Onenote;
+import com.microsoft.graph.models.extensions.GroupLifecyclePolicy;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseGroupSettingCollectionResponse;
+import com.microsoft.graph.requests.extensions.GroupSettingCollectionPage;
+import com.microsoft.graph.requests.generated.BaseExtensionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ExtensionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseConversationThreadCollectionResponse;
+import com.microsoft.graph.requests.extensions.ConversationThreadCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BaseConversationCollectionResponse;
+import com.microsoft.graph.requests.extensions.ConversationCollectionPage;
+import com.microsoft.graph.requests.generated.BaseProfilePhotoCollectionResponse;
+import com.microsoft.graph.requests.extensions.ProfilePhotoCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDriveCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSiteCollectionResponse;
+import com.microsoft.graph.requests.extensions.SiteCollectionPage;
+import com.microsoft.graph.requests.generated.BaseGroupLifecyclePolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.GroupLifecyclePolicyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -41,7 +88,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Created Date Time.
-     * The date and time the group was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -49,7 +96,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Description.
-     * An optional description for the group.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -57,7 +104,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -65,7 +112,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Group Types.
-     * Specifies the type of group to create. Possible values are Unified to create an Office 365 group, or DynamicMembership for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. Supports $filter.
+     * 
      */
     @SerializedName("groupTypes")
     @Expose
@@ -73,7 +120,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mail.
-     * The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.
+     * 
      */
     @SerializedName("mail")
     @Expose
@@ -81,7 +128,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mail Enabled.
-     * Specifies whether the group is mail-enabled. If the securityEnabled property is also true, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.
+     * 
      */
     @SerializedName("mailEnabled")
     @Expose
@@ -89,7 +136,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mail Nickname.
-     * The mail alias for the group. This property must be specified when a group is created. Supports $filter.
+     * 
      */
     @SerializedName("mailNickname")
     @Expose
@@ -97,7 +144,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Last Sync Date Time.
-     * Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. Supports $filter.
+     * 
      */
     @SerializedName("onPremisesLastSyncDateTime")
     @Expose
@@ -105,7 +152,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Security Identifier.
-     * Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only.
+     * 
      */
     @SerializedName("onPremisesSecurityIdentifier")
     @Expose
@@ -113,7 +160,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Sync Enabled.
-     * true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.
+     * 
      */
     @SerializedName("onPremisesSyncEnabled")
     @Expose
@@ -121,7 +168,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Proxy Addresses.
-     * The any operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter.
+     * 
      */
     @SerializedName("proxyAddresses")
     @Expose
@@ -137,7 +184,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Security Enabled.
-     * Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be false for Office 365 groups. Supports $filter.
+     * 
      */
     @SerializedName("securityEnabled")
     @Expose
@@ -145,7 +192,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Visibility.
-     * Specifies the visibility of an Office 365 group. Possible values are: Private, Public, or empty (which is interpreted as Public).
+     * 
      */
     @SerializedName("visibility")
     @Expose
@@ -153,7 +200,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Allow External Senders.
-     * Default is false. Indicates if people external to the organization can send messages to the group.
+     * 
      */
     @SerializedName("allowExternalSenders")
     @Expose
@@ -161,7 +208,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Auto Subscribe New Members.
-     * Default is false. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.
+     * 
      */
     @SerializedName("autoSubscribeNewMembers")
     @Expose
@@ -169,7 +216,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Is Subscribed By Mail.
-     * Default value is true. Indicates whether the current user is subscribed to receive email conversations.
+     * 
      */
     @SerializedName("isSubscribedByMail")
     @Expose
@@ -177,7 +224,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Unseen Count.
-     * Count of posts that the current  user has not seen since his last visit.
+     * 
      */
     @SerializedName("unseenCount")
     @Expose
@@ -185,19 +232,19 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Members.
-     * Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage members;
 
     /**
      * The Member Of.
-     * Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage memberOf;
 
     /**
      * The Created On Behalf Of.
-     * The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.
+     * 
      */
     @SerializedName("createdOnBehalfOf")
     @Expose
@@ -205,31 +252,31 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Owners.
-     * The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage owners;
 
     /**
      * The Settings.
-     * Read-only. Nullable.
+     * 
      */
     public GroupSettingCollectionPage settings;
 
     /**
      * The Extensions.
-     * The collection of open extensions defined for the group. Read-only. Nullable.
+     * 
      */
     public ExtensionCollectionPage extensions;
 
     /**
      * The Threads.
-     * The group's conversation threads. Nullable.
+     * 
      */
     public ConversationThreadCollectionPage threads;
 
     /**
      * The Calendar.
-     * The group's calendar. Read-only.
+     * 
      */
     @SerializedName("calendar")
     @Expose
@@ -237,25 +284,25 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Calendar View.
-     * The calendar view for the calendar. Read-only.
+     * 
      */
     public EventCollectionPage calendarView;
 
     /**
      * The Events.
-     * The group's calendar events.
+     * 
      */
     public EventCollectionPage events;
 
     /**
      * The Conversations.
-     * The group's conversations.
+     * 
      */
     public ConversationCollectionPage conversations;
 
     /**
      * The Photo.
-     * The group's profile photo
+     * 
      */
     @SerializedName("photo")
     @Expose
@@ -263,25 +310,25 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Photos.
-     * The profile photos owned by the group. Read-only. Nullable.
+     * 
      */
     public ProfilePhotoCollectionPage photos;
 
     /**
      * The Accepted Senders.
-     * The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
+     * 
      */
     public DirectoryObjectCollectionPage acceptedSenders;
 
     /**
      * The Rejected Senders.
-     * The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
+     * 
      */
     public DirectoryObjectCollectionPage rejectedSenders;
 
     /**
      * The Drive.
-     * The group's drive. Read-only.
+     * 
      */
     @SerializedName("drive")
     @Expose
@@ -295,13 +342,13 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Sites.
-     * The list of SharePoint sites in this group. Access the default site with /sites/root.
+     * 
      */
     public SiteCollectionPage sites;
 
     /**
      * The Planner.
-     * Entry-point to Planner resource that might exist for a Unified Group.
+     * 
      */
     @SerializedName("planner")
     @Expose
@@ -309,7 +356,7 @@ public class BaseGroup extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Onenote.
-     * Read-only.
+     * 
      */
     @SerializedName("onenote")
     @Expose

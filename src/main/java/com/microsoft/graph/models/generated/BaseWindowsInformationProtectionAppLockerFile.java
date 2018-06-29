@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseWindowsInformationProtectionAppLockerFile extends Entity implem
 
     /**
      * The Display Name.
-     * The friendly name
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseWindowsInformationProtectionAppLockerFile extends Entity implem
 
     /**
      * The File Hash.
-     * SHA256 hash of the file
+     * 
      */
     @SerializedName("fileHash")
     @Expose
@@ -49,7 +45,7 @@ public class BaseWindowsInformationProtectionAppLockerFile extends Entity implem
 
     /**
      * The File.
-     * File as a byte array
+     * 
      */
     @SerializedName("file")
     @Expose
@@ -57,7 +53,7 @@ public class BaseWindowsInformationProtectionAppLockerFile extends Entity implem
 
     /**
      * The Version.
-     * Version of the entity.
+     * 
      */
     @SerializedName("version")
     @Expose

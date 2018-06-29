@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseWindows10NetworkProxyServer implements IJsonBackedObject {
 
     /**
      * The Address.
-     * Address to the proxy server. Specify an address in the format [":"]
+     * 
      */
     @SerializedName("address")
     @Expose
@@ -51,7 +46,7 @@ public class BaseWindows10NetworkProxyServer implements IJsonBackedObject {
 
     /**
      * The Exceptions.
-     * Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node.
+     * 
      */
     @SerializedName("exceptions")
     @Expose
@@ -59,7 +54,7 @@ public class BaseWindows10NetworkProxyServer implements IJsonBackedObject {
 
     /**
      * The Use For Local Addresses.
-     * Specifies whether the proxy server should be used for local (intranet) addresses.
+     * 
      */
     @SerializedName("useForLocalAddresses")
     @Expose

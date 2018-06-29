@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentPlatformRestriction;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentPlatformRestriction;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentPlatformRestriction;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentPlatformRestriction;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentPlatformRestriction;
+import com.microsoft.graph.models.extensions.DeviceEnrollmentConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseDeviceEnrollmentPlatformRestrictionsConfiguration extends Devic
 
     /**
      * The Ios Restriction.
-     * Not yet documented
+     * 
      */
     @SerializedName("iosRestriction")
     @Expose
@@ -41,7 +42,7 @@ public class BaseDeviceEnrollmentPlatformRestrictionsConfiguration extends Devic
 
     /**
      * The Windows Restriction.
-     * Not yet documented
+     * 
      */
     @SerializedName("windowsRestriction")
     @Expose
@@ -49,7 +50,7 @@ public class BaseDeviceEnrollmentPlatformRestrictionsConfiguration extends Devic
 
     /**
      * The Windows Mobile Restriction.
-     * Not yet documented
+     * 
      */
     @SerializedName("windowsMobileRestriction")
     @Expose
@@ -57,7 +58,7 @@ public class BaseDeviceEnrollmentPlatformRestrictionsConfiguration extends Devic
 
     /**
      * The Android Restriction.
-     * Not yet documented
+     * 
      */
     @SerializedName("androidRestriction")
     @Expose
@@ -65,7 +66,7 @@ public class BaseDeviceEnrollmentPlatformRestrictionsConfiguration extends Devic
 
     /**
      * The Mac OSRestriction.
-     * Not yet documented
+     * 
      */
     @SerializedName("macOSRestriction")
     @Expose

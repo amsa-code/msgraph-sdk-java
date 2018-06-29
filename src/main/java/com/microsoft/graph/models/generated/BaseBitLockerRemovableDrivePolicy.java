@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.BitLockerEncryptionMethod;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseBitLockerRemovableDrivePolicy implements IJsonBackedObject {
 
     /**
      * The Encryption Method.
-     * Select the encryption method for removable  drives. Possible values are: aesCbc128, aesCbc256, xtsAes128, xtsAes256.
+     * 
      */
     @SerializedName("encryptionMethod")
     @Expose
@@ -51,7 +47,7 @@ public class BaseBitLockerRemovableDrivePolicy implements IJsonBackedObject {
 
     /**
      * The Require Encryption For Write Access.
-     * Indicates whether to block write access to devices configured in another organization.  If requireEncryptionForWriteAccess is false, this value does not affect.
+     * 
      */
     @SerializedName("requireEncryptionForWriteAccess")
     @Expose
@@ -59,7 +55,7 @@ public class BaseBitLockerRemovableDrivePolicy implements IJsonBackedObject {
 
     /**
      * The Block Cross Organization Write Access.
-     * This policy setting determines whether BitLocker protection is required for removable data drives to be writable on a computer.
+     * 
      */
     @SerializedName("blockCrossOrganizationWriteAccess")
     @Expose

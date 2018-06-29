@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDriveRecipient implements IJsonBackedObject {
 
     /**
      * The Alias.
-     * The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
+     * 
      */
     @SerializedName("alias")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDriveRecipient implements IJsonBackedObject {
 
     /**
      * The Email.
-     * The email address for the recipient, if the recipient has an associated email address.
+     * 
      */
     @SerializedName("email")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDriveRecipient implements IJsonBackedObject {
 
     /**
      * The Object Id.
-     * The unique identifier for the recipient in the directory.
+     * 
      */
     @SerializedName("objectId")
     @Expose

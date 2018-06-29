@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.InstallIntent;
+import com.microsoft.graph.models.extensions.DeviceAndAppManagementAssignmentTarget;
+import com.microsoft.graph.models.extensions.MobileAppAssignmentSettings;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseMobileAppAssignment extends Entity implements IJsonBackedObject
 
     /**
      * The Intent.
-     * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
+     * 
      */
     @SerializedName("intent")
     @Expose
@@ -41,7 +40,7 @@ public class BaseMobileAppAssignment extends Entity implements IJsonBackedObject
 
     /**
      * The Target.
-     * The target group assignment defined by the admin.
+     * 
      */
     @SerializedName("target")
     @Expose
@@ -49,7 +48,7 @@ public class BaseMobileAppAssignment extends Entity implements IJsonBackedObject
 
     /**
      * The Settings.
-     * The settings for target assignment defined by the admin.
+     * 
      */
     @SerializedName("settings")
     @Expose

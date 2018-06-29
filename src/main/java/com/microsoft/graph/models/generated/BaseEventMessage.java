@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.MeetingMessageType;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Message;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseEventMessage extends Message implements IJsonBackedObject {
 
     /**
      * The Meeting Message Type.
-     * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined.
+     * 
      */
     @SerializedName("meetingMessageType")
     @Expose
@@ -41,7 +39,7 @@ public class BaseEventMessage extends Message implements IJsonBackedObject {
 
     /**
      * The Event.
-     * The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.
+     * 
      */
     @SerializedName("event")
     @Expose

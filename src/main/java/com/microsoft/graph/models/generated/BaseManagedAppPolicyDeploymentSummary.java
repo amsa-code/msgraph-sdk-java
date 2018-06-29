@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedAppPolicyDeploymentSummaryPerApp;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseManagedAppPolicyDeploymentSummary extends Entity implements IJs
 
     /**
      * The Display Name.
-     * Not yet documented
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +38,7 @@ public class BaseManagedAppPolicyDeploymentSummary extends Entity implements IJs
 
     /**
      * The Configuration Deployed User Count.
-     * Not yet documented
+     * 
      */
     @SerializedName("configurationDeployedUserCount")
     @Expose
@@ -49,7 +46,7 @@ public class BaseManagedAppPolicyDeploymentSummary extends Entity implements IJs
 
     /**
      * The Last Refresh Time.
-     * Not yet documented
+     * 
      */
     @SerializedName("lastRefreshTime")
     @Expose
@@ -57,7 +54,7 @@ public class BaseManagedAppPolicyDeploymentSummary extends Entity implements IJs
 
     /**
      * The Configuration Deployment Summary Per App.
-     * Not yet documented
+     * 
      */
     @SerializedName("configurationDeploymentSummaryPerApp")
     @Expose
@@ -65,7 +62,7 @@ public class BaseManagedAppPolicyDeploymentSummary extends Entity implements IJs
 
     /**
      * The Version.
-     * Version of the entity.
+     * 
      */
     @SerializedName("version")
     @Expose

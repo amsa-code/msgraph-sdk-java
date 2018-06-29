@@ -3,19 +3,22 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AssignedPlan;
+import com.microsoft.graph.models.extensions.ProvisionedPlan;
+import com.microsoft.graph.models.extensions.VerifiedDomain;
+import com.microsoft.graph.models.generated.MdmAuthority;
+import com.microsoft.graph.models.extensions.Extension;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.requests.generated.BaseExtensionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ExtensionCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +36,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Assigned Plans.
-     * The collection of service plans associated with the tenant. Not nullable.
+     * 
      */
     @SerializedName("assignedPlans")
     @Expose
@@ -49,7 +52,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The City.
-     * City name of the address for the organization
+     * 
      */
     @SerializedName("city")
     @Expose
@@ -57,7 +60,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Country.
-     * Country/region name of the address for the organization
+     * 
      */
     @SerializedName("country")
     @Expose
@@ -65,7 +68,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Country Letter Code.
-     * Country/region abbreviation for the organization
+     * 
      */
     @SerializedName("countryLetterCode")
     @Expose
@@ -73,7 +76,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Display Name.
-     * The display name for the tenant.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -81,7 +84,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Marketing Notification Emails.
-     * Not nullable.
+     * 
      */
     @SerializedName("marketingNotificationEmails")
     @Expose
@@ -105,7 +108,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Postal Code.
-     * Postal code of the address for the organization
+     * 
      */
     @SerializedName("postalCode")
     @Expose
@@ -113,7 +116,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Preferred Language.
-     * The preferred language for the organization. Should follow ISO 639-1 Code; for example "en".
+     * 
      */
     @SerializedName("preferredLanguage")
     @Expose
@@ -121,7 +124,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Provisioned Plans.
-     * Not nullable.
+     * 
      */
     @SerializedName("provisionedPlans")
     @Expose
@@ -145,7 +148,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The State.
-     * State name of the address for the organization
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -153,7 +156,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Street.
-     * Street name of the address for organization
+     * 
      */
     @SerializedName("street")
     @Expose
@@ -161,7 +164,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Technical Notification Mails.
-     * Not nullable.
+     * 
      */
     @SerializedName("technicalNotificationMails")
     @Expose
@@ -169,7 +172,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Verified Domains.
-     * The collection of domains associated with this tenant. Not nullable.
+     * 
      */
     @SerializedName("verifiedDomains")
     @Expose
@@ -177,7 +180,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Mobile Device Management Authority.
-     * Mobile device management authority. Possible values are: unknown, intune, sccm, office365.
+     * 
      */
     @SerializedName("mobileDeviceManagementAuthority")
     @Expose
@@ -185,7 +188,7 @@ public class BaseOrganization extends DirectoryObject implements IJsonBackedObje
 
     /**
      * The Extensions.
-     * The collection of open extensions defined for the organization. Read-only. Nullable.
+     * 
      */
     public ExtensionCollectionPage extensions;
 

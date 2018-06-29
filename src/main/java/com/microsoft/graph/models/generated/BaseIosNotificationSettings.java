@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.IosNotificationAlertType;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Bundle ID.
-     * Bundle id of app to which to apply these notification settings.
+     * 
      */
     @SerializedName("bundleID")
     @Expose
@@ -51,7 +47,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The App Name.
-     * Application name to be associated with the bundleID.
+     * 
      */
     @SerializedName("appName")
     @Expose
@@ -59,7 +55,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Publisher.
-     * Publisher to be associated with the bundleID.
+     * 
      */
     @SerializedName("publisher")
     @Expose
@@ -67,7 +63,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Enabled.
-     * Indicates whether notifications are allowed for this app.
+     * 
      */
     @SerializedName("enabled")
     @Expose
@@ -75,7 +71,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Show In Notification Center.
-     * Indicates whether notifications can be shown in notification center.
+     * 
      */
     @SerializedName("showInNotificationCenter")
     @Expose
@@ -83,7 +79,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Show On Lock Screen.
-     * Indicates whether notifications can be shown on the lock screen.
+     * 
      */
     @SerializedName("showOnLockScreen")
     @Expose
@@ -91,7 +87,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Alert Type.
-     * Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
+     * 
      */
     @SerializedName("alertType")
     @Expose
@@ -99,7 +95,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Badges Enabled.
-     * Indicates whether badges are allowed for this app.
+     * 
      */
     @SerializedName("badgesEnabled")
     @Expose
@@ -107,7 +103,7 @@ public class BaseIosNotificationSettings implements IJsonBackedObject {
 
     /**
      * The Sounds Enabled.
-     * Indicates whether sounds are allowed for this app.
+     * 
      */
     @SerializedName("soundsEnabled")
     @Expose

@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Hashes;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseFile implements IJsonBackedObject {
 
     /**
      * The Hashes.
-     * Hashes of the file's binary content, if available. Read-only.
+     * 
      */
     @SerializedName("hashes")
     @Expose
@@ -51,7 +47,7 @@ public class BaseFile implements IJsonBackedObject {
 
     /**
      * The Mime Type.
-     * The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.
+     * 
      */
     @SerializedName("mimeType")
     @Expose

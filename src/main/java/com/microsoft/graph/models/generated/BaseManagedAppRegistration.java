@@ -3,19 +3,26 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.ManagedAppFlaggedReason;
+import com.microsoft.graph.models.extensions.MobileAppIdentifier;
+import com.microsoft.graph.models.extensions.ManagedAppPolicy;
+import com.microsoft.graph.models.extensions.ManagedAppPolicy;
+import com.microsoft.graph.models.extensions.ManagedAppOperation;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseManagedAppPolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppPolicyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppPolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppPolicyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppOperationCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppOperationCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +40,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Created Date Time.
-     * Date and time of creation
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -41,7 +48,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Last Sync Date Time.
-     * Date and time of last the app synced with management service.
+     * 
      */
     @SerializedName("lastSyncDateTime")
     @Expose
@@ -49,7 +56,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Application Version.
-     * App version
+     * 
      */
     @SerializedName("applicationVersion")
     @Expose
@@ -57,7 +64,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Management Sdk Version.
-     * App management SDK version
+     * 
      */
     @SerializedName("managementSdkVersion")
     @Expose
@@ -65,7 +72,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Platform Version.
-     * Operating System version
+     * 
      */
     @SerializedName("platformVersion")
     @Expose
@@ -73,7 +80,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Device Type.
-     * Host device type
+     * 
      */
     @SerializedName("deviceType")
     @Expose
@@ -81,7 +88,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Device Tag.
-     * App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions.
+     * 
      */
     @SerializedName("deviceTag")
     @Expose
@@ -89,7 +96,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Device Name.
-     * Host device name
+     * 
      */
     @SerializedName("deviceName")
     @Expose
@@ -97,7 +104,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Flagged Reasons.
-     * Zero or more reasons an app registration is flagged. E.g. app running on rooted device
+     * 
      */
     @SerializedName("flaggedReasons")
     @Expose
@@ -105,7 +112,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The User Id.
-     * The user Id to who this app registration belongs.
+     * 
      */
     @SerializedName("userId")
     @Expose
@@ -113,7 +120,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The App Identifier.
-     * The app package Identifier
+     * 
      */
     @SerializedName("appIdentifier")
     @Expose
@@ -121,7 +128,7 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Version.
-     * Version of the entity.
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -129,19 +136,19 @@ public class BaseManagedAppRegistration extends Entity implements IJsonBackedObj
 
     /**
      * The Applied Policies.
-     * Zero or more policys already applied on the registered app when it last synchronized with managment service.
+     * 
      */
     public ManagedAppPolicyCollectionPage appliedPolicies;
 
     /**
      * The Intended Policies.
-     * Zero or more policies admin intended for the app as of now.
+     * 
      */
     public ManagedAppPolicyCollectionPage intendedPolicies;
 
     /**
      * The Operations.
-     * Zero or more long running operations triggered on the app registration.
+     * 
      */
     public ManagedAppOperationCollectionPage operations;
 

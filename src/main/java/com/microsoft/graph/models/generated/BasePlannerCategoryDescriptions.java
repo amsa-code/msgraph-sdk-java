@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category1.
-     * The label associated with Category 1
+     * 
      */
     @SerializedName("category1")
     @Expose
@@ -51,7 +46,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category2.
-     * The label associated with Category 2
+     * 
      */
     @SerializedName("category2")
     @Expose
@@ -59,7 +54,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category3.
-     * The label associated with Category 3
+     * 
      */
     @SerializedName("category3")
     @Expose
@@ -67,7 +62,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category4.
-     * The label associated with Category 4
+     * 
      */
     @SerializedName("category4")
     @Expose
@@ -75,7 +70,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category5.
-     * The label associated with Category 5
+     * 
      */
     @SerializedName("category5")
     @Expose
@@ -83,7 +78,7 @@ public class BasePlannerCategoryDescriptions implements IJsonBackedObject {
 
     /**
      * The Category6.
-     * The label associated with Category 6
+     * 
      */
     @SerializedName("category6")
     @Expose

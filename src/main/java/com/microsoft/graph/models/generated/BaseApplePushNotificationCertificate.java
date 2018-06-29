@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseApplePushNotificationCertificate extends Entity implements IJso
 
     /**
      * The Apple Identifier.
-     * Apple Id of the account used to create the MDM push certificate.
+     * 
      */
     @SerializedName("appleIdentifier")
     @Expose
@@ -41,7 +37,7 @@ public class BaseApplePushNotificationCertificate extends Entity implements IJso
 
     /**
      * The Topic Identifier.
-     * Topic Id.
+     * 
      */
     @SerializedName("topicIdentifier")
     @Expose
@@ -49,7 +45,7 @@ public class BaseApplePushNotificationCertificate extends Entity implements IJso
 
     /**
      * The Last Modified Date Time.
-     * Last modified date and time for Apple push notification certificate.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -57,7 +53,7 @@ public class BaseApplePushNotificationCertificate extends Entity implements IJso
 
     /**
      * The Expiration Date Time.
-     * The expiration date and time for Apple push notification certificate.
+     * 
      */
     @SerializedName("expirationDateTime")
     @Expose
@@ -65,7 +61,7 @@ public class BaseApplePushNotificationCertificate extends Entity implements IJso
 
     /**
      * The Certificate.
-     * Not yet documented
+     * 
      */
     @SerializedName("certificate")
     @Expose

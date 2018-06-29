@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseManagedAppDiagnosticStatus implements IJsonBackedObject {
 
     /**
      * The Validation Name.
-     * The validation friendly name
+     * 
      */
     @SerializedName("validationName")
     @Expose
@@ -51,7 +46,7 @@ public class BaseManagedAppDiagnosticStatus implements IJsonBackedObject {
 
     /**
      * The State.
-     * The state of the operation
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -59,7 +54,7 @@ public class BaseManagedAppDiagnosticStatus implements IJsonBackedObject {
 
     /**
      * The Mitigation Instruction.
-     * Instruction on how to mitigate a failed validation
+     * 
      */
     @SerializedName("mitigationInstruction")
     @Expose

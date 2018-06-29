@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IosDeviceType;
+import com.microsoft.graph.models.extensions.IosMinimumOperatingSystem;
+import com.microsoft.graph.models.extensions.ManagedApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseManagedIOSStoreApp extends ManagedApp implements IJsonBackedObj
 
     /**
      * The Bundle Id.
-     * The app's Bundle ID.
+     * 
      */
     @SerializedName("bundleId")
     @Expose
@@ -41,7 +39,7 @@ public class BaseManagedIOSStoreApp extends ManagedApp implements IJsonBackedObj
 
     /**
      * The App Store Url.
-     * The Apple AppStoreUrl.
+     * 
      */
     @SerializedName("appStoreUrl")
     @Expose
@@ -49,7 +47,7 @@ public class BaseManagedIOSStoreApp extends ManagedApp implements IJsonBackedObj
 
     /**
      * The Applicable Device Type.
-     * The iOS architecture for which this app can run on.
+     * 
      */
     @SerializedName("applicableDeviceType")
     @Expose
@@ -57,7 +55,7 @@ public class BaseManagedIOSStoreApp extends ManagedApp implements IJsonBackedObj
 
     /**
      * The Minimum Supported Operating System.
-     * The value for the minimum supported operating system.
+     * 
      */
     @SerializedName("minimumSupportedOperatingSystem")
     @Expose

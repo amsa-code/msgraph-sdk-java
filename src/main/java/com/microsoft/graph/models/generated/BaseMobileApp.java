@@ -3,19 +3,23 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.MimeContent;
+import com.microsoft.graph.models.generated.MobileAppPublishingState;
+import com.microsoft.graph.models.extensions.MobileAppCategory;
+import com.microsoft.graph.models.extensions.MobileAppAssignment;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseMobileAppCategoryCollectionResponse;
+import com.microsoft.graph.requests.extensions.MobileAppCategoryCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMobileAppAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.MobileAppAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +37,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The admin provided or imported title of the app.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +45,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Description.
-     * The description of the app.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +53,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Publisher.
-     * The publisher of the app.
+     * 
      */
     @SerializedName("publisher")
     @Expose
@@ -57,7 +61,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Large Icon.
-     * The large icon, to be displayed in the app details and used for upload of the icon.
+     * 
      */
     @SerializedName("largeIcon")
     @Expose
@@ -65,7 +69,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Created Date Time.
-     * The date and time the app was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -73,7 +77,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * The date and time the app was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -81,7 +85,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Is Featured.
-     * The value indicating whether the app is marked as featured by the admin.
+     * 
      */
     @SerializedName("isFeatured")
     @Expose
@@ -89,7 +93,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Privacy Information Url.
-     * The privacy statement Url.
+     * 
      */
     @SerializedName("privacyInformationUrl")
     @Expose
@@ -97,7 +101,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Information Url.
-     * The more information Url.
+     * 
      */
     @SerializedName("informationUrl")
     @Expose
@@ -105,7 +109,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Owner.
-     * The owner of the app.
+     * 
      */
     @SerializedName("owner")
     @Expose
@@ -113,7 +117,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Developer.
-     * The developer of the app.
+     * 
      */
     @SerializedName("developer")
     @Expose
@@ -121,7 +125,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Notes.
-     * Notes for the app.
+     * 
      */
     @SerializedName("notes")
     @Expose
@@ -129,7 +133,7 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Publishing State.
-     * The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: notPublished, processing, published.
+     * 
      */
     @SerializedName("publishingState")
     @Expose
@@ -137,13 +141,13 @@ public class BaseMobileApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Categories.
-     * The list of categories for this app.
+     * 
      */
     public MobileAppCategoryCollectionPage categories;
 
     /**
      * The Assignments.
-     * The list of group assignments for this mobile app.
+     * 
      */
     public MobileAppAssignmentCollectionPage assignments;
 

@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseIosMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V8_0.
-     * Version 8.0 or later.
+     * 
      */
     @SerializedName("v8_0")
     @Expose
@@ -51,7 +46,7 @@ public class BaseIosMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V9_0.
-     * Version 9.0 or later.
+     * 
      */
     @SerializedName("v9_0")
     @Expose
@@ -59,7 +54,7 @@ public class BaseIosMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V10_0.
-     * Version 10.0 or later.
+     * 
      */
     @SerializedName("v10_0")
     @Expose
@@ -67,7 +62,7 @@ public class BaseIosMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V11_0.
-     * Version 11.0 or later.
+     * 
      */
     @SerializedName("v11_0")
     @Expose

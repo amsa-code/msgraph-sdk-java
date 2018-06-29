@@ -3,19 +3,41 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Audio;
+import com.microsoft.graph.models.extensions.Deleted;
+import com.microsoft.graph.models.extensions.File;
+import com.microsoft.graph.models.extensions.FileSystemInfo;
+import com.microsoft.graph.models.extensions.Folder;
+import com.microsoft.graph.models.extensions.Image;
+import com.microsoft.graph.models.extensions.GeoCoordinates;
+import com.microsoft.graph.models.extensions.Photo;
+import com.microsoft.graph.models.extensions.RemoteItem;
+import com.microsoft.graph.models.extensions.Root;
+import com.microsoft.graph.models.extensions.SearchResult;
+import com.microsoft.graph.models.extensions.Shared;
+import com.microsoft.graph.models.extensions.SharepointIds;
+import com.microsoft.graph.models.extensions.SpecialFolder;
+import com.microsoft.graph.models.extensions.Video;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.ListItem;
+import com.microsoft.graph.models.extensions.Permission;
+import com.microsoft.graph.models.extensions.ThumbnailSet;
+import com.microsoft.graph.models.extensions.Workbook;
+import com.microsoft.graph.models.extensions.BaseItem;
+import com.microsoft.graph.requests.generated.BaseDriveItemCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveItemCollectionPage;
+import com.microsoft.graph.requests.generated.BasePermissionCollectionResponse;
+import com.microsoft.graph.requests.extensions.PermissionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseThumbnailSetCollectionResponse;
+import com.microsoft.graph.requests.extensions.ThumbnailSetCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +55,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Audio.
-     * Audio metadata, if the item is an audio file. Read-only.
+     * 
      */
     @SerializedName("audio")
     @Expose
@@ -41,7 +63,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The CTag.
-     * An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
+     * 
      */
     @SerializedName("cTag")
     @Expose
@@ -49,7 +71,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Deleted.
-     * Information about the deleted state of the item. Read-only.
+     * 
      */
     @SerializedName("deleted")
     @Expose
@@ -57,7 +79,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The File.
-     * File metadata, if the item is a file. Read-only.
+     * 
      */
     @SerializedName("file")
     @Expose
@@ -65,7 +87,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The File System Info.
-     * File system information on client. Read-write.
+     * 
      */
     @SerializedName("fileSystemInfo")
     @Expose
@@ -73,7 +95,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Folder.
-     * Folder metadata, if the item is a folder. Read-only.
+     * 
      */
     @SerializedName("folder")
     @Expose
@@ -81,7 +103,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Image.
-     * Image metadata, if the item is an image. Read-only.
+     * 
      */
     @SerializedName("image")
     @Expose
@@ -89,7 +111,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Location.
-     * Location metadata, if the item has location data. Read-only.
+     * 
      */
     @SerializedName("location")
     @Expose
@@ -97,7 +119,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Package.
-     * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
+     * 
      */
     @SerializedName("package")
     @Expose
@@ -105,7 +127,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Photo.
-     * Photo metadata, if the item is a photo. Read-only.
+     * 
      */
     @SerializedName("photo")
     @Expose
@@ -113,7 +135,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Remote Item.
-     * Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
+     * 
      */
     @SerializedName("remoteItem")
     @Expose
@@ -121,7 +143,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Root.
-     * If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
+     * 
      */
     @SerializedName("root")
     @Expose
@@ -129,7 +151,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Search Result.
-     * Search metadata, if the item is from a search result. Read-only.
+     * 
      */
     @SerializedName("searchResult")
     @Expose
@@ -137,7 +159,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Shared.
-     * Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
+     * 
      */
     @SerializedName("shared")
     @Expose
@@ -145,7 +167,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Sharepoint Ids.
-     * Returns identifiers useful for SharePoint REST compatibility. Read-only.
+     * 
      */
     @SerializedName("sharepointIds")
     @Expose
@@ -153,7 +175,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Size.
-     * Size of the item in bytes. Read-only.
+     * 
      */
     @SerializedName("size")
     @Expose
@@ -161,7 +183,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Special Folder.
-     * If the current item is also available as a special folder, this facet is returned. Read-only.
+     * 
      */
     @SerializedName("specialFolder")
     @Expose
@@ -169,7 +191,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Video.
-     * Video metadata, if the item is a video. Read-only.
+     * 
      */
     @SerializedName("video")
     @Expose
@@ -177,7 +199,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Web Dav Url.
-     * WebDAV compatible URL for the item.
+     * 
      */
     @SerializedName("webDavUrl")
     @Expose
@@ -185,7 +207,7 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Children.
-     * Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+     * 
      */
     public DriveItemCollectionPage children;
 
@@ -199,13 +221,13 @@ public class BaseDriveItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Permissions.
-     * The set of permissions for the item. Read-only. Nullable.
+     * 
      */
     public PermissionCollectionPage permissions;
 
     /**
      * The Thumbnails.
-     * Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+     * 
      */
     public ThumbnailSetCollectionPage thumbnails;
 

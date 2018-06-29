@@ -3,19 +3,27 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.Quota;
+import com.microsoft.graph.models.extensions.SharepointIds;
+import com.microsoft.graph.models.extensions.SystemFacet;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.List;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.BaseItem;
+import com.microsoft.graph.requests.generated.BaseDriveItemCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveItemCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDriveItemCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveItemCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +41,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Drive Type.
-     * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+     * 
      */
     @SerializedName("driveType")
     @Expose
@@ -41,7 +49,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Owner.
-     * Optional. The user account that owns the drive. Read-only.
+     * 
      */
     @SerializedName("owner")
     @Expose
@@ -49,7 +57,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Quota.
-     * Optional. Information about the drive's storage space quota. Read-only.
+     * 
      */
     @SerializedName("quota")
     @Expose
@@ -65,7 +73,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The System.
-     * If present, indicates that this is a system-managed drive. Read-only.
+     * 
      */
     @SerializedName("system")
     @Expose
@@ -73,7 +81,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Items.
-     * All items contained in the drive. Read-only. Nullable.
+     * 
      */
     public DriveItemCollectionPage items;
 
@@ -87,7 +95,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Root.
-     * The root folder of the drive. Read-only.
+     * 
      */
     @SerializedName("root")
     @Expose
@@ -95,7 +103,7 @@ public class BaseDrive extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Special.
-     * Collection of common folders available in OneDrive. Read-only. Nullable.
+     * 
      */
     public DriveItemCollectionPage special;
 

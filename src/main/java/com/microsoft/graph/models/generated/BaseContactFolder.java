@@ -3,19 +3,27 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Contact;
+import com.microsoft.graph.models.extensions.ContactFolder;
+import com.microsoft.graph.models.extensions.SingleValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.MultiValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseContactCollectionResponse;
+import com.microsoft.graph.requests.extensions.ContactCollectionPage;
+import com.microsoft.graph.requests.generated.BaseContactFolderCollectionResponse;
+import com.microsoft.graph.requests.extensions.ContactFolderCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSingleValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.SingleValueLegacyExtendedPropertyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMultiValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MultiValueLegacyExtendedPropertyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +41,7 @@ public class BaseContactFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Parent Folder Id.
-     * The ID of the folder's parent folder.
+     * 
      */
     @SerializedName("parentFolderId")
     @Expose
@@ -41,7 +49,7 @@ public class BaseContactFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The folder's display name.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -49,25 +57,25 @@ public class BaseContactFolder extends Entity implements IJsonBackedObject {
 
     /**
      * The Contacts.
-     * The contacts in the folder. Navigation property. Read-only. Nullable.
+     * 
      */
     public ContactCollectionPage contacts;
 
     /**
      * The Child Folders.
-     * The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+     * 
      */
     public ContactFolderCollectionPage childFolders;
 
     /**
      * The Single Value Extended Properties.
-     * The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+     * 
      */
     public SingleValueLegacyExtendedPropertyCollectionPage singleValueExtendedProperties;
 
     /**
      * The Multi Value Extended Properties.
-     * The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
+     * 
      */
     public MultiValueLegacyExtendedPropertyCollectionPage multiValueExtendedProperties;
 

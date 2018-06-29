@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.ComplianceStatus;
+import com.microsoft.graph.models.extensions.SettingSource;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +40,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Setting.
-     * The setting that is being reported
+     * 
      */
     @SerializedName("setting")
     @Expose
@@ -51,7 +48,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Setting Name.
-     * Localized/user friendly setting name that is being reported
+     * 
      */
     @SerializedName("settingName")
     @Expose
@@ -59,7 +56,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Instance Display Name.
-     * Name of setting instance that is being reported.
+     * 
      */
     @SerializedName("instanceDisplayName")
     @Expose
@@ -67,7 +64,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The State.
-     * The compliance state of the setting Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -75,7 +72,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Error Code.
-     * Error code for the setting
+     * 
      */
     @SerializedName("errorCode")
     @Expose
@@ -83,7 +80,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Error Description.
-     * Error description
+     * 
      */
     @SerializedName("errorDescription")
     @Expose
@@ -91,7 +88,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The User Id.
-     * UserId
+     * 
      */
     @SerializedName("userId")
     @Expose
@@ -99,7 +96,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The User Name.
-     * UserName
+     * 
      */
     @SerializedName("userName")
     @Expose
@@ -107,7 +104,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The User Email.
-     * UserEmail
+     * 
      */
     @SerializedName("userEmail")
     @Expose
@@ -115,7 +112,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The User Principal Name.
-     * UserPrincipalName.
+     * 
      */
     @SerializedName("userPrincipalName")
     @Expose
@@ -123,7 +120,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Sources.
-     * Contributing policies
+     * 
      */
     @SerializedName("sources")
     @Expose
@@ -131,7 +128,7 @@ public class BaseDeviceConfigurationSettingState implements IJsonBackedObject {
 
     /**
      * The Current Value.
-     * Current value of setting on device
+     * 
      */
     @SerializedName("currentValue")
     @Expose

@@ -3,19 +3,54 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.MobileApp;
+import com.microsoft.graph.models.extensions.MobileAppCategory;
+import com.microsoft.graph.models.extensions.ManagedDeviceMobileAppConfiguration;
+import com.microsoft.graph.models.extensions.ManagedAppPolicy;
+import com.microsoft.graph.models.extensions.IosManagedAppProtection;
+import com.microsoft.graph.models.extensions.AndroidManagedAppProtection;
+import com.microsoft.graph.models.extensions.DefaultManagedAppProtection;
+import com.microsoft.graph.models.extensions.TargetedManagedAppConfiguration;
+import com.microsoft.graph.models.extensions.MdmWindowsInformationProtectionPolicy;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionPolicy;
+import com.microsoft.graph.models.extensions.ManagedAppRegistration;
+import com.microsoft.graph.models.extensions.ManagedAppStatus;
+import com.microsoft.graph.models.extensions.ManagedEBook;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseMobileAppCollectionResponse;
+import com.microsoft.graph.requests.extensions.MobileAppCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMobileAppCategoryCollectionResponse;
+import com.microsoft.graph.requests.extensions.MobileAppCategoryCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedDeviceMobileAppConfigurationCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedDeviceMobileAppConfigurationCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppPolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppPolicyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseIosManagedAppProtectionCollectionResponse;
+import com.microsoft.graph.requests.extensions.IosManagedAppProtectionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseAndroidManagedAppProtectionCollectionResponse;
+import com.microsoft.graph.requests.extensions.AndroidManagedAppProtectionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDefaultManagedAppProtectionCollectionResponse;
+import com.microsoft.graph.requests.extensions.DefaultManagedAppProtectionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseTargetedManagedAppConfigurationCollectionResponse;
+import com.microsoft.graph.requests.extensions.TargetedManagedAppConfigurationCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMdmWindowsInformationProtectionPolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MdmWindowsInformationProtectionPolicyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseWindowsInformationProtectionPolicyCollectionResponse;
+import com.microsoft.graph.requests.extensions.WindowsInformationProtectionPolicyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppRegistrationCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppRegistrationCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppStatusCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedEBookCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedEBookCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +68,7 @@ public class BaseDeviceAppManagement extends Entity implements IJsonBackedObject
 
     /**
      * The Microsoft Store For Business Last Successful Sync Date Time.
-     * The last time the apps from the Microsoft Store for Business were synced successfully for the account.
+     * 
      */
     @SerializedName("microsoftStoreForBusinessLastSuccessfulSyncDateTime")
     @Expose
@@ -41,7 +76,7 @@ public class BaseDeviceAppManagement extends Entity implements IJsonBackedObject
 
     /**
      * The Is Enabled For Microsoft Store For Business.
-     * Whether the account is enabled for syncing applications from the Microsoft Store for Business.
+     * 
      */
     @SerializedName("isEnabledForMicrosoftStoreForBusiness")
     @Expose
@@ -49,7 +84,7 @@ public class BaseDeviceAppManagement extends Entity implements IJsonBackedObject
 
     /**
      * The Microsoft Store For Business Language.
-     * The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is -&amp;lt;country/regioncode2&amp;gt;, where  is a lowercase two-letter code derived from ISO 639-1 and &amp;lt;country/regioncode2&amp;gt; is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.
+     * 
      */
     @SerializedName("microsoftStoreForBusinessLanguage")
     @Expose
@@ -57,7 +92,7 @@ public class BaseDeviceAppManagement extends Entity implements IJsonBackedObject
 
     /**
      * The Microsoft Store For Business Last Completed Application Sync Time.
-     * The last time an application sync from the Microsoft Store for Business was completed.
+     * 
      */
     @SerializedName("microsoftStoreForBusinessLastCompletedApplicationSyncTime")
     @Expose
@@ -65,79 +100,79 @@ public class BaseDeviceAppManagement extends Entity implements IJsonBackedObject
 
     /**
      * The Mobile Apps.
-     * The mobile apps.
+     * 
      */
     public MobileAppCollectionPage mobileApps;
 
     /**
      * The Mobile App Categories.
-     * The mobile app categories.
+     * 
      */
     public MobileAppCategoryCollectionPage mobileAppCategories;
 
     /**
      * The Mobile App Configurations.
-     * The Managed Device Mobile Application Configurations.
+     * 
      */
     public ManagedDeviceMobileAppConfigurationCollectionPage mobileAppConfigurations;
 
     /**
      * The Managed App Policies.
-     * Managed app policies.
+     * 
      */
     public ManagedAppPolicyCollectionPage managedAppPolicies;
 
     /**
      * The Ios Managed App Protections.
-     * iOS managed app policies.
+     * 
      */
     public IosManagedAppProtectionCollectionPage iosManagedAppProtections;
 
     /**
      * The Android Managed App Protections.
-     * Android managed app policies.
+     * 
      */
     public AndroidManagedAppProtectionCollectionPage androidManagedAppProtections;
 
     /**
      * The Default Managed App Protections.
-     * Default managed app policies.
+     * 
      */
     public DefaultManagedAppProtectionCollectionPage defaultManagedAppProtections;
 
     /**
      * The Targeted Managed App Configurations.
-     * Targeted managed app configurations.
+     * 
      */
     public TargetedManagedAppConfigurationCollectionPage targetedManagedAppConfigurations;
 
     /**
      * The Mdm Windows Information Protection Policies.
-     * Windows information protection for apps running on devices which are MDM enrolled.
+     * 
      */
     public MdmWindowsInformationProtectionPolicyCollectionPage mdmWindowsInformationProtectionPolicies;
 
     /**
      * The Windows Information Protection Policies.
-     * Windows information protection for apps running on devices which are not MDM enrolled.
+     * 
      */
     public WindowsInformationProtectionPolicyCollectionPage windowsInformationProtectionPolicies;
 
     /**
      * The Managed App Registrations.
-     * The managed app registrations.
+     * 
      */
     public ManagedAppRegistrationCollectionPage managedAppRegistrations;
 
     /**
      * The Managed App Statuses.
-     * The managed app statuses.
+     * 
      */
     public ManagedAppStatusCollectionPage managedAppStatuses;
 
     /**
      * The Managed EBooks.
-     * The Managed eBook.
+     * 
      */
     public ManagedEBookCollectionPage managedEBooks;
 

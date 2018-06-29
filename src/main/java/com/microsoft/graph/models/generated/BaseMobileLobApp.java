@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.MobileAppContent;
+import com.microsoft.graph.models.extensions.MobileApp;
+import com.microsoft.graph.requests.generated.BaseMobileAppContentCollectionResponse;
+import com.microsoft.graph.requests.extensions.MobileAppContentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseMobileLobApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Committed Content Version.
-     * The internal committed content version.
+     * 
      */
     @SerializedName("committedContentVersion")
     @Expose
@@ -41,7 +40,7 @@ public class BaseMobileLobApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The File Name.
-     * The name of the main Lob application file.
+     * 
      */
     @SerializedName("fileName")
     @Expose
@@ -49,7 +48,7 @@ public class BaseMobileLobApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Size.
-     * The total size, including all uploaded files.
+     * 
      */
     @SerializedName("size")
     @Expose
@@ -57,7 +56,7 @@ public class BaseMobileLobApp extends MobileApp implements IJsonBackedObject {
 
     /**
      * The Content Versions.
-     * The list of content versions for this app.
+     * 
      */
     public MobileAppContentCollectionPage contentVersions;
 

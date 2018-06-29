@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.SettingTemplateValue;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseGroupSettingTemplate extends DirectoryObject implements IJsonBa
 
     /**
      * The Display Name.
-     * Display name of the template.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +38,7 @@ public class BaseGroupSettingTemplate extends DirectoryObject implements IJsonBa
 
     /**
      * The Description.
-     * Description of the template.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +46,7 @@ public class BaseGroupSettingTemplate extends DirectoryObject implements IJsonBa
 
     /**
      * The Values.
-     * Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+     * 
      */
     @SerializedName("values")
     @Expose

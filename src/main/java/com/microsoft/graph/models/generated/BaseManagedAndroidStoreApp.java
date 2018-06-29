@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AndroidMinimumOperatingSystem;
+import com.microsoft.graph.models.extensions.ManagedApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseManagedAndroidStoreApp extends ManagedApp implements IJsonBacke
 
     /**
      * The Package Id.
-     * The app's package ID.
+     * 
      */
     @SerializedName("packageId")
     @Expose
@@ -41,7 +38,7 @@ public class BaseManagedAndroidStoreApp extends ManagedApp implements IJsonBacke
 
     /**
      * The App Store Url.
-     * The Android AppStoreUrl.
+     * 
      */
     @SerializedName("appStoreUrl")
     @Expose
@@ -49,7 +46,7 @@ public class BaseManagedAndroidStoreApp extends ManagedApp implements IJsonBacke
 
     /**
      * The Minimum Supported Operating System.
-     * The value for the minimum supported operating system.
+     * 
      */
     @SerializedName("minimumSupportedOperatingSystem")
     @Expose

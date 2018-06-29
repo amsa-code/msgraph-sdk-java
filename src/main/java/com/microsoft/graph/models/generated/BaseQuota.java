@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseQuota implements IJsonBackedObject {
 
     /**
      * The Deleted.
-     * Total space consumed by files in the recycle bin, in bytes. Read-only.
+     * 
      */
     @SerializedName("deleted")
     @Expose
@@ -51,7 +46,7 @@ public class BaseQuota implements IJsonBackedObject {
 
     /**
      * The Remaining.
-     * Total space remaining before reaching the quota limit, in bytes. Read-only.
+     * 
      */
     @SerializedName("remaining")
     @Expose
@@ -59,7 +54,7 @@ public class BaseQuota implements IJsonBackedObject {
 
     /**
      * The State.
-     * Enumeration value that indicates the state of the storage space. Read-only.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -67,7 +62,7 @@ public class BaseQuota implements IJsonBackedObject {
 
     /**
      * The Total.
-     * Total allowed storage space, in bytes. Read-only.
+     * 
      */
     @SerializedName("total")
     @Expose
@@ -75,7 +70,7 @@ public class BaseQuota implements IJsonBackedObject {
 
     /**
      * The Used.
-     * Total space used, in bytes. Read-only.
+     * 
      */
     @SerializedName("used")
     @Expose

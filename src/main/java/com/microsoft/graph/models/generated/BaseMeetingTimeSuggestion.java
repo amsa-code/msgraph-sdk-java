@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.TimeSlot;
+import com.microsoft.graph.models.generated.FreeBusyStatus;
+import com.microsoft.graph.models.extensions.AttendeeAvailability;
+import com.microsoft.graph.models.extensions.Location;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +42,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Meeting Time Slot.
-     * A time period suggested for the meeting.
+     * 
      */
     @SerializedName("meetingTimeSlot")
     @Expose
@@ -51,7 +50,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Confidence.
-     * A percentage that represents the likelhood of all the attendees attending.
+     * 
      */
     @SerializedName("confidence")
     @Expose
@@ -59,7 +58,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Organizer Availability.
-     * Availability of the meeting organizer for this meeting suggestion. Possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
+     * 
      */
     @SerializedName("organizerAvailability")
     @Expose
@@ -67,7 +66,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Attendee Availability.
-     * An array that shows the availability status of each attendee for this meeting suggestion.
+     * 
      */
     @SerializedName("attendeeAvailability")
     @Expose
@@ -75,7 +74,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Locations.
-     * An array that specifies the name and geographic location of each meeting location for this meeting suggestion.
+     * 
      */
     @SerializedName("locations")
     @Expose
@@ -83,7 +82,7 @@ public class BaseMeetingTimeSuggestion implements IJsonBackedObject {
 
     /**
      * The Suggestion Reason.
-     * Reason for suggesting the meeting time.
+     * 
      */
     @SerializedName("suggestionReason")
     @Expose

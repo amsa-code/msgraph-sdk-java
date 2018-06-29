@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.EdgeSearchEngineBase;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseEdgeSearchEngineCustom extends EdgeSearchEngineBase implements 
 
     /**
      * The Edge Search Engine Open Search Xml Url.
-     * Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.
+     * 
      */
     @SerializedName("edgeSearchEngineOpenSearchXmlUrl")
     @Expose

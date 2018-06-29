@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.InferenceClassificationType;
+import com.microsoft.graph.models.extensions.EmailAddress;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseInferenceClassificationOverride extends Entity implements IJson
 
     /**
      * The Classify As.
-     * Specifies how incoming messages from a specific sender should always be classified as. Possible values are: focused, other.
+     * 
      */
     @SerializedName("classifyAs")
     @Expose
@@ -41,7 +39,7 @@ public class BaseInferenceClassificationOverride extends Entity implements IJson
 
     /**
      * The Sender Email Address.
-     * The email address information of the sender for whom the override is created.
+     * 
      */
     @SerializedName("senderEmailAddress")
     @Expose

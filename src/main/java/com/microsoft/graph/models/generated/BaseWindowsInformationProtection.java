@@ -3,19 +3,36 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.WindowsInformationProtectionEnforcementLevel;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionDataRecoveryCertificate;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionApp;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionApp;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionProxiedDomainCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionIPRangeCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionResourceCollection;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionAppLockerFile;
+import com.microsoft.graph.models.extensions.WindowsInformationProtectionAppLockerFile;
+import com.microsoft.graph.models.extensions.TargetedManagedAppPolicyAssignment;
+import com.microsoft.graph.models.extensions.ManagedAppPolicy;
+import com.microsoft.graph.requests.generated.BaseWindowsInformationProtectionAppLockerFileCollectionResponse;
+import com.microsoft.graph.requests.extensions.WindowsInformationProtectionAppLockerFileCollectionPage;
+import com.microsoft.graph.requests.generated.BaseWindowsInformationProtectionAppLockerFileCollectionResponse;
+import com.microsoft.graph.requests.extensions.WindowsInformationProtectionAppLockerFileCollectionPage;
+import com.microsoft.graph.requests.generated.BaseTargetedManagedAppPolicyAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.TargetedManagedAppPolicyAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +50,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enforcement Level.
-     * WIP enforcement level.See the Enum definition for supported values Possible values are: noProtection, encryptAndAuditOnly, encryptAuditAndPrompt, encryptAuditAndBlock.
+     * 
      */
     @SerializedName("enforcementLevel")
     @Expose
@@ -41,7 +58,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Domain.
-     * Primary enterprise domain
+     * 
      */
     @SerializedName("enterpriseDomain")
     @Expose
@@ -49,7 +66,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Protected Domain Names.
-     * List of enterprise domains to be protected
+     * 
      */
     @SerializedName("enterpriseProtectedDomainNames")
     @Expose
@@ -57,7 +74,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Protection Under Lock Config Required.
-     * Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured
+     * 
      */
     @SerializedName("protectionUnderLockConfigRequired")
     @Expose
@@ -65,7 +82,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Data Recovery Certificate.
-     * Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent(DRA) certificate for encrypting file system(EFS)
+     * 
      */
     @SerializedName("dataRecoveryCertificate")
     @Expose
@@ -73,7 +90,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Revoke On Unenroll Disabled.
-     * This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 1 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment. If the keys are not revoked, there will be no revoked file cleanup subsequently.
+     * 
      */
     @SerializedName("revokeOnUnenrollDisabled")
     @Expose
@@ -81,7 +98,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Rights Management Services Template Id.
-     * TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access
+     * 
      */
     @SerializedName("rightsManagementServicesTemplateId")
     @Expose
@@ -89,7 +106,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Azure Rights Management Services Allowed.
-     * Specifies whether to allow Azure RMS encryption for WIP
+     * 
      */
     @SerializedName("azureRightsManagementServicesAllowed")
     @Expose
@@ -97,7 +114,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Icons Visible.
-     * Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app
+     * 
      */
     @SerializedName("iconsVisible")
     @Expose
@@ -105,7 +122,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Protected Apps.
-     * Protected applications can access enterprise data and the data handled by those applications are protected with encryption
+     * 
      */
     @SerializedName("protectedApps")
     @Expose
@@ -113,7 +130,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Exempt Apps.
-     * Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
+     * 
      */
     @SerializedName("exemptApps")
     @Expose
@@ -121,7 +138,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Network Domain Names.
-     * This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
+     * 
      */
     @SerializedName("enterpriseNetworkDomainNames")
     @Expose
@@ -129,7 +146,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Proxied Domains.
-     * Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
+     * 
      */
     @SerializedName("enterpriseProxiedDomains")
     @Expose
@@ -137,7 +154,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise IPRanges.
-     * Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to
+     * 
      */
     @SerializedName("enterpriseIPRanges")
     @Expose
@@ -145,7 +162,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise IPRanges Are Authoritative.
-     * Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets. Default is false
+     * 
      */
     @SerializedName("enterpriseIPRangesAreAuthoritative")
     @Expose
@@ -153,7 +170,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Proxy Servers.
-     * This is a list of proxy servers. Any server not on this list is considered non-enterprise
+     * 
      */
     @SerializedName("enterpriseProxyServers")
     @Expose
@@ -161,7 +178,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Internal Proxy Servers.
-     * This is the comma-separated list of internal proxy servers. For example, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
+     * 
      */
     @SerializedName("enterpriseInternalProxyServers")
     @Expose
@@ -169,7 +186,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Enterprise Proxy Servers Are Authoritative.
-     * Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies. Default is false
+     * 
      */
     @SerializedName("enterpriseProxyServersAreAuthoritative")
     @Expose
@@ -177,7 +194,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Neutral Domain Resources.
-     * List of domain names that can used for work or personal resource
+     * 
      */
     @SerializedName("neutralDomainResources")
     @Expose
@@ -185,7 +202,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Indexing Encrypted Stores Or Items Blocked.
-     * This switch is for the Windows Search Indexer, to allow or disallow indexing of items
+     * 
      */
     @SerializedName("indexingEncryptedStoresOrItemsBlocked")
     @Expose
@@ -193,7 +210,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Smb Auto Encrypted File Extensions.
-     * Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
+     * 
      */
     @SerializedName("smbAutoEncryptedFileExtensions")
     @Expose
@@ -201,7 +218,7 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Is Assigned.
-     * Indicates if the policy is deployed to any inclusion groups or not.
+     * 
      */
     @SerializedName("isAssigned")
     @Expose
@@ -209,19 +226,19 @@ public class BaseWindowsInformationProtection extends ManagedAppPolicy implement
 
     /**
      * The Protected App Locker Files.
-     * Another way to input protected apps through xml files
+     * 
      */
     public WindowsInformationProtectionAppLockerFileCollectionPage protectedAppLockerFiles;
 
     /**
      * The Exempt App Locker Files.
-     * Another way to input exempt apps through xml files
+     * 
      */
     public WindowsInformationProtectionAppLockerFileCollectionPage exemptAppLockerFiles;
 
     /**
      * The Assignments.
-     * Navigation property to list of security groups targeted for policy.
+     * 
      */
     public TargetedManagedAppPolicyAssignmentCollectionPage assignments;
 

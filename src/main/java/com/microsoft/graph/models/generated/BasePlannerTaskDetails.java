@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.PlannerPreviewType;
+import com.microsoft.graph.models.extensions.PlannerExternalReferences;
+import com.microsoft.graph.models.extensions.PlannerChecklistItems;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BasePlannerTaskDetails extends Entity implements IJsonBackedObject 
 
     /**
      * The Description.
-     * Description of the task
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -41,7 +40,7 @@ public class BasePlannerTaskDetails extends Entity implements IJsonBackedObject 
 
     /**
      * The Preview Type.
-     * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
+     * 
      */
     @SerializedName("previewType")
     @Expose
@@ -49,7 +48,7 @@ public class BasePlannerTaskDetails extends Entity implements IJsonBackedObject 
 
     /**
      * The References.
-     * The collection of references on the task.
+     * 
      */
     @SerializedName("references")
     @Expose
@@ -57,7 +56,7 @@ public class BasePlannerTaskDetails extends Entity implements IJsonBackedObject 
 
     /**
      * The Checklist.
-     * The collection of checklist items on the task.
+     * 
      */
     @SerializedName("checklist")
     @Expose

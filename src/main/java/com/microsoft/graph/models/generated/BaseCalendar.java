@@ -3,19 +3,29 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.CalendarColor;
+import com.microsoft.graph.models.extensions.EmailAddress;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.SingleValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.MultiValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSingleValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.SingleValueLegacyExtendedPropertyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMultiValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MultiValueLegacyExtendedPropertyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +43,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Name.
-     * The calendar name.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -41,7 +51,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Color.
-     * Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1
+     * 
      */
     @SerializedName("color")
     @Expose
@@ -49,7 +59,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Change Key.
-     * Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+     * 
      */
     @SerializedName("changeKey")
     @Expose
@@ -57,7 +67,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Can Share.
-     * True if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
+     * 
      */
     @SerializedName("canShare")
     @Expose
@@ -65,7 +75,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Can View Private Items.
-     * True if the user can read calendar items that have been marked private, false otherwise.
+     * 
      */
     @SerializedName("canViewPrivateItems")
     @Expose
@@ -73,7 +83,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Can Edit.
-     * True if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
+     * 
      */
     @SerializedName("canEdit")
     @Expose
@@ -81,7 +91,7 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Owner.
-     * If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the owner property is set to the user. For a calendar shared with the user, the owner property is set to the person who shared that calendar with the user.
+     * 
      */
     @SerializedName("owner")
     @Expose
@@ -89,25 +99,25 @@ public class BaseCalendar extends Entity implements IJsonBackedObject {
 
     /**
      * The Events.
-     * The events in the calendar. Navigation property. Read-only.
+     * 
      */
     public EventCollectionPage events;
 
     /**
      * The Calendar View.
-     * The calendar view for the calendar. Navigation property. Read-only.
+     * 
      */
     public EventCollectionPage calendarView;
 
     /**
      * The Single Value Extended Properties.
-     * The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
+     * 
      */
     public SingleValueLegacyExtendedPropertyCollectionPage singleValueExtendedProperties;
 
     /**
      * The Multi Value Extended Properties.
-     * The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
+     * 
      */
     public MultiValueLegacyExtendedPropertyCollectionPage multiValueExtendedProperties;
 

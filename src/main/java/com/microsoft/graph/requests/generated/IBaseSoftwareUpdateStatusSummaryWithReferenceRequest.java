@@ -32,14 +32,6 @@ public interface IBaseSoftwareUpdateStatusSummaryWithReferenceRequest extends IH
 
     SoftwareUpdateStatusSummary get() throws ClientException;
 
-	void delete(final ICallback<SoftwareUpdateStatusSummary> callback);
-
-	void delete() throws ClientException;
-
-	void patch(final SoftwareUpdateStatusSummary sourceSoftwareUpdateStatusSummary, final ICallback<SoftwareUpdateStatusSummary> callback);
-
-	SoftwareUpdateStatusSummary patch(final SoftwareUpdateStatusSummary sourceSoftwareUpdateStatusSummary) throws ClientException;
-
     IBaseSoftwareUpdateStatusSummaryWithReferenceRequest select(final String value);
 
     IBaseSoftwareUpdateStatusSummaryWithReferenceRequest expand(final String value);

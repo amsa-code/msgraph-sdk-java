@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedEBook;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Vpp Token Id.
-     * The Vpp token ID.
+     * 
      */
     @SerializedName("vppTokenId")
     @Expose
@@ -41,7 +37,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Apple Id.
-     * The Apple ID associated with Vpp token.
+     * 
      */
     @SerializedName("appleId")
     @Expose
@@ -49,7 +45,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Vpp Organization Name.
-     * The Vpp token's organization name.
+     * 
      */
     @SerializedName("vppOrganizationName")
     @Expose
@@ -57,7 +53,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Genres.
-     * Genres.
+     * 
      */
     @SerializedName("genres")
     @Expose
@@ -65,7 +61,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Language.
-     * Language.
+     * 
      */
     @SerializedName("language")
     @Expose
@@ -73,7 +69,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Seller.
-     * Seller.
+     * 
      */
     @SerializedName("seller")
     @Expose
@@ -81,7 +77,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Total License Count.
-     * Total license count.
+     * 
      */
     @SerializedName("totalLicenseCount")
     @Expose
@@ -89,7 +85,7 @@ public class BaseIosVppEBook extends ManagedEBook implements IJsonBackedObject {
 
     /**
      * The Used License Count.
-     * Used license count.
+     * 
      */
     @SerializedName("usedLicenseCount")
     @Expose

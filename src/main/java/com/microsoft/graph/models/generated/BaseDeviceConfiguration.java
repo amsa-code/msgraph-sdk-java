@@ -3,19 +3,29 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceConfigurationAssignment;
+import com.microsoft.graph.models.extensions.DeviceConfigurationDeviceStatus;
+import com.microsoft.graph.models.extensions.DeviceConfigurationUserStatus;
+import com.microsoft.graph.models.extensions.DeviceConfigurationDeviceOverview;
+import com.microsoft.graph.models.extensions.DeviceConfigurationUserOverview;
+import com.microsoft.graph.models.extensions.SettingStateDeviceSummary;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseDeviceConfigurationAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceConfigurationAssignmentCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceConfigurationDeviceStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceConfigurationDeviceStatusCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceConfigurationUserStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceConfigurationUserStatusCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSettingStateDeviceSummaryCollectionResponse;
+import com.microsoft.graph.requests.extensions.SettingStateDeviceSummaryCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +43,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -41,7 +51,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Created Date Time.
-     * DateTime the object was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -49,7 +59,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Description.
-     * Admin provided description of the Device Configuration.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -57,7 +67,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Display Name.
-     * Admin provided name of the device configuration.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -65,7 +75,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Version.
-     * Version of the device configuration.
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -73,25 +83,25 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Assignments.
-     * The list of assignments for the device configuration profile.
+     * 
      */
     public DeviceConfigurationAssignmentCollectionPage assignments;
 
     /**
      * The Device Statuses.
-     * Device configuration installation status by device.
+     * 
      */
     public DeviceConfigurationDeviceStatusCollectionPage deviceStatuses;
 
     /**
      * The User Statuses.
-     * Device configuration installation stauts by user.
+     * 
      */
     public DeviceConfigurationUserStatusCollectionPage userStatuses;
 
     /**
      * The Device Status Overview.
-     * Device Configuration devices status overview
+     * 
      */
     @SerializedName("deviceStatusOverview")
     @Expose
@@ -99,7 +109,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The User Status Overview.
-     * Device Configuration users status overview
+     * 
      */
     @SerializedName("userStatusOverview")
     @Expose
@@ -107,7 +117,7 @@ public class BaseDeviceConfiguration extends Entity implements IJsonBackedObject
 
     /**
      * The Device Setting State Summaries.
-     * Device Configuration Setting State Device Summary
+     * 
      */
     public SettingStateDeviceSummaryCollectionPage deviceSettingStateSummaries;
 

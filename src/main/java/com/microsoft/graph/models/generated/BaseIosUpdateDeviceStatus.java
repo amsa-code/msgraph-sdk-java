@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.IosUpdatesInstallStatus;
+import com.microsoft.graph.models.generated.ComplianceStatus;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Install Status.
-     * The installation status of the policy report. Possible values are: success, available, idle, downloading, downloadFailed, downloadRequiresComputer, downloadInsufficientSpace, downloadInsufficientPower, downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower, installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError.
+     * 
      */
     @SerializedName("installStatus")
     @Expose
@@ -41,7 +39,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Os Version.
-     * The device version that is being reported.
+     * 
      */
     @SerializedName("osVersion")
     @Expose
@@ -49,7 +47,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Device Id.
-     * The device id that is being reported.
+     * 
      */
     @SerializedName("deviceId")
     @Expose
@@ -57,7 +55,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The User Id.
-     * The User id that is being reported.
+     * 
      */
     @SerializedName("userId")
     @Expose
@@ -65,7 +63,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Device Display Name.
-     * Device name of the DevicePolicyStatus.
+     * 
      */
     @SerializedName("deviceDisplayName")
     @Expose
@@ -73,7 +71,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The User Name.
-     * The User Name that is being reported
+     * 
      */
     @SerializedName("userName")
     @Expose
@@ -81,7 +79,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Device Model.
-     * The device model that is being reported
+     * 
      */
     @SerializedName("deviceModel")
     @Expose
@@ -89,7 +87,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Compliance Grace Period Expiration Date Time.
-     * The DateTime when device compliance grace period expires
+     * 
      */
     @SerializedName("complianceGracePeriodExpirationDateTime")
     @Expose
@@ -97,7 +95,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Status.
-     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+     * 
      */
     @SerializedName("status")
     @Expose
@@ -105,7 +103,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The Last Reported Date Time.
-     * Last modified date time of the policy report.
+     * 
      */
     @SerializedName("lastReportedDateTime")
     @Expose
@@ -113,7 +111,7 @@ public class BaseIosUpdateDeviceStatus extends Entity implements IJsonBackedObje
 
     /**
      * The User Principal Name.
-     * UserPrincipalName.
+     * 
      */
     @SerializedName("userPrincipalName")
     @Expose

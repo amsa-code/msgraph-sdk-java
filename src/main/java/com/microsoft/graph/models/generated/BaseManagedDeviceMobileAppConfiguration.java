@@ -3,19 +3,23 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedDeviceMobileAppConfigurationAssignment;
+import com.microsoft.graph.models.extensions.ManagedDeviceMobileAppConfigurationUserStatus;
+import com.microsoft.graph.models.extensions.ManagedDeviceMobileAppConfigurationDeviceSummary;
+import com.microsoft.graph.models.extensions.ManagedDeviceMobileAppConfigurationUserSummary;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseManagedDeviceMobileAppConfigurationAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedDeviceMobileAppConfigurationAssignmentCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedDeviceMobileAppConfigurationUserStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedDeviceMobileAppConfigurationUserStatusCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +37,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Targeted Mobile Apps.
-     * the associated app.
+     * 
      */
     @SerializedName("targetedMobileApps")
     @Expose
@@ -41,7 +45,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Created Date Time.
-     * DateTime the object was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -49,7 +53,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Description.
-     * Admin provided description of the Device Configuration.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -57,7 +61,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -65,7 +69,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Display Name.
-     * Admin provided name of the device configuration.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -73,7 +77,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Version.
-     * Version of the device configuration.
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -81,19 +85,19 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The Assignments.
-     * The list of group assignemenets for app configration.
+     * 
      */
     public ManagedDeviceMobileAppConfigurationAssignmentCollectionPage assignments;
 
     /**
      * The User Statuses.
-     * List of ManagedDeviceMobileAppConfigurationUserStatus.
+     * 
      */
     public ManagedDeviceMobileAppConfigurationUserStatusCollectionPage userStatuses;
 
     /**
      * The Device Status Summary.
-     * App configuration device status summary.
+     * 
      */
     @SerializedName("deviceStatusSummary")
     @Expose
@@ -101,7 +105,7 @@ public class BaseManagedDeviceMobileAppConfiguration extends Entity implements I
 
     /**
      * The User Status Summary.
-     * App configuration user status summary.
+     * 
      */
     @SerializedName("userStatusSummary")
     @Expose

@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.NotificationTemplateBrandingOptions;
+import com.microsoft.graph.models.extensions.LocalizedNotificationMessage;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseLocalizedNotificationMessageCollectionResponse;
+import com.microsoft.graph.requests.extensions.LocalizedNotificationMessageCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseNotificationMessageTemplate extends Entity implements IJsonBack
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -41,7 +41,7 @@ public class BaseNotificationMessageTemplate extends Entity implements IJsonBack
 
     /**
      * The Display Name.
-     * Display name for the Notification Message Template.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -49,7 +49,7 @@ public class BaseNotificationMessageTemplate extends Entity implements IJsonBack
 
     /**
      * The Default Locale.
-     * The default locale to fallback onto when the requested locale is not available.
+     * 
      */
     @SerializedName("defaultLocale")
     @Expose
@@ -57,7 +57,7 @@ public class BaseNotificationMessageTemplate extends Entity implements IJsonBack
 
     /**
      * The Branding Options.
-     * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation.
+     * 
      */
     @SerializedName("brandingOptions")
     @Expose
@@ -65,7 +65,7 @@ public class BaseNotificationMessageTemplate extends Entity implements IJsonBack
 
     /**
      * The Localized Notification Messages.
-     * The list of localized messages for this Notification Message Template.
+     * 
      */
     public LocalizedNotificationMessageCollectionPage localizedNotificationMessages;
 

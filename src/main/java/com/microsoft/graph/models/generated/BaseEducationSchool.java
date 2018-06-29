@@ -3,19 +3,24 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.EducationClass;
+import com.microsoft.graph.models.extensions.EducationUser;
+import com.microsoft.graph.models.extensions.AdministrativeUnit;
+import com.microsoft.graph.models.extensions.EducationOrganization;
+import com.microsoft.graph.requests.generated.BaseEducationClassCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationClassCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEducationUserCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationUserCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +38,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Principal Email.
-     * Email address of the principal.
+     * 
      */
     @SerializedName("principalEmail")
     @Expose
@@ -41,7 +46,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Principal Name.
-     * Name of the principal.
+     * 
      */
     @SerializedName("principalName")
     @Expose
@@ -49,7 +54,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The External Principal Id.
-     * ID of principal in syncing system.
+     * 
      */
     @SerializedName("externalPrincipalId")
     @Expose
@@ -57,7 +62,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Lowest Grade.
-     * Lowest grade taught.
+     * 
      */
     @SerializedName("lowestGrade")
     @Expose
@@ -65,7 +70,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Highest Grade.
-     * Highest grade taught.
+     * 
      */
     @SerializedName("highestGrade")
     @Expose
@@ -73,7 +78,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The School Number.
-     * School Number.
+     * 
      */
     @SerializedName("schoolNumber")
     @Expose
@@ -81,7 +86,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The External Id.
-     * ID of school in syncing system.
+     * 
      */
     @SerializedName("externalId")
     @Expose
@@ -89,7 +94,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Phone.
-     * Phone number of school.
+     * 
      */
     @SerializedName("phone")
     @Expose
@@ -97,7 +102,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Fax.
-     * Fax number of school.
+     * 
      */
     @SerializedName("fax")
     @Expose
@@ -105,7 +110,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Created By.
-     * Entity who created the school.
+     * 
      */
     @SerializedName("createdBy")
     @Expose
@@ -113,7 +118,7 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Address.
-     * Address of the school.
+     * 
      */
     @SerializedName("address")
     @Expose
@@ -121,13 +126,13 @@ public class BaseEducationSchool extends EducationOrganization implements IJsonB
 
     /**
      * The Classes.
-     * Classes taught at the school. Nullable.
+     * 
      */
     public EducationClassCollectionPage classes;
 
     /**
      * The Users.
-     * Users in the school. Nullable.
+     * 
      */
     public EducationUserCollectionPage users;
 

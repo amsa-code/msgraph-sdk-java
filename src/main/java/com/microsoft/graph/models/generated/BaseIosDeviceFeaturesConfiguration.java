@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IosHomeScreenItem;
+import com.microsoft.graph.models.extensions.IosHomeScreenPage;
+import com.microsoft.graph.models.extensions.IosNotificationSettings;
+import com.microsoft.graph.models.extensions.AppleDeviceFeaturesConfigurationBase;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseIosDeviceFeaturesConfiguration extends AppleDeviceFeaturesConfi
 
     /**
      * The Asset Tag Template.
-     * Asset tag information for the device, displayed on the login window and lock screen.
+     * 
      */
     @SerializedName("assetTagTemplate")
     @Expose
@@ -41,7 +40,7 @@ public class BaseIosDeviceFeaturesConfiguration extends AppleDeviceFeaturesConfi
 
     /**
      * The Lock Screen Footnote.
-     * A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.
+     * 
      */
     @SerializedName("lockScreenFootnote")
     @Expose
@@ -49,7 +48,7 @@ public class BaseIosDeviceFeaturesConfiguration extends AppleDeviceFeaturesConfi
 
     /**
      * The Home Screen Dock Icons.
-     * A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("homeScreenDockIcons")
     @Expose
@@ -57,7 +56,7 @@ public class BaseIosDeviceFeaturesConfiguration extends AppleDeviceFeaturesConfi
 
     /**
      * The Home Screen Pages.
-     * A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("homeScreenPages")
     @Expose
@@ -65,7 +64,7 @@ public class BaseIosDeviceFeaturesConfiguration extends AppleDeviceFeaturesConfi
 
     /**
      * The Notification Settings.
-     * Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("notificationSettings")
     @Expose

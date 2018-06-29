@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.ManagedAppDataEncryptionType;
+import com.microsoft.graph.models.extensions.ManagedMobileApp;
+import com.microsoft.graph.models.extensions.ManagedAppPolicyDeploymentSummary;
+import com.microsoft.graph.models.extensions.TargetedManagedAppProtection;
+import com.microsoft.graph.requests.generated.BaseManagedMobileAppCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedMobileAppCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseIosManagedAppProtection extends TargetedManagedAppProtection im
 
     /**
      * The App Data Encryption Type.
-     * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
+     * 
      */
     @SerializedName("appDataEncryptionType")
     @Expose
@@ -41,7 +42,7 @@ public class BaseIosManagedAppProtection extends TargetedManagedAppProtection im
 
     /**
      * The Minimum Required Sdk Version.
-     * Versions less than the specified version will block the managed app from accessing company data.
+     * 
      */
     @SerializedName("minimumRequiredSdkVersion")
     @Expose
@@ -49,7 +50,7 @@ public class BaseIosManagedAppProtection extends TargetedManagedAppProtection im
 
     /**
      * The Deployed App Count.
-     * Count of apps to which the current policy is deployed.
+     * 
      */
     @SerializedName("deployedAppCount")
     @Expose
@@ -57,7 +58,7 @@ public class BaseIosManagedAppProtection extends TargetedManagedAppProtection im
 
     /**
      * The Face Id Blocked.
-     * Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
+     * 
      */
     @SerializedName("faceIdBlocked")
     @Expose
@@ -65,13 +66,13 @@ public class BaseIosManagedAppProtection extends TargetedManagedAppProtection im
 
     /**
      * The Apps.
-     * List of apps to which the policy is deployed.
+     * 
      */
     public ManagedMobileAppCollectionPage apps;
 
     /**
      * The Deployment Summary.
-     * Navigation property to deployment summary of the configuration.
+     * 
      */
     @SerializedName("deploymentSummary")
     @Expose

@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DeviceComplianceActionType;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseDeviceComplianceActionItem extends Entity implements IJsonBacke
 
     /**
      * The Grace Period Hours.
-     * Number of hours to wait till the action will be enforced. Valid values 0 to 8760
+     * 
      */
     @SerializedName("gracePeriodHours")
     @Expose
@@ -41,7 +38,7 @@ public class BaseDeviceComplianceActionItem extends Entity implements IJsonBacke
 
     /**
      * The Action Type.
-     * What action to take Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles.
+     * 
      */
     @SerializedName("actionType")
     @Expose
@@ -49,7 +46,7 @@ public class BaseDeviceComplianceActionItem extends Entity implements IJsonBacke
 
     /**
      * The Notification Template Id.
-     * What notification Message template to use
+     * 
      */
     @SerializedName("notificationTemplateId")
     @Expose
@@ -57,7 +54,7 @@ public class BaseDeviceComplianceActionItem extends Entity implements IJsonBacke
 
     /**
      * The Notification Message CCList.
-     * A list of group IDs to speicify who to CC this notification message to.
+     * 
      */
     @SerializedName("notificationMessageCCList")
     @Expose

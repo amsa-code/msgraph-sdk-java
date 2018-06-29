@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.EducationGender;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The Graduation Year.
-     * Year the student is graduating from the school.
+     * 
      */
     @SerializedName("graduationYear")
     @Expose
@@ -51,7 +47,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The Grade.
-     * Current grade level of the student.
+     * 
      */
     @SerializedName("grade")
     @Expose
@@ -59,7 +55,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The Birth Date.
-     * Birth date of the student.
+     * 
      */
     @SerializedName("birthDate")
     @Expose
@@ -67,7 +63,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The Gender.
-     * Possible values are: female, male, other, unkownFutureValue.
+     * 
      */
     @SerializedName("gender")
     @Expose
@@ -75,7 +71,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The Student Number.
-     * Student Number.
+     * 
      */
     @SerializedName("studentNumber")
     @Expose
@@ -83,7 +79,7 @@ public class BaseEducationStudent implements IJsonBackedObject {
 
     /**
      * The External Id.
-     * ID of the student in the source system.
+     * 
      */
     @SerializedName("externalId")
     @Expose

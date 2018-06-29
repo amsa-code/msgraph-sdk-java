@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IosHomeScreenItem;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseIosHomeScreenPage implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Name of the page
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -51,7 +47,7 @@ public class BaseIosHomeScreenPage implements IJsonBackedObject {
 
     /**
      * The Icons.
-     * A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("icons")
     @Expose

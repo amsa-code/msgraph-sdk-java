@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.MobileThreatPartnerTenantState;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Last Heartbeat Date Time.
-     * Timestamp of last heartbeat after admin enabled option Connect to MTP
+     * 
      */
     @SerializedName("lastHeartbeatDateTime")
     @Expose
@@ -41,7 +38,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Partner State.
-     * Partner state of this tenant Possible values are: unavailable, available, enabled, unresponsive.
+     * 
      */
     @SerializedName("partnerState")
     @Expose
@@ -49,7 +46,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Android Enabled.
-     * Android Toggle On or Off
+     * 
      */
     @SerializedName("androidEnabled")
     @Expose
@@ -57,7 +54,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Android Device Blocked On Missing Partner Data.
-     * For Android, Allows admin to config must receive data from the data sync partner prior to being considered compliant
+     * 
      */
     @SerializedName("androidDeviceBlockedOnMissingPartnerData")
     @Expose
@@ -65,7 +62,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Ios Device Blocked On Missing Partner Data.
-     * For IOS, Allows admin to config must receive data from the data sync partner prior to being considered compliant
+     * 
      */
     @SerializedName("iosDeviceBlockedOnMissingPartnerData")
     @Expose
@@ -73,7 +70,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Partner Unsupported Os Version Blocked.
-     * Allows admin to block devices on the enabled platforms that do not meet minimum version requirements
+     * 
      */
     @SerializedName("partnerUnsupportedOsVersionBlocked")
     @Expose
@@ -81,7 +78,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Ios Enabled.
-     * IOS Toggle On or Off
+     * 
      */
     @SerializedName("iosEnabled")
     @Expose
@@ -89,7 +86,7 @@ public class BaseMobileThreatDefenseConnector extends Entity implements IJsonBac
 
     /**
      * The Partner Unresponsiveness Threshold In Days.
-     * Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+     * 
      */
     @SerializedName("partnerUnresponsivenessThresholdInDays")
     @Expose

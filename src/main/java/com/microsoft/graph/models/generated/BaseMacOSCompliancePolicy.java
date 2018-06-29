@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.generated.DeviceThreatProtectionLevel;
+import com.microsoft.graph.models.extensions.DeviceCompliancePolicy;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Required.
-     * Whether or not to require a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -41,7 +39,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Block Simple.
-     * Indicates whether or not to block simple passwords.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -49,7 +47,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Expiration Days.
-     * Number of days before the password expires. Valid values 1 to 65535
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -57,7 +55,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Minimum Length.
-     * Minimum length of password. Valid values 4 to 14
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -65,7 +63,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Minutes Of Inactivity Before Lock.
-     * Minutes of inactivity before a password is required.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeLock")
     @Expose
@@ -73,7 +71,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Previous Password Block Count.
-     * Number of previous passwords to block. Valid values 1 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -81,7 +79,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Minimum Character Set Count.
-     * The number of character sets required in the password.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -89,7 +87,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Password Required Type.
-     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -97,7 +95,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Os Minimum Version.
-     * Minimum IOS version.
+     * 
      */
     @SerializedName("osMinimumVersion")
     @Expose
@@ -105,7 +103,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Os Maximum Version.
-     * Maximum IOS version.
+     * 
      */
     @SerializedName("osMaximumVersion")
     @Expose
@@ -113,7 +111,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The System Integrity Protection Enabled.
-     * Require that devices have enabled system integrity protection.
+     * 
      */
     @SerializedName("systemIntegrityProtectionEnabled")
     @Expose
@@ -121,7 +119,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Device Threat Protection Enabled.
-     * Require that devices have enabled device threat protection .
+     * 
      */
     @SerializedName("deviceThreatProtectionEnabled")
     @Expose
@@ -129,7 +127,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Device Threat Protection Required Security Level.
-     * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured, low, medium, high, notSet.
+     * 
      */
     @SerializedName("deviceThreatProtectionRequiredSecurityLevel")
     @Expose
@@ -137,7 +135,7 @@ public class BaseMacOSCompliancePolicy extends DeviceCompliancePolicy implements
 
     /**
      * The Storage Require Encryption.
-     * Require encryption on Mac OS devices.
+     * 
      */
     @SerializedName("storageRequireEncryption")
     @Expose

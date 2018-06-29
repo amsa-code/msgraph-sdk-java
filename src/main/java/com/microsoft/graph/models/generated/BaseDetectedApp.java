@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedDevice;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseManagedDeviceCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedDeviceCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseDetectedApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Name of the discovered application. Read-only
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +40,7 @@ public class BaseDetectedApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Version.
-     * Version of the discovered application. Read-only
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -49,7 +48,7 @@ public class BaseDetectedApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Size In Byte.
-     * Discovered application size in bytes. Read-only
+     * 
      */
     @SerializedName("sizeInByte")
     @Expose
@@ -57,7 +56,7 @@ public class BaseDetectedApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Device Count.
-     * The number of devices that have installed this application
+     * 
      */
     @SerializedName("deviceCount")
     @Expose
@@ -65,7 +64,7 @@ public class BaseDetectedApp extends Entity implements IJsonBackedObject {
 
     /**
      * The Managed Devices.
-     * The devices that have the discovered application installed
+     * 
      */
     public ManagedDeviceCollectionPage managedDevices;
 

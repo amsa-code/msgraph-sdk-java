@@ -3,19 +3,21 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.TermsAndConditionsAssignment;
+import com.microsoft.graph.models.extensions.TermsAndConditionsAcceptanceStatus;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseTermsAndConditionsAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.TermsAndConditionsAssignmentCollectionPage;
+import com.microsoft.graph.requests.generated.BaseTermsAndConditionsAcceptanceStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.TermsAndConditionsAcceptanceStatusCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +35,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Created Date Time.
-     * DateTime the object was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -41,7 +43,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -49,7 +51,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Display Name.
-     * Administrator-supplied name for the T&amp;C policy.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -57,7 +59,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Description.
-     * Administrator-supplied description of the T&amp;C policy.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -65,7 +67,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Title.
-     * Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&amp;C policy.
+     * 
      */
     @SerializedName("title")
     @Expose
@@ -73,7 +75,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Body Text.
-     * Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&amp;C policy.
+     * 
      */
     @SerializedName("bodyText")
     @Expose
@@ -81,7 +83,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Acceptance Statement.
-     * Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&amp;C policy. This is shown to the user on prompts to accept the T&amp;C policy.
+     * 
      */
     @SerializedName("acceptanceStatement")
     @Expose
@@ -89,7 +91,7 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Version.
-     * Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&amp;C policy.
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -97,13 +99,13 @@ public class BaseTermsAndConditions extends Entity implements IJsonBackedObject 
 
     /**
      * The Assignments.
-     * The list of assignments for this T&amp;C policy.
+     * 
      */
     public TermsAndConditionsAssignmentCollectionPage assignments;
 
     /**
      * The Acceptance Statuses.
-     * The list of acceptance statuses for this T&amp;C policy.
+     * 
      */
     public TermsAndConditionsAcceptanceStatusCollectionPage acceptanceStatuses;
 

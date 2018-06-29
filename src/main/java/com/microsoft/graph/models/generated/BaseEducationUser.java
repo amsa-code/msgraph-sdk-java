@@ -3,19 +3,34 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.EducationUserRole;
+import com.microsoft.graph.models.generated.EducationExternalSource;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.PhysicalAddress;
+import com.microsoft.graph.models.extensions.EducationStudent;
+import com.microsoft.graph.models.extensions.EducationTeacher;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.EducationRelatedContact;
+import com.microsoft.graph.models.extensions.AssignedLicense;
+import com.microsoft.graph.models.extensions.AssignedPlan;
+import com.microsoft.graph.models.extensions.PasswordProfile;
+import com.microsoft.graph.models.extensions.ProvisionedPlan;
+import com.microsoft.graph.models.extensions.EducationSchool;
+import com.microsoft.graph.models.extensions.EducationClass;
+import com.microsoft.graph.models.extensions.User;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseEducationSchoolCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationSchoolCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEducationClassCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationClassCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +48,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Primary Role.
-     * Default role for a user. The user's role might be different in an individual class. Possible values are: student, teacher, enum_sentinel. Supports $filter.
+     * 
      */
     @SerializedName("primaryRole")
     @Expose
@@ -41,7 +56,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Middle Name.
-     * The middle name of user.
+     * 
      */
     @SerializedName("middleName")
     @Expose
@@ -49,7 +64,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The External Source.
-     * Where this user was created from. Possible values are: sis, manual, unkownFutureValue.
+     * 
      */
     @SerializedName("externalSource")
     @Expose
@@ -57,7 +72,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Residence Address.
-     * Address where user lives.
+     * 
      */
     @SerializedName("residenceAddress")
     @Expose
@@ -65,7 +80,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Mailing Address.
-     * Mail address of user.
+     * 
      */
     @SerializedName("mailingAddress")
     @Expose
@@ -73,7 +88,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Student.
-     * If the primary role is student, this block will contain student specific data.
+     * 
      */
     @SerializedName("student")
     @Expose
@@ -81,7 +96,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Teacher.
-     * If the primary role is teacher, this block will conatin teacher specific data.
+     * 
      */
     @SerializedName("teacher")
     @Expose
@@ -89,7 +104,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Created By.
-     * Entity who created the user.
+     * 
      */
     @SerializedName("createdBy")
     @Expose
@@ -145,7 +160,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -153,7 +168,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Given Name.
-     * The given name (first name) of the user. Supports $filter.
+     * 
      */
     @SerializedName("givenName")
     @Expose
@@ -161,7 +176,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Mail.
-     * The SMTP address for the user; for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.
+     * 
      */
     @SerializedName("mail")
     @Expose
@@ -177,7 +192,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Mobile Phone.
-     * The primary cellular telephone number for the user.
+     * 
      */
     @SerializedName("mobilePhone")
     @Expose
@@ -241,7 +256,7 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Surname.
-     * The user's surname (family name or last name). Supports $filter.
+     * 
      */
     @SerializedName("surname")
     @Expose
@@ -273,13 +288,13 @@ public class BaseEducationUser extends Entity implements IJsonBackedObject {
 
     /**
      * The Schools.
-     * Schools to which the user belongs. Nullable.
+     * 
      */
     public EducationSchoolCollectionPage schools;
 
     /**
      * The Classes.
-     * Classes to which the user belongs. Nullable.
+     * 
      */
     public EducationClassCollectionPage classes;
 

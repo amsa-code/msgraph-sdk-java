@@ -3,19 +3,43 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DiagnosticDataSubmissionMode;
+import com.microsoft.graph.models.generated.EdgeCookiePolicy;
+import com.microsoft.graph.models.extensions.DefenderDetectedMalwareActions;
+import com.microsoft.graph.models.generated.WeeklySchedule;
+import com.microsoft.graph.models.generated.DefenderMonitorFileActivity;
+import com.microsoft.graph.models.generated.DefenderPromptForSampleSubmission;
+import com.microsoft.graph.models.generated.DefenderScanType;
+import com.microsoft.graph.models.generated.DefenderCloudBlockLevelType;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.generated.StateManagementSetting;
+import com.microsoft.graph.models.generated.WindowsStartMenuAppListVisibilityType;
+import com.microsoft.graph.models.generated.WindowsStartMenuModeType;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.VisibilitySetting;
+import com.microsoft.graph.models.generated.WindowsSpotlightEnablementSettings;
+import com.microsoft.graph.models.extensions.Windows10NetworkProxyServer;
+import com.microsoft.graph.models.generated.SafeSearchFilterType;
+import com.microsoft.graph.models.extensions.EdgeSearchEngineBase;
+import com.microsoft.graph.models.generated.StateManagementSetting;
+import com.microsoft.graph.models.generated.StateManagementSetting;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +57,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print Discovery End Point.
-     * Endpoint for discovering cloud printers.
+     * 
      */
     @SerializedName("enterpriseCloudPrintDiscoveryEndPoint")
     @Expose
@@ -41,7 +65,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print OAuth Authority.
-     * Authentication endpoint for acquiring OAuth tokens.
+     * 
      */
     @SerializedName("enterpriseCloudPrintOAuthAuthority")
     @Expose
@@ -49,7 +73,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print OAuth Client Identifier.
-     * GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.
+     * 
      */
     @SerializedName("enterpriseCloudPrintOAuthClientIdentifier")
     @Expose
@@ -57,7 +81,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print Resource Identifier.
-     * OAuth resource URI for print service as configured in the Azure portal.
+     * 
      */
     @SerializedName("enterpriseCloudPrintResourceIdentifier")
     @Expose
@@ -65,7 +89,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print Discovery Max Limit.
-     * Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535
+     * 
      */
     @SerializedName("enterpriseCloudPrintDiscoveryMaxLimit")
     @Expose
@@ -73,7 +97,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Enterprise Cloud Print Mopria Discovery Resource Identifier.
-     * OAuth resource URI for printer discovery service as configured in Azure portal.
+     * 
      */
     @SerializedName("enterpriseCloudPrintMopriaDiscoveryResourceIdentifier")
     @Expose
@@ -81,7 +105,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Block Diacritics.
-     * Specifies if search can use diacritics.
+     * 
      */
     @SerializedName("searchBlockDiacritics")
     @Expose
@@ -89,7 +113,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Disable Auto Language Detection.
-     * Specifies whether to use automatic language detection when indexing content and properties.
+     * 
      */
     @SerializedName("searchDisableAutoLanguageDetection")
     @Expose
@@ -97,7 +121,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Disable Indexing Encrypted Items.
-     * Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.
+     * 
      */
     @SerializedName("searchDisableIndexingEncryptedItems")
     @Expose
@@ -105,7 +129,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Enable Remote Queries.
-     * Indicates whether or not to block remote queries of this computer's index.
+     * 
      */
     @SerializedName("searchEnableRemoteQueries")
     @Expose
@@ -113,7 +137,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Disable Indexer Backoff.
-     * Indicates whether or not to disable the search indexer backoff feature.
+     * 
      */
     @SerializedName("searchDisableIndexerBackoff")
     @Expose
@@ -121,7 +145,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Disable Indexing Removable Drive.
-     * Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.
+     * 
      */
     @SerializedName("searchDisableIndexingRemovableDrive")
     @Expose
@@ -129,7 +153,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Search Enable Automatic Index Size Manangement.
-     * Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.
+     * 
      */
     @SerializedName("searchEnableAutomaticIndexSizeManangement")
     @Expose
@@ -137,7 +161,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Diagnostics Data Submission Mode.
-     * Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: userDefined, none, basic, enhanced, full.
+     * 
      */
     @SerializedName("diagnosticsDataSubmissionMode")
     @Expose
@@ -145,7 +169,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The One Drive Disable File Sync.
-     * Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.
+     * 
      */
     @SerializedName("oneDriveDisableFileSync")
     @Expose
@@ -153,7 +177,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Smart Screen Enable App Install Control.
-     * Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+     * 
      */
     @SerializedName("smartScreenEnableAppInstallControl")
     @Expose
@@ -161,7 +185,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Personalization Desktop Image Url.
-     * A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.
+     * 
      */
     @SerializedName("personalizationDesktopImageUrl")
     @Expose
@@ -169,7 +193,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Personalization Lock Screen Image Url.
-     * A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
+     * 
      */
     @SerializedName("personalizationLockScreenImageUrl")
     @Expose
@@ -177,7 +201,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Bluetooth Allowed Services.
-     * Specify a list of allowed Bluetooth services and profiles in hex formatted strings.
+     * 
      */
     @SerializedName("bluetoothAllowedServices")
     @Expose
@@ -185,7 +209,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Bluetooth Block Advertising.
-     * Whether or not to Block the user from using bluetooth advertising.
+     * 
      */
     @SerializedName("bluetoothBlockAdvertising")
     @Expose
@@ -193,7 +217,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Bluetooth Block Discoverable Mode.
-     * Whether or not to Block the user from using bluetooth discoverable mode.
+     * 
      */
     @SerializedName("bluetoothBlockDiscoverableMode")
     @Expose
@@ -201,7 +225,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Bluetooth Block Pre Pairing.
-     * Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.
+     * 
      */
     @SerializedName("bluetoothBlockPrePairing")
     @Expose
@@ -209,7 +233,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Autofill.
-     * Indicates whether or not to block auto fill.
+     * 
      */
     @SerializedName("edgeBlockAutofill")
     @Expose
@@ -217,7 +241,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Blocked.
-     * Indicates whether or not to Block the user from using the Edge browser.
+     * 
      */
     @SerializedName("edgeBlocked")
     @Expose
@@ -225,7 +249,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Cookie Policy.
-     * Indicates which cookies to block in the Edge browser. Possible values are: userDefined, allow, blockThirdParty, blockAll.
+     * 
      */
     @SerializedName("edgeCookiePolicy")
     @Expose
@@ -233,7 +257,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Developer Tools.
-     * Indicates whether or not to block developer tools in the Edge browser.
+     * 
      */
     @SerializedName("edgeBlockDeveloperTools")
     @Expose
@@ -241,7 +265,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Sending Do Not Track Header.
-     * Indicates whether or not to Block the user from sending the do not track header.
+     * 
      */
     @SerializedName("edgeBlockSendingDoNotTrackHeader")
     @Expose
@@ -249,7 +273,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Extensions.
-     * Indicates whether or not to block extensions in the Edge browser.
+     * 
      */
     @SerializedName("edgeBlockExtensions")
     @Expose
@@ -257,7 +281,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block In Private Browsing.
-     * Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
+     * 
      */
     @SerializedName("edgeBlockInPrivateBrowsing")
     @Expose
@@ -265,7 +289,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Java Script.
-     * Indicates whether or not to Block the user from using JavaScript.
+     * 
      */
     @SerializedName("edgeBlockJavaScript")
     @Expose
@@ -273,7 +297,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Password Manager.
-     * Indicates whether or not to Block password manager.
+     * 
      */
     @SerializedName("edgeBlockPasswordManager")
     @Expose
@@ -281,7 +305,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Address Bar Dropdown.
-     * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
+     * 
      */
     @SerializedName("edgeBlockAddressBarDropdown")
     @Expose
@@ -289,7 +313,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Compatibility List.
-     * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
+     * 
      */
     @SerializedName("edgeBlockCompatibilityList")
     @Expose
@@ -297,7 +321,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Clear Browsing Data On Exit.
-     * Clear browsing data on exiting Microsoft Edge.
+     * 
      */
     @SerializedName("edgeClearBrowsingDataOnExit")
     @Expose
@@ -305,7 +329,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Allow Start Pages Modification.
-     * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
+     * 
      */
     @SerializedName("edgeAllowStartPagesModification")
     @Expose
@@ -313,7 +337,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Disable First Run Page.
-     * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
+     * 
      */
     @SerializedName("edgeDisableFirstRunPage")
     @Expose
@@ -321,7 +345,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Live Tile Data Collection.
-     * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
+     * 
      */
     @SerializedName("edgeBlockLiveTileDataCollection")
     @Expose
@@ -329,7 +353,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Sync Favorites With Internet Explorer.
-     * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
+     * 
      */
     @SerializedName("edgeSyncFavoritesWithInternetExplorer")
     @Expose
@@ -337,7 +361,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Cellular Block Data When Roaming.
-     * Whether or not to Block the user from using data over cellular while roaming.
+     * 
      */
     @SerializedName("cellularBlockDataWhenRoaming")
     @Expose
@@ -345,7 +369,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Cellular Block Vpn.
-     * Whether or not to Block the user from using VPN over cellular.
+     * 
      */
     @SerializedName("cellularBlockVpn")
     @Expose
@@ -353,7 +377,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Cellular Block Vpn When Roaming.
-     * Whether or not to Block the user from using VPN when roaming over cellular.
+     * 
      */
     @SerializedName("cellularBlockVpnWhenRoaming")
     @Expose
@@ -361,7 +385,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Block End User Access.
-     * Whether or not to block end user access to Defender.
+     * 
      */
     @SerializedName("defenderBlockEndUserAccess")
     @Expose
@@ -369,7 +393,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Days Before Deleting Quarantined Malware.
-     * Number of days before deleting quarantined malware. Valid values 0 to 90
+     * 
      */
     @SerializedName("defenderDaysBeforeDeletingQuarantinedMalware")
     @Expose
@@ -377,7 +401,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Detected Malware Actions.
-     * Gets or sets Defender's actions to take on detected Malware per threat level.
+     * 
      */
     @SerializedName("defenderDetectedMalwareActions")
     @Expose
@@ -385,7 +409,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender System Scan Schedule.
-     * Defender day of the week for the system scan. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+     * 
      */
     @SerializedName("defenderSystemScanSchedule")
     @Expose
@@ -393,7 +417,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Files And Folders To Exclude.
-     * Files and folder to exclude from scans and real time protection.
+     * 
      */
     @SerializedName("defenderFilesAndFoldersToExclude")
     @Expose
@@ -401,7 +425,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender File Extensions To Exclude.
-     * File extensions to exclude from scans and real time protection.
+     * 
      */
     @SerializedName("defenderFileExtensionsToExclude")
     @Expose
@@ -409,7 +433,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Max Cpu.
-     * Max CPU usage percentage during scan. Valid values 0 to 100
+     * 
      */
     @SerializedName("defenderScanMaxCpu")
     @Expose
@@ -417,7 +441,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Monitor File Activity.
-     * Value for monitoring file activity. Possible values are: userDefined, disable, monitorAllFiles, monitorIncomingFilesOnly, monitorOutgoingFilesOnly.
+     * 
      */
     @SerializedName("defenderMonitorFileActivity")
     @Expose
@@ -425,7 +449,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Processes To Exclude.
-     * Processes to exclude from scans and real time protection.
+     * 
      */
     @SerializedName("defenderProcessesToExclude")
     @Expose
@@ -433,7 +457,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Prompt For Sample Submission.
-     * The configuration for how to prompt user for sample submission. Possible values are: userDefined, alwaysPrompt, promptBeforeSendingPersonalData, neverSendData, sendAllDataWithoutPrompting.
+     * 
      */
     @SerializedName("defenderPromptForSampleSubmission")
     @Expose
@@ -441,7 +465,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Require Behavior Monitoring.
-     * Indicates whether or not to require behavior monitoring.
+     * 
      */
     @SerializedName("defenderRequireBehaviorMonitoring")
     @Expose
@@ -449,7 +473,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Require Cloud Protection.
-     * Indicates whether or not to require cloud protection.
+     * 
      */
     @SerializedName("defenderRequireCloudProtection")
     @Expose
@@ -457,7 +481,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Require Network Inspection System.
-     * Indicates whether or not to require network inspection system.
+     * 
      */
     @SerializedName("defenderRequireNetworkInspectionSystem")
     @Expose
@@ -465,7 +489,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Require Real Time Monitoring.
-     * Indicates whether or not to require real time monitoring.
+     * 
      */
     @SerializedName("defenderRequireRealTimeMonitoring")
     @Expose
@@ -473,7 +497,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Archive Files.
-     * Indicates whether or not to scan archive files.
+     * 
      */
     @SerializedName("defenderScanArchiveFiles")
     @Expose
@@ -481,7 +505,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Downloads.
-     * Indicates whether or not to scan downloads.
+     * 
      */
     @SerializedName("defenderScanDownloads")
     @Expose
@@ -489,7 +513,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Network Files.
-     * Indicates whether or not to scan files opened from a network folder.
+     * 
      */
     @SerializedName("defenderScanNetworkFiles")
     @Expose
@@ -497,7 +521,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Incoming Mail.
-     * Indicates whether or not to scan incoming mail messages.
+     * 
      */
     @SerializedName("defenderScanIncomingMail")
     @Expose
@@ -505,7 +529,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Mapped Network Drives During Full Scan.
-     * Indicates whether or not to scan mapped network drives during full scan.
+     * 
      */
     @SerializedName("defenderScanMappedNetworkDrivesDuringFullScan")
     @Expose
@@ -513,7 +537,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Removable Drives During Full Scan.
-     * Indicates whether or not to scan removable drives during full scan.
+     * 
      */
     @SerializedName("defenderScanRemovableDrivesDuringFullScan")
     @Expose
@@ -521,7 +545,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Scripts Loaded In Internet Explorer.
-     * Indicates whether or not to scan scripts loaded in Internet Explorer browser.
+     * 
      */
     @SerializedName("defenderScanScriptsLoadedInInternetExplorer")
     @Expose
@@ -529,7 +553,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Signature Update Interval In Hours.
-     * The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24
+     * 
      */
     @SerializedName("defenderSignatureUpdateIntervalInHours")
     @Expose
@@ -537,7 +561,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scan Type.
-     * The defender system scan type. Possible values are: userDefined, disabled, quick, full.
+     * 
      */
     @SerializedName("defenderScanType")
     @Expose
@@ -545,7 +569,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scheduled Scan Time.
-     * The defender time for the system scan.
+     * 
      */
     @SerializedName("defenderScheduledScanTime")
     @Expose
@@ -553,7 +577,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Scheduled Quick Scan Time.
-     * The time to perform a daily quick scan.
+     * 
      */
     @SerializedName("defenderScheduledQuickScanTime")
     @Expose
@@ -561,7 +585,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Defender Cloud Block Level.
-     * Specifies the level of cloud-delivered protection. Possible values are: notConfigured, high, highPlus, zeroTolerance.
+     * 
      */
     @SerializedName("defenderCloudBlockLevel")
     @Expose
@@ -569,7 +593,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Lock Screen Allow Timeout Configuration.
-     * Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.
+     * 
      */
     @SerializedName("lockScreenAllowTimeoutConfiguration")
     @Expose
@@ -577,7 +601,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Lock Screen Block Action Center Notifications.
-     * Indicates whether or not to block action center notifications over lock screen.
+     * 
      */
     @SerializedName("lockScreenBlockActionCenterNotifications")
     @Expose
@@ -585,7 +609,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Lock Screen Block Cortana.
-     * Indicates whether or not the user can interact with Cortana using speech while the system is locked.
+     * 
      */
     @SerializedName("lockScreenBlockCortana")
     @Expose
@@ -593,7 +617,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Lock Screen Block Toast Notifications.
-     * Indicates whether to allow toast notifications above the device lock screen.
+     * 
      */
     @SerializedName("lockScreenBlockToastNotifications")
     @Expose
@@ -601,7 +625,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Lock Screen Timeout In Seconds.
-     * Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800
+     * 
      */
     @SerializedName("lockScreenTimeoutInSeconds")
     @Expose
@@ -609,7 +633,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Block Simple.
-     * Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -617,7 +641,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Expiration Days.
-     * The password expiration in days. Valid values 0 to 730
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -625,7 +649,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minimum Length.
-     * The minimum password length. Valid values 4 to 16
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -633,7 +657,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minutes Of Inactivity Before Screen Timeout.
-     * The minutes of inactivity before the screen times out.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeScreenTimeout")
     @Expose
@@ -641,7 +665,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minimum Character Set Count.
-     * The number of character sets required in the password.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -649,7 +673,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Previous Password Block Count.
-     * The number of previous passwords to prevent reuse of. Valid values 0 to 50
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -657,7 +681,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Required.
-     * Indicates whether or not to require the user to have a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -665,7 +689,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Require When Resume From Idle State.
-     * Indicates whether or not to require a password upon resuming from an idle state.
+     * 
      */
     @SerializedName("passwordRequireWhenResumeFromIdleState")
     @Expose
@@ -673,7 +697,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Required Type.
-     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -681,7 +705,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Sign In Failure Count Before Factory Reset.
-     * The number of sign in failures before factory reset. Valid values 0 to 999
+     * 
      */
     @SerializedName("passwordSignInFailureCountBeforeFactoryReset")
     @Expose
@@ -689,7 +713,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Privacy Advertising Id.
-     * Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: notConfigured, blocked, allowed.
+     * 
      */
     @SerializedName("privacyAdvertisingId")
     @Expose
@@ -697,7 +721,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Privacy Auto Accept Pairing And Consent Prompts.
-     * Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
+     * 
      */
     @SerializedName("privacyAutoAcceptPairingAndConsentPrompts")
     @Expose
@@ -705,7 +729,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Privacy Block Input Personalization.
-     * Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.
+     * 
      */
     @SerializedName("privacyBlockInputPersonalization")
     @Expose
@@ -713,7 +737,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Block Unpinning Apps From Taskbar.
-     * Indicates whether or not to block the user from unpinning apps from taskbar.
+     * 
      */
     @SerializedName("startBlockUnpinningAppsFromTaskbar")
     @Expose
@@ -721,7 +745,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu App List Visibility.
-     * Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: userDefined, collapse, remove, disableSettingsApp.
+     * 
      */
     @SerializedName("startMenuAppListVisibility")
     @Expose
@@ -729,7 +753,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Change Account Settings.
-     * Enabling this policy hides the change account setting from appearing in the user tile in the start menu.
+     * 
      */
     @SerializedName("startMenuHideChangeAccountSettings")
     @Expose
@@ -737,7 +761,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Frequently Used Apps.
-     * Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
+     * 
      */
     @SerializedName("startMenuHideFrequentlyUsedApps")
     @Expose
@@ -745,7 +769,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Hibernate.
-     * Enabling this policy hides hibernate from appearing in the power button in the start menu.
+     * 
      */
     @SerializedName("startMenuHideHibernate")
     @Expose
@@ -753,7 +777,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Lock.
-     * Enabling this policy hides lock from appearing in the user tile in the start menu.
+     * 
      */
     @SerializedName("startMenuHideLock")
     @Expose
@@ -761,7 +785,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Power Button.
-     * Enabling this policy hides the power button from appearing in the start menu.
+     * 
      */
     @SerializedName("startMenuHidePowerButton")
     @Expose
@@ -769,7 +793,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Recent Jump Lists.
-     * Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.
+     * 
      */
     @SerializedName("startMenuHideRecentJumpLists")
     @Expose
@@ -777,7 +801,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Recently Added Apps.
-     * Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
+     * 
      */
     @SerializedName("startMenuHideRecentlyAddedApps")
     @Expose
@@ -785,7 +809,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Restart Options.
-     * Enabling this policy hides "Restart/Update and Restart" from appearing in the power button in the start menu.
+     * 
      */
     @SerializedName("startMenuHideRestartOptions")
     @Expose
@@ -793,7 +817,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Shut Down.
-     * Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.
+     * 
      */
     @SerializedName("startMenuHideShutDown")
     @Expose
@@ -801,7 +825,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Sign Out.
-     * Enabling this policy hides sign out from appearing in the user tile in the start menu.
+     * 
      */
     @SerializedName("startMenuHideSignOut")
     @Expose
@@ -809,7 +833,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Sleep.
-     * Enabling this policy hides sleep from appearing in the power button in the start menu.
+     * 
      */
     @SerializedName("startMenuHideSleep")
     @Expose
@@ -817,7 +841,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide Switch Account.
-     * Enabling this policy hides switch account from appearing in the user tile in the start menu.
+     * 
      */
     @SerializedName("startMenuHideSwitchAccount")
     @Expose
@@ -825,7 +849,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Hide User Tile.
-     * Enabling this policy hides the user tile from appearing in the start menu.
+     * 
      */
     @SerializedName("startMenuHideUserTile")
     @Expose
@@ -833,7 +857,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Layout Edge Assets Xml.
-     * This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.
+     * 
      */
     @SerializedName("startMenuLayoutEdgeAssetsXml")
     @Expose
@@ -841,7 +865,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Layout Xml.
-     * Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
+     * 
      */
     @SerializedName("startMenuLayoutXml")
     @Expose
@@ -849,7 +873,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Mode.
-     * Allows admins to decide how the Start menu is displayed. Possible values are: userDefined, fullScreen, nonFullScreen.
+     * 
      */
     @SerializedName("startMenuMode")
     @Expose
@@ -857,7 +881,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Documents.
-     * Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderDocuments")
     @Expose
@@ -865,7 +889,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Downloads.
-     * Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderDownloads")
     @Expose
@@ -873,7 +897,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder File Explorer.
-     * Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderFileExplorer")
     @Expose
@@ -881,7 +905,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Home Group.
-     * Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderHomeGroup")
     @Expose
@@ -889,7 +913,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Music.
-     * Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderMusic")
     @Expose
@@ -897,7 +921,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Network.
-     * Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderNetwork")
     @Expose
@@ -905,7 +929,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Personal Folder.
-     * Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderPersonalFolder")
     @Expose
@@ -913,7 +937,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Pictures.
-     * Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderPictures")
     @Expose
@@ -921,7 +945,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Settings.
-     * Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderSettings")
     @Expose
@@ -929,7 +953,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Start Menu Pinned Folder Videos.
-     * Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
+     * 
      */
     @SerializedName("startMenuPinnedFolderVideos")
     @Expose
@@ -937,7 +961,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Settings App.
-     * Indicates whether or not to block access to Settings app.
+     * 
      */
     @SerializedName("settingsBlockSettingsApp")
     @Expose
@@ -945,7 +969,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block System Page.
-     * Indicates whether or not to block access to System in Settings app.
+     * 
      */
     @SerializedName("settingsBlockSystemPage")
     @Expose
@@ -953,7 +977,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Devices Page.
-     * Indicates whether or not to block access to Devices in Settings app.
+     * 
      */
     @SerializedName("settingsBlockDevicesPage")
     @Expose
@@ -961,7 +985,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Network Internet Page.
-     * Indicates whether or not to block access to Network &amp; Internet in Settings app.
+     * 
      */
     @SerializedName("settingsBlockNetworkInternetPage")
     @Expose
@@ -969,7 +993,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Personalization Page.
-     * Indicates whether or not to block access to Personalization in Settings app.
+     * 
      */
     @SerializedName("settingsBlockPersonalizationPage")
     @Expose
@@ -977,7 +1001,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Accounts Page.
-     * Indicates whether or not to block access to Accounts in Settings app.
+     * 
      */
     @SerializedName("settingsBlockAccountsPage")
     @Expose
@@ -985,7 +1009,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Time Language Page.
-     * Indicates whether or not to block access to Time &amp; Language in Settings app.
+     * 
      */
     @SerializedName("settingsBlockTimeLanguagePage")
     @Expose
@@ -993,7 +1017,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Ease Of Access Page.
-     * Indicates whether or not to block access to Ease of Access in Settings app.
+     * 
      */
     @SerializedName("settingsBlockEaseOfAccessPage")
     @Expose
@@ -1001,7 +1025,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Privacy Page.
-     * Indicates whether or not to block access to Privacy in Settings app.
+     * 
      */
     @SerializedName("settingsBlockPrivacyPage")
     @Expose
@@ -1009,7 +1033,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Update Security Page.
-     * Indicates whether or not to block access to Update &amp; Security in Settings app.
+     * 
      */
     @SerializedName("settingsBlockUpdateSecurityPage")
     @Expose
@@ -1017,7 +1041,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Apps Page.
-     * Indicates whether or not to block access to Apps in Settings app.
+     * 
      */
     @SerializedName("settingsBlockAppsPage")
     @Expose
@@ -1025,7 +1049,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Gaming Page.
-     * Indicates whether or not to block access to Gaming in Settings app.
+     * 
      */
     @SerializedName("settingsBlockGamingPage")
     @Expose
@@ -1033,7 +1057,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block Consumer Specific Features.
-     * Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
+     * 
      */
     @SerializedName("windowsSpotlightBlockConsumerSpecificFeatures")
     @Expose
@@ -1041,7 +1065,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Blocked.
-     * Allows IT admins to turn off all Windows Spotlight features
+     * 
      */
     @SerializedName("windowsSpotlightBlocked")
     @Expose
@@ -1049,7 +1073,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block On Action Center.
-     * Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed
+     * 
      */
     @SerializedName("windowsSpotlightBlockOnActionCenter")
     @Expose
@@ -1057,7 +1081,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block Tailored Experiences.
-     * Block personalized content in Windows spotlight based on user's device usage.
+     * 
      */
     @SerializedName("windowsSpotlightBlockTailoredExperiences")
     @Expose
@@ -1065,7 +1089,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block Third Party Notifications.
-     * Block third party content delivered via Windows Spotlight
+     * 
      */
     @SerializedName("windowsSpotlightBlockThirdPartyNotifications")
     @Expose
@@ -1073,7 +1097,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block Welcome Experience.
-     * Block Windows Spotlight Windows welcome experience
+     * 
      */
     @SerializedName("windowsSpotlightBlockWelcomeExperience")
     @Expose
@@ -1081,7 +1105,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Block Windows Tips.
-     * Allows IT admins to turn off the popup of Windows Tips.
+     * 
      */
     @SerializedName("windowsSpotlightBlockWindowsTips")
     @Expose
@@ -1089,7 +1113,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Spotlight Configure On Lock Screen.
-     * Specifies the type of Spotlight Possible values are: notConfigured, disabled, enabled.
+     * 
      */
     @SerializedName("windowsSpotlightConfigureOnLockScreen")
     @Expose
@@ -1097,7 +1121,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Network Proxy Apply Settings Device Wide.
-     * If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that's enrolled into MDM.
+     * 
      */
     @SerializedName("networkProxyApplySettingsDeviceWide")
     @Expose
@@ -1105,7 +1129,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Network Proxy Disable Auto Detect.
-     * Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.
+     * 
      */
     @SerializedName("networkProxyDisableAutoDetect")
     @Expose
@@ -1113,7 +1137,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Network Proxy Automatic Configuration Url.
-     * Address to the proxy auto-config (PAC) script you want to use.
+     * 
      */
     @SerializedName("networkProxyAutomaticConfigurationUrl")
     @Expose
@@ -1121,7 +1145,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Network Proxy Server.
-     * Specifies manual proxy server settings.
+     * 
      */
     @SerializedName("networkProxyServer")
     @Expose
@@ -1129,7 +1153,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Accounts Block Adding Non Microsoft Account Email.
-     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
+     * 
      */
     @SerializedName("accountsBlockAddingNonMicrosoftAccountEmail")
     @Expose
@@ -1137,7 +1161,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Anti Theft Mode Blocked.
-     * Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).
+     * 
      */
     @SerializedName("antiTheftModeBlocked")
     @Expose
@@ -1145,7 +1169,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Bluetooth Blocked.
-     * Whether or not to Block the user from using bluetooth.
+     * 
      */
     @SerializedName("bluetoothBlocked")
     @Expose
@@ -1153,7 +1177,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Camera Blocked.
-     * Whether or not to Block the user from accessing the camera of the device.
+     * 
      */
     @SerializedName("cameraBlocked")
     @Expose
@@ -1161,7 +1185,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Connected Devices Service Blocked.
-     * Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote messaging, remote app sessions and other cross-device experiences.
+     * 
      */
     @SerializedName("connectedDevicesServiceBlocked")
     @Expose
@@ -1169,7 +1193,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Certificates Block Manual Root Certificate Installation.
-     * Whether or not to Block the user from doing manual root certificate installation.
+     * 
      */
     @SerializedName("certificatesBlockManualRootCertificateInstallation")
     @Expose
@@ -1177,7 +1201,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Copy Paste Blocked.
-     * Whether or not to Block the user from using copy paste.
+     * 
      */
     @SerializedName("copyPasteBlocked")
     @Expose
@@ -1185,7 +1209,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Cortana Blocked.
-     * Whether or not to Block the user from using Cortana.
+     * 
      */
     @SerializedName("cortanaBlocked")
     @Expose
@@ -1193,7 +1217,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Device Management Block Factory Reset On Mobile.
-     * Indicates whether or not to Block the user from resetting their phone.
+     * 
      */
     @SerializedName("deviceManagementBlockFactoryResetOnMobile")
     @Expose
@@ -1201,7 +1225,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Device Management Block Manual Unenroll.
-     * Indicates whether or not to Block the user from doing manual un-enrollment from device management.
+     * 
      */
     @SerializedName("deviceManagementBlockManualUnenroll")
     @Expose
@@ -1209,7 +1233,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Safe Search Filter.
-     * Specifies what filter level of safe search is required. Possible values are: userDefined, strict, moderate.
+     * 
      */
     @SerializedName("safeSearchFilter")
     @Expose
@@ -1217,7 +1241,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Popups.
-     * Indicates whether or not to block popups.
+     * 
      */
     @SerializedName("edgeBlockPopups")
     @Expose
@@ -1225,7 +1249,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Search Suggestions.
-     * Indicates whether or not to Block the user from using the search suggestions in the address bar.
+     * 
      */
     @SerializedName("edgeBlockSearchSuggestions")
     @Expose
@@ -1233,7 +1257,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Sending Intranet Traffic To Internet Explorer.
-     * Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.
+     * 
      */
     @SerializedName("edgeBlockSendingIntranetTrafficToInternetExplorer")
     @Expose
@@ -1241,7 +1265,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Require Smart Screen.
-     * Indicates whether or not to Require the user to use the smart screen filter.
+     * 
      */
     @SerializedName("edgeRequireSmartScreen")
     @Expose
@@ -1249,7 +1273,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Enterprise Mode Site List Location.
-     * Indicates the enterprise mode site list location. Could be a local file, local network or http location.
+     * 
      */
     @SerializedName("edgeEnterpriseModeSiteListLocation")
     @Expose
@@ -1257,7 +1281,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge First Run Url.
-     * The first run URL for when Edge browser is opened for the first time.
+     * 
      */
     @SerializedName("edgeFirstRunUrl")
     @Expose
@@ -1265,7 +1289,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Search Engine.
-     * Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
+     * 
      */
     @SerializedName("edgeSearchEngine")
     @Expose
@@ -1273,7 +1297,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Homepage Urls.
-     * The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.
+     * 
      */
     @SerializedName("edgeHomepageUrls")
     @Expose
@@ -1281,7 +1305,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Edge Block Access To About Flags.
-     * Indicates whether or not to prevent access to about flags on Edge browser.
+     * 
      */
     @SerializedName("edgeBlockAccessToAboutFlags")
     @Expose
@@ -1289,7 +1313,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Smart Screen Block Prompt Override.
-     * Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.
+     * 
      */
     @SerializedName("smartScreenBlockPromptOverride")
     @Expose
@@ -1297,7 +1321,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Smart Screen Block Prompt Override For Files.
-     * Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
+     * 
      */
     @SerializedName("smartScreenBlockPromptOverrideForFiles")
     @Expose
@@ -1305,7 +1329,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Web Rtc Block Localhost Ip Address.
-     * Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC
+     * 
      */
     @SerializedName("webRtcBlockLocalhostIpAddress")
     @Expose
@@ -1313,7 +1337,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Internet Sharing Blocked.
-     * Indicates whether or not to Block the user from using internet sharing.
+     * 
      */
     @SerializedName("internetSharingBlocked")
     @Expose
@@ -1321,7 +1345,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Add Provisioning Package.
-     * Indicates whether or not to block the user from installing provisioning packages.
+     * 
      */
     @SerializedName("settingsBlockAddProvisioningPackage")
     @Expose
@@ -1329,7 +1353,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Remove Provisioning Package.
-     * Indicates whether or not to block the runtime configuration agent from removing provisioning packages.
+     * 
      */
     @SerializedName("settingsBlockRemoveProvisioningPackage")
     @Expose
@@ -1337,7 +1361,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Change System Time.
-     * Indicates whether or not to block the user from changing date and time settings.
+     * 
      */
     @SerializedName("settingsBlockChangeSystemTime")
     @Expose
@@ -1345,7 +1369,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Edit Device Name.
-     * Indicates whether or not to block the user from editing the device name.
+     * 
      */
     @SerializedName("settingsBlockEditDeviceName")
     @Expose
@@ -1353,7 +1377,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Change Region.
-     * Indicates whether or not to block the user from changing the region settings.
+     * 
      */
     @SerializedName("settingsBlockChangeRegion")
     @Expose
@@ -1361,7 +1385,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Change Language.
-     * Indicates whether or not to block the user from changing the language settings.
+     * 
      */
     @SerializedName("settingsBlockChangeLanguage")
     @Expose
@@ -1369,7 +1393,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Settings Block Change Power Sleep.
-     * Indicates whether or not to block the user from changing power and sleep settings.
+     * 
      */
     @SerializedName("settingsBlockChangePowerSleep")
     @Expose
@@ -1377,7 +1401,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Location Services Blocked.
-     * Indicates whether or not to Block the user from location services.
+     * 
      */
     @SerializedName("locationServicesBlocked")
     @Expose
@@ -1385,7 +1409,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Microsoft Account Blocked.
-     * Indicates whether or not to Block a Microsoft account.
+     * 
      */
     @SerializedName("microsoftAccountBlocked")
     @Expose
@@ -1393,7 +1417,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Microsoft Account Block Settings Sync.
-     * Indicates whether or not to Block Microsoft account settings sync.
+     * 
      */
     @SerializedName("microsoftAccountBlockSettingsSync")
     @Expose
@@ -1401,7 +1425,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Nfc Blocked.
-     * Indicates whether or not to Block the user from using near field communication.
+     * 
      */
     @SerializedName("nfcBlocked")
     @Expose
@@ -1409,7 +1433,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Reset Protection Mode Blocked.
-     * Indicates whether or not to Block the user from reset protection mode.
+     * 
      */
     @SerializedName("resetProtectionModeBlocked")
     @Expose
@@ -1417,7 +1441,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Screen Capture Blocked.
-     * Indicates whether or not to Block the user from taking Screenshots.
+     * 
      */
     @SerializedName("screenCaptureBlocked")
     @Expose
@@ -1425,7 +1449,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Storage Block Removable Storage.
-     * Indicates whether or not to Block the user from using removable storage.
+     * 
      */
     @SerializedName("storageBlockRemovableStorage")
     @Expose
@@ -1433,7 +1457,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Storage Require Mobile Device Encryption.
-     * Indicating whether or not to require encryption on a mobile device.
+     * 
      */
     @SerializedName("storageRequireMobileDeviceEncryption")
     @Expose
@@ -1441,7 +1465,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Usb Blocked.
-     * Indicates whether or not to Block the user from USB connection.
+     * 
      */
     @SerializedName("usbBlocked")
     @Expose
@@ -1449,7 +1473,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Voice Recording Blocked.
-     * Indicates whether or not to Block the user from voice recording.
+     * 
      */
     @SerializedName("voiceRecordingBlocked")
     @Expose
@@ -1457,7 +1481,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wi Fi Block Automatic Connect Hotspots.
-     * Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
+     * 
      */
     @SerializedName("wiFiBlockAutomaticConnectHotspots")
     @Expose
@@ -1465,7 +1489,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wi Fi Blocked.
-     * Indicates whether or not to Block the user from using Wi-Fi.
+     * 
      */
     @SerializedName("wiFiBlocked")
     @Expose
@@ -1473,7 +1497,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wi Fi Block Manual Configuration.
-     * Indicates whether or not to Block the user from using Wi-Fi manual configuration.
+     * 
      */
     @SerializedName("wiFiBlockManualConfiguration")
     @Expose
@@ -1481,7 +1505,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wi Fi Scan Interval.
-     * Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency. Valid values 1 to 500
+     * 
      */
     @SerializedName("wiFiScanInterval")
     @Expose
@@ -1489,7 +1513,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wireless Display Block Projection To This Device.
-     * Indicates whether or not to allow other devices from discovering this PC for projection.
+     * 
      */
     @SerializedName("wirelessDisplayBlockProjectionToThisDevice")
     @Expose
@@ -1497,7 +1521,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wireless Display Block User Input From Receiver.
-     * Indicates whether or not to allow user input from wireless display receiver.
+     * 
      */
     @SerializedName("wirelessDisplayBlockUserInputFromReceiver")
     @Expose
@@ -1505,7 +1529,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Wireless Display Require Pin For Pairing.
-     * Indicates whether or not to require a PIN for new devices to initiate pairing.
+     * 
      */
     @SerializedName("wirelessDisplayRequirePinForPairing")
     @Expose
@@ -1513,7 +1537,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Store Blocked.
-     * Indicates whether or not to Block the user from using the Windows store.
+     * 
      */
     @SerializedName("windowsStoreBlocked")
     @Expose
@@ -1521,7 +1545,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Apps Allow Trusted Apps Sideloading.
-     * Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: notConfigured, blocked, allowed.
+     * 
      */
     @SerializedName("appsAllowTrustedAppsSideloading")
     @Expose
@@ -1529,7 +1553,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Store Block Auto Update.
-     * Indicates whether or not to block automatic update of apps from Windows Store.
+     * 
      */
     @SerializedName("windowsStoreBlockAutoUpdate")
     @Expose
@@ -1537,7 +1561,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Developer Unlock Setting.
-     * Indicates whether or not to allow developer unlock. Possible values are: notConfigured, blocked, allowed.
+     * 
      */
     @SerializedName("developerUnlockSetting")
     @Expose
@@ -1545,7 +1569,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Shared User App Data Allowed.
-     * Indicates whether or not to block multiple users of the same app to share data.
+     * 
      */
     @SerializedName("sharedUserAppDataAllowed")
     @Expose
@@ -1553,7 +1577,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Apps Block Windows Store Originated Apps.
-     * Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.
+     * 
      */
     @SerializedName("appsBlockWindowsStoreOriginatedApps")
     @Expose
@@ -1561,7 +1585,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Windows Store Enable Private Store Only.
-     * Indicates whether or not to enable Private Store Only.
+     * 
      */
     @SerializedName("windowsStoreEnablePrivateStoreOnly")
     @Expose
@@ -1569,7 +1593,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Storage Restrict App Data To System Volume.
-     * Indicates whether application data is restricted to the system drive.
+     * 
      */
     @SerializedName("storageRestrictAppDataToSystemVolume")
     @Expose
@@ -1577,7 +1601,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Storage Restrict App Install To System Volume.
-     * Indicates whether the installation of applications is restricted to the system drive.
+     * 
      */
     @SerializedName("storageRestrictAppInstallToSystemVolume")
     @Expose
@@ -1585,7 +1609,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Game Dvr Blocked.
-     * Indicates whether or not to block DVR and broadcasting.
+     * 
      */
     @SerializedName("gameDvrBlocked")
     @Expose
@@ -1593,7 +1617,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Experience Block Device Discovery.
-     * Indicates whether or not to enable device discovery UX.
+     * 
      */
     @SerializedName("experienceBlockDeviceDiscovery")
     @Expose
@@ -1601,7 +1625,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Experience Block Error Dialog When No SIM.
-     * Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.
+     * 
      */
     @SerializedName("experienceBlockErrorDialogWhenNoSIM")
     @Expose
@@ -1609,7 +1633,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Experience Block Task Switcher.
-     * Indicates whether or not to enable task switching on the device.
+     * 
      */
     @SerializedName("experienceBlockTaskSwitcher")
     @Expose
@@ -1617,7 +1641,7 @@ public class BaseWindows10GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Logon Block Fast User Switching.
-     * Disables the ability to quickly switch between users that are logged on simultaneously without logging off.
+     * 
      */
     @SerializedName("logonBlockFastUserSwitching")
     @Expose

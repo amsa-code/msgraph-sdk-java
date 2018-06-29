@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DeviceManagementPartnerTenantState;
+import com.microsoft.graph.models.generated.DeviceManagementPartnerAppType;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Last Heartbeat Date Time.
-     * Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+     * 
      */
     @SerializedName("lastHeartbeatDateTime")
     @Expose
@@ -41,7 +39,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Partner State.
-     * Partner state of this tenant Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
+     * 
      */
     @SerializedName("partnerState")
     @Expose
@@ -49,7 +47,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Partner App Type.
-     * Partner App type Possible values are: unknown, singleTenantApp, multiTenantApp.
+     * 
      */
     @SerializedName("partnerAppType")
     @Expose
@@ -57,7 +55,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Single Tenant App Id.
-     * Partner Single tenant App id
+     * 
      */
     @SerializedName("singleTenantAppId")
     @Expose
@@ -65,7 +63,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Display Name.
-     * Partner display name
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -73,7 +71,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The Is Configured.
-     * Whether device management partner is configured or not
+     * 
      */
     @SerializedName("isConfigured")
     @Expose
@@ -81,7 +79,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The When Partner Devices Will Be Removed Date Time.
-     * DateTime in UTC when PartnerDevices will be removed
+     * 
      */
     @SerializedName("whenPartnerDevicesWillBeRemovedDateTime")
     @Expose
@@ -89,7 +87,7 @@ public class BaseDeviceManagementPartner extends Entity implements IJsonBackedOb
 
     /**
      * The When Partner Devices Will Be Marked As Non Compliant Date Time.
-     * DateTime in UTC when PartnerDevices will be marked as NonCompliant
+     * 
      */
     @SerializedName("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime")
     @Expose

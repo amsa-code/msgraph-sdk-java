@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Camera Make.
-     * Camera manufacturer. Read-only.
+     * 
      */
     @SerializedName("cameraMake")
     @Expose
@@ -51,7 +46,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Camera Model.
-     * Camera model. Read-only.
+     * 
      */
     @SerializedName("cameraModel")
     @Expose
@@ -59,7 +54,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Exposure Denominator.
-     * The denominator for the exposure time fraction from the camera. Read-only.
+     * 
      */
     @SerializedName("exposureDenominator")
     @Expose
@@ -67,7 +62,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Exposure Numerator.
-     * The numerator for the exposure time fraction from the camera. Read-only.
+     * 
      */
     @SerializedName("exposureNumerator")
     @Expose
@@ -75,7 +70,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The FNumber.
-     * The F-stop value from the camera. Read-only.
+     * 
      */
     @SerializedName("fNumber")
     @Expose
@@ -83,7 +78,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Focal Length.
-     * The focal length from the camera. Read-only.
+     * 
      */
     @SerializedName("focalLength")
     @Expose
@@ -91,7 +86,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Iso.
-     * The ISO value from the camera. Read-only.
+     * 
      */
     @SerializedName("iso")
     @Expose
@@ -99,7 +94,7 @@ public class BasePhoto implements IJsonBackedObject {
 
     /**
      * The Taken Date Time.
-     * Represents the date and time the photo was taken. Read-only.
+     * 
      */
     @SerializedName("takenDateTime")
     @Expose

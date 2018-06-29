@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AndroidMinimumOperatingSystem;
+import com.microsoft.graph.models.extensions.MobileLobApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseAndroidLobApp extends MobileLobApp implements IJsonBackedObject
 
     /**
      * The Package Id.
-     * The package identifier.
+     * 
      */
     @SerializedName("packageId")
     @Expose
@@ -41,7 +38,7 @@ public class BaseAndroidLobApp extends MobileLobApp implements IJsonBackedObject
 
     /**
      * The Minimum Supported Operating System.
-     * The value for the minimum applicable operating system.
+     * 
      */
     @SerializedName("minimumSupportedOperatingSystem")
     @Expose
@@ -49,7 +46,7 @@ public class BaseAndroidLobApp extends MobileLobApp implements IJsonBackedObject
 
     /**
      * The Version Name.
-     * The version name of Android Line of Business (LoB) app.
+     * 
      */
     @SerializedName("versionName")
     @Expose
@@ -57,7 +54,7 @@ public class BaseAndroidLobApp extends MobileLobApp implements IJsonBackedObject
 
     /**
      * The Version Code.
-     * The version code of Android Line of Business (LoB) app.
+     * 
      */
     @SerializedName("versionCode")
     @Expose

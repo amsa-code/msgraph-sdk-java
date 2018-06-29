@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseEducationTerm implements IJsonBackedObject {
 
     /**
      * The External Id.
-     * ID of term in the syncing system.
+     * 
      */
     @SerializedName("externalId")
     @Expose
@@ -51,7 +46,7 @@ public class BaseEducationTerm implements IJsonBackedObject {
 
     /**
      * The Start Date.
-     * Start of the term.
+     * 
      */
     @SerializedName("startDate")
     @Expose
@@ -59,7 +54,7 @@ public class BaseEducationTerm implements IJsonBackedObject {
 
     /**
      * The End Date.
-     * End of the term.
+     * 
      */
     @SerializedName("endDate")
     @Expose
@@ -67,7 +62,7 @@ public class BaseEducationTerm implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Display name of the term.
+     * 
      */
     @SerializedName("displayName")
     @Expose

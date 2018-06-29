@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.WindowsDeviceAccount;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Device Account.
-     * Not yet documented
+     * 
      */
     @SerializedName("deviceAccount")
     @Expose
@@ -51,7 +47,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Password Rotation Enabled.
-     * Not yet documented
+     * 
      */
     @SerializedName("passwordRotationEnabled")
     @Expose
@@ -59,7 +55,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Calendar Sync Enabled.
-     * Not yet documented
+     * 
      */
     @SerializedName("calendarSyncEnabled")
     @Expose
@@ -67,7 +63,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Device Account Email.
-     * Not yet documented
+     * 
      */
     @SerializedName("deviceAccountEmail")
     @Expose
@@ -75,7 +71,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Exchange Server.
-     * Not yet documented
+     * 
      */
     @SerializedName("exchangeServer")
     @Expose
@@ -83,7 +79,7 @@ public class BaseUpdateWindowsDeviceAccountActionParameter implements IJsonBacke
 
     /**
      * The Session Initiation Protocal Address.
-     * Not yet documented
+     * 
      */
     @SerializedName("sessionInitiationProtocalAddress")
     @Expose

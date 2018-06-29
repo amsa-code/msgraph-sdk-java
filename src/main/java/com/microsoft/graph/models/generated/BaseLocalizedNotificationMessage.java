@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseLocalizedNotificationMessage extends Entity implements IJsonBac
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -41,7 +37,7 @@ public class BaseLocalizedNotificationMessage extends Entity implements IJsonBac
 
     /**
      * The Locale.
-     * The Locale for which this message is destined.
+     * 
      */
     @SerializedName("locale")
     @Expose
@@ -49,7 +45,7 @@ public class BaseLocalizedNotificationMessage extends Entity implements IJsonBac
 
     /**
      * The Subject.
-     * The Message Template Subject.
+     * 
      */
     @SerializedName("subject")
     @Expose
@@ -57,7 +53,7 @@ public class BaseLocalizedNotificationMessage extends Entity implements IJsonBac
 
     /**
      * The Message Template.
-     * The Message Template content.
+     * 
      */
     @SerializedName("messageTemplate")
     @Expose
@@ -65,7 +61,7 @@ public class BaseLocalizedNotificationMessage extends Entity implements IJsonBac
 
     /**
      * The Is Default.
-     * Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.
+     * 
      */
     @SerializedName("isDefault")
     @Expose

@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.extensions.DeviceCompliancePolicy;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Block Simple.
-     * Whether or not to block syncing the calendar.
+     * 
      */
     @SerializedName("passwordBlockSimple")
     @Expose
@@ -41,7 +38,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Expiration Days.
-     * Number of days before the password expires.
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -49,7 +46,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Minimum Length.
-     * Minimum length of passwords.
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -57,7 +54,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Minutes Of Inactivity Before Lock.
-     * Minutes of inactivity before a password is required.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeLock")
     @Expose
@@ -65,7 +62,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Minimum Character Set Count.
-     * The number of character sets required in the password.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -73,7 +70,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Required Type.
-     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -81,7 +78,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Previous Password Block Count.
-     * Number of previous passwords to block. Valid values 0 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -89,7 +86,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Password Required.
-     * Whether or not to require a password.
+     * 
      */
     @SerializedName("passwordRequired")
     @Expose
@@ -97,7 +94,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Os Minimum Version.
-     * Minimum Windows Phone version.
+     * 
      */
     @SerializedName("osMinimumVersion")
     @Expose
@@ -105,7 +102,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Os Maximum Version.
-     * Maximum Windows Phone version.
+     * 
      */
     @SerializedName("osMaximumVersion")
     @Expose
@@ -113,7 +110,7 @@ public class BaseWindowsPhone81CompliancePolicy extends DeviceCompliancePolicy i
 
     /**
      * The Storage Require Encryption.
-     * Require encryption on windows phone devices.
+     * 
      */
     @SerializedName("storageRequireEncryption")
     @Expose

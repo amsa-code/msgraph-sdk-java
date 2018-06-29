@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.RecurrenceRangeType;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseRecurrenceRange implements IJsonBackedObject {
 
     /**
      * The Type.
-     * The recurrence range. Possible values are: endDate, noEnd, numbered. Required.
+     * 
      */
     @SerializedName("type")
     @Expose
@@ -51,7 +47,7 @@ public class BaseRecurrenceRange implements IJsonBackedObject {
 
     /**
      * The Start Date.
-     * The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+     * 
      */
     @SerializedName("startDate")
     @Expose
@@ -59,7 +55,7 @@ public class BaseRecurrenceRange implements IJsonBackedObject {
 
     /**
      * The End Date.
-     * The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
+     * 
      */
     @SerializedName("endDate")
     @Expose
@@ -67,7 +63,7 @@ public class BaseRecurrenceRange implements IJsonBackedObject {
 
     /**
      * The Recurrence Time Zone.
-     * Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
+     * 
      */
     @SerializedName("recurrenceTimeZone")
     @Expose
@@ -75,7 +71,7 @@ public class BaseRecurrenceRange implements IJsonBackedObject {
 
     /**
      * The Number Of Occurrences.
-     * The number of times to repeat the event. Required and must be positive if type is numbered.
+     * 
      */
     @SerializedName("numberOfOccurrences")
     @Expose

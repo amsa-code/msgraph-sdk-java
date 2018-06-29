@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseTextColumn implements IJsonBackedObject {
 
     /**
      * The Allow Multiple Lines.
-     * Whether to allow multiple lines of text.
+     * 
      */
     @SerializedName("allowMultipleLines")
     @Expose
@@ -51,7 +46,7 @@ public class BaseTextColumn implements IJsonBackedObject {
 
     /**
      * The Append Changes To Existing Text.
-     * Whether updates to this column should replace existing text, or append to it.
+     * 
      */
     @SerializedName("appendChangesToExistingText")
     @Expose
@@ -59,7 +54,7 @@ public class BaseTextColumn implements IJsonBackedObject {
 
     /**
      * The Lines For Editing.
-     * The size of the text box.
+     * 
      */
     @SerializedName("linesForEditing")
     @Expose
@@ -67,7 +62,7 @@ public class BaseTextColumn implements IJsonBackedObject {
 
     /**
      * The Max Length.
-     * The maximum number of characters for the value.
+     * 
      */
     @SerializedName("maxLength")
     @Expose
@@ -75,7 +70,7 @@ public class BaseTextColumn implements IJsonBackedObject {
 
     /**
      * The Text Type.
-     * The type of text being stored. Must be one of plain or richText
+     * 
      */
     @SerializedName("textType")
     @Expose

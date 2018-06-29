@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.TargetedManagedAppPolicyAssignment;
+import com.microsoft.graph.models.extensions.ManagedAppProtection;
+import com.microsoft.graph.requests.generated.BaseTargetedManagedAppPolicyAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.TargetedManagedAppPolicyAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseTargetedManagedAppProtection extends ManagedAppProtection imple
 
     /**
      * The Is Assigned.
-     * Indicates if the policy is deployed to any inclusion groups or not.
+     * 
      */
     @SerializedName("isAssigned")
     @Expose
@@ -41,7 +40,7 @@ public class BaseTargetedManagedAppProtection extends ManagedAppProtection imple
 
     /**
      * The Assignments.
-     * Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+     * 
      */
     public TargetedManagedAppPolicyAssignmentCollectionPage assignments;
 

@@ -3,19 +3,20 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.InternetSiteSecurityLevel;
+import com.microsoft.graph.models.generated.SiteSecurityLevel;
+import com.microsoft.graph.models.generated.SiteSecurityLevel;
+import com.microsoft.graph.models.generated.RequiredPasswordType;
+import com.microsoft.graph.models.generated.WindowsUserAccountControlSettings;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +34,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Accounts Block Adding Non Microsoft Account Email.
-     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
+     * 
      */
     @SerializedName("accountsBlockAddingNonMicrosoftAccountEmail")
     @Expose
@@ -41,7 +42,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Apply Only To Windows81.
-     * Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
+     * 
      */
     @SerializedName("applyOnlyToWindows81")
     @Expose
@@ -49,7 +50,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Autofill.
-     * Indicates whether or not to block auto fill.
+     * 
      */
     @SerializedName("browserBlockAutofill")
     @Expose
@@ -57,7 +58,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Automatic Detection Of Intranet Sites.
-     * Indicates whether or not to block automatic detection of Intranet sites.
+     * 
      */
     @SerializedName("browserBlockAutomaticDetectionOfIntranetSites")
     @Expose
@@ -65,7 +66,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Enterprise Mode Access.
-     * Indicates whether or not to block enterprise mode access.
+     * 
      */
     @SerializedName("browserBlockEnterpriseModeAccess")
     @Expose
@@ -73,7 +74,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Java Script.
-     * Indicates whether or not to Block the user from using JavaScript.
+     * 
      */
     @SerializedName("browserBlockJavaScript")
     @Expose
@@ -81,7 +82,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Plugins.
-     * Indicates whether or not to block plug-ins.
+     * 
      */
     @SerializedName("browserBlockPlugins")
     @Expose
@@ -89,7 +90,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Popups.
-     * Indicates whether or not to block popups.
+     * 
      */
     @SerializedName("browserBlockPopups")
     @Expose
@@ -97,7 +98,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Sending Do Not Track Header.
-     * Indicates whether or not to Block the user from sending the do not track header.
+     * 
      */
     @SerializedName("browserBlockSendingDoNotTrackHeader")
     @Expose
@@ -105,7 +106,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Block Single Word Entry On Intranet Sites.
-     * Indicates whether or not to block a single word entry on Intranet sites.
+     * 
      */
     @SerializedName("browserBlockSingleWordEntryOnIntranetSites")
     @Expose
@@ -113,7 +114,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Require Smart Screen.
-     * Indicates whether or not to require the user to use the smart screen filter.
+     * 
      */
     @SerializedName("browserRequireSmartScreen")
     @Expose
@@ -121,7 +122,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Enterprise Mode Site List Location.
-     * The enterprise mode site list location. Could be a local file, local network or http location.
+     * 
      */
     @SerializedName("browserEnterpriseModeSiteListLocation")
     @Expose
@@ -129,7 +130,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Internet Security Level.
-     * The internet security level. Possible values are: userDefined, medium, mediumHigh, high.
+     * 
      */
     @SerializedName("browserInternetSecurityLevel")
     @Expose
@@ -137,7 +138,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Intranet Security Level.
-     * The Intranet security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
+     * 
      */
     @SerializedName("browserIntranetSecurityLevel")
     @Expose
@@ -145,7 +146,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Logging Report Location.
-     * The logging report location.
+     * 
      */
     @SerializedName("browserLoggingReportLocation")
     @Expose
@@ -153,7 +154,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Require High Security For Restricted Sites.
-     * Indicates whether or not to require high security for restricted sites.
+     * 
      */
     @SerializedName("browserRequireHighSecurityForRestrictedSites")
     @Expose
@@ -161,7 +162,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Require Firewall.
-     * Indicates whether or not to require a firewall.
+     * 
      */
     @SerializedName("browserRequireFirewall")
     @Expose
@@ -169,7 +170,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Require Fraud Warning.
-     * Indicates whether or not to require fraud warning.
+     * 
      */
     @SerializedName("browserRequireFraudWarning")
     @Expose
@@ -177,7 +178,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Browser Trusted Sites Security Level.
-     * The trusted sites security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
+     * 
      */
     @SerializedName("browserTrustedSitesSecurityLevel")
     @Expose
@@ -185,7 +186,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Cellular Block Data Roaming.
-     * Indicates whether or not to block data roaming.
+     * 
      */
     @SerializedName("cellularBlockDataRoaming")
     @Expose
@@ -193,7 +194,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Diagnostics Block Data Submission.
-     * Indicates whether or not to block diagnostic data submission.
+     * 
      */
     @SerializedName("diagnosticsBlockDataSubmission")
     @Expose
@@ -201,7 +202,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Block Picture Password And Pin.
-     * Indicates whether or not to Block the user from using a pictures password and pin.
+     * 
      */
     @SerializedName("passwordBlockPicturePasswordAndPin")
     @Expose
@@ -209,7 +210,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Expiration Days.
-     * Password expiration in days.
+     * 
      */
     @SerializedName("passwordExpirationDays")
     @Expose
@@ -217,7 +218,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minimum Length.
-     * The minimum password length.
+     * 
      */
     @SerializedName("passwordMinimumLength")
     @Expose
@@ -225,7 +226,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minutes Of Inactivity Before Screen Timeout.
-     * The minutes of inactivity before the screen times out.
+     * 
      */
     @SerializedName("passwordMinutesOfInactivityBeforeScreenTimeout")
     @Expose
@@ -233,7 +234,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Minimum Character Set Count.
-     * The number of character sets required in the password.
+     * 
      */
     @SerializedName("passwordMinimumCharacterSetCount")
     @Expose
@@ -241,7 +242,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Previous Password Block Count.
-     * The number of previous passwords to prevent re-use of. Valid values 0 to 24
+     * 
      */
     @SerializedName("passwordPreviousPasswordBlockCount")
     @Expose
@@ -249,7 +250,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Required Type.
-     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
+     * 
      */
     @SerializedName("passwordRequiredType")
     @Expose
@@ -257,7 +258,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Password Sign In Failure Count Before Factory Reset.
-     * The number of sign in failures before factory reset.
+     * 
      */
     @SerializedName("passwordSignInFailureCountBeforeFactoryReset")
     @Expose
@@ -265,7 +266,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Storage Require Device Encryption.
-     * Indicates whether or not to require encryption on a mobile device.
+     * 
      */
     @SerializedName("storageRequireDeviceEncryption")
     @Expose
@@ -273,7 +274,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Updates Require Automatic Updates.
-     * Indicates whether or not to require automatic updates.
+     * 
      */
     @SerializedName("updatesRequireAutomaticUpdates")
     @Expose
@@ -281,7 +282,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The User Account Control Settings.
-     * The user account control settings. Possible values are: userDefined, alwaysNotify, notifyOnAppChanges, notifyOnAppChangesWithoutDimming, neverNotify.
+     * 
      */
     @SerializedName("userAccountControlSettings")
     @Expose
@@ -289,7 +290,7 @@ public class BaseWindows81GeneralConfiguration extends DeviceConfiguration imple
 
     /**
      * The Work Folders Url.
-     * The work folders url.
+     * 
      */
     @SerializedName("workFoldersUrl")
     @Expose

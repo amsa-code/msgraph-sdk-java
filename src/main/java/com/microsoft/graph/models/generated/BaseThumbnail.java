@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseThumbnail implements IJsonBackedObject {
 
     /**
      * The Height.
-     * The height of the thumbnail, in pixels.
+     * 
      */
     @SerializedName("height")
     @Expose
@@ -51,7 +46,7 @@ public class BaseThumbnail implements IJsonBackedObject {
 
     /**
      * The Source Item Id.
-     * The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
+     * 
      */
     @SerializedName("sourceItemId")
     @Expose
@@ -59,7 +54,7 @@ public class BaseThumbnail implements IJsonBackedObject {
 
     /**
      * The Url.
-     * The URL used to fetch the thumbnail content.
+     * 
      */
     @SerializedName("url")
     @Expose
@@ -67,7 +62,7 @@ public class BaseThumbnail implements IJsonBackedObject {
 
     /**
      * The Width.
-     * The width of the thumbnail, in pixels.
+     * 
      */
     @SerializedName("width")
     @Expose

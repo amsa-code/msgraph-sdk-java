@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BasePhysicalAddress implements IJsonBackedObject {
 
     /**
      * The Street.
-     * The street.
+     * 
      */
     @SerializedName("street")
     @Expose
@@ -51,7 +46,7 @@ public class BasePhysicalAddress implements IJsonBackedObject {
 
     /**
      * The City.
-     * The city.
+     * 
      */
     @SerializedName("city")
     @Expose
@@ -59,7 +54,7 @@ public class BasePhysicalAddress implements IJsonBackedObject {
 
     /**
      * The State.
-     * The state.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -67,7 +62,7 @@ public class BasePhysicalAddress implements IJsonBackedObject {
 
     /**
      * The Country Or Region.
-     * The country or region. It's a free-format string value, for example, "United States".
+     * 
      */
     @SerializedName("countryOrRegion")
     @Expose
@@ -75,7 +70,7 @@ public class BasePhysicalAddress implements IJsonBackedObject {
 
     /**
      * The Postal Code.
-     * The postal code.
+     * 
      */
     @SerializedName("postalCode")
     @Expose

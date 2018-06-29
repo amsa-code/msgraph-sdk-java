@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BasePersonOrGroupColumn implements IJsonBackedObject {
 
     /**
      * The Allow Multiple Selection.
-     * Indicates whether multiple values can be selected from the source.
+     * 
      */
     @SerializedName("allowMultipleSelection")
     @Expose
@@ -51,7 +46,7 @@ public class BasePersonOrGroupColumn implements IJsonBackedObject {
 
     /**
      * The Display As.
-     * How to display the information about the person or group chosen. See below.
+     * 
      */
     @SerializedName("displayAs")
     @Expose
@@ -59,7 +54,7 @@ public class BasePersonOrGroupColumn implements IJsonBackedObject {
 
     /**
      * The Choose From Type.
-     * Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
+     * 
      */
     @SerializedName("chooseFromType")
     @Expose

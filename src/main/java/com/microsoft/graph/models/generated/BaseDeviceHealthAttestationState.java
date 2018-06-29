@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Last Update Date Time.
-     * The Timestamp of the last update.
+     * 
      */
     @SerializedName("lastUpdateDateTime")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Content Namespace Url.
-     * The DHA report version. (Namespace version)
+     * 
      */
     @SerializedName("contentNamespaceUrl")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Device Health Attestation Status.
-     * The DHA report version. (Namespace version)
+     * 
      */
     @SerializedName("deviceHealthAttestationStatus")
     @Expose
@@ -67,7 +62,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Content Version.
-     * The HealthAttestation state schema version
+     * 
      */
     @SerializedName("contentVersion")
     @Expose
@@ -75,7 +70,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Issued Date Time.
-     * The DateTime when device was evaluated or issued to MDM
+     * 
      */
     @SerializedName("issuedDateTime")
     @Expose
@@ -83,7 +78,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Attestation Identity Key.
-     * TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
+     * 
      */
     @SerializedName("attestationIdentityKey")
     @Expose
@@ -91,7 +86,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Reset Count.
-     * The number of times a PC device has hibernated or resumed
+     * 
      */
     @SerializedName("resetCount")
     @Expose
@@ -99,7 +94,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Restart Count.
-     * The number of times a PC device has rebooted
+     * 
      */
     @SerializedName("restartCount")
     @Expose
@@ -107,7 +102,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Data Excution Policy.
-     * DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
+     * 
      */
     @SerializedName("dataExcutionPolicy")
     @Expose
@@ -115,7 +110,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Bit Locker Status.
-     * On or Off of BitLocker Drive Encryption
+     * 
      */
     @SerializedName("bitLockerStatus")
     @Expose
@@ -123,7 +118,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Boot Manager Version.
-     * The version of the Boot Manager
+     * 
      */
     @SerializedName("bootManagerVersion")
     @Expose
@@ -131,7 +126,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Code Integrity Check Version.
-     * The version of the Boot Manager
+     * 
      */
     @SerializedName("codeIntegrityCheckVersion")
     @Expose
@@ -139,7 +134,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Secure Boot.
-     * When Secure Boot is enabled, the core components must have the correct cryptographic signatures
+     * 
      */
     @SerializedName("secureBoot")
     @Expose
@@ -147,7 +142,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Boot Debugging.
-     * When bootDebugging is enabled, the device is used in development and testing
+     * 
      */
     @SerializedName("bootDebugging")
     @Expose
@@ -155,7 +150,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Operating System Kernel Debugging.
-     * When operatingSystemKernelDebugging is enabled, the device is used in development and testing
+     * 
      */
     @SerializedName("operatingSystemKernelDebugging")
     @Expose
@@ -163,7 +158,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Code Integrity.
-     * When code integrity is enabled, code execution is restricted to integrity verified code
+     * 
      */
     @SerializedName("codeIntegrity")
     @Expose
@@ -171,7 +166,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Test Signing.
-     * When test signing is allowed, the device does not enforce signature validation during boot
+     * 
      */
     @SerializedName("testSigning")
     @Expose
@@ -179,7 +174,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Safe Mode.
-     * Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
+     * 
      */
     @SerializedName("safeMode")
     @Expose
@@ -187,7 +182,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Windows PE.
-     * Operating system running with limited services that is used to prepare a computer for Windows
+     * 
      */
     @SerializedName("windowsPE")
     @Expose
@@ -195,7 +190,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Early Launch Anti Malware Driver Protection.
-     * ELAM provides protection for the computers in your network when they start up
+     * 
      */
     @SerializedName("earlyLaunchAntiMalwareDriverProtection")
     @Expose
@@ -203,7 +198,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Virtual Secure Mode.
-     * VSM is a container that protects high value assets from a compromised kernel
+     * 
      */
     @SerializedName("virtualSecureMode")
     @Expose
@@ -211,7 +206,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Pcr Hash Algorithm.
-     * Informational attribute that identifies the HASH algorithm that was used by TPM
+     * 
      */
     @SerializedName("pcrHashAlgorithm")
     @Expose
@@ -219,7 +214,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Boot App Security Version.
-     * The security version number of the Boot Application
+     * 
      */
     @SerializedName("bootAppSecurityVersion")
     @Expose
@@ -227,7 +222,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Boot Manager Security Version.
-     * The security version number of the Boot Application
+     * 
      */
     @SerializedName("bootManagerSecurityVersion")
     @Expose
@@ -235,7 +230,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Tpm Version.
-     * The security version number of the Boot Application
+     * 
      */
     @SerializedName("tpmVersion")
     @Expose
@@ -243,7 +238,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Pcr0.
-     * The measurement that is captured in PCR[0]
+     * 
      */
     @SerializedName("pcr0")
     @Expose
@@ -251,7 +246,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Secure Boot Configuration Policy Finger Print.
-     * Fingerprint of the Custom Secure Boot Configuration Policy
+     * 
      */
     @SerializedName("secureBootConfigurationPolicyFingerPrint")
     @Expose
@@ -259,7 +254,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Code Integrity Policy.
-     * The Code Integrity policy that is controlling the security of the boot environment
+     * 
      */
     @SerializedName("codeIntegrityPolicy")
     @Expose
@@ -267,7 +262,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Boot Revision List Info.
-     * The Boot Revision List that was loaded during initial boot on the attested device
+     * 
      */
     @SerializedName("bootRevisionListInfo")
     @Expose
@@ -275,7 +270,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Operating System Rev List Info.
-     * The Operating System Revision List that was loaded during initial boot on the attested device
+     * 
      */
     @SerializedName("operatingSystemRevListInfo")
     @Expose
@@ -283,7 +278,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Health Status Mismatch Info.
-     * This attribute appears if DHA-Service detects an integrity issue
+     * 
      */
     @SerializedName("healthStatusMismatchInfo")
     @Expose
@@ -291,7 +286,7 @@ public class BaseDeviceHealthAttestationState implements IJsonBackedObject {
 
     /**
      * The Health Attestation Supported Status.
-     * This attribute indicates if DHA is supported for the device
+     * 
      */
     @SerializedName("healthAttestationSupportedStatus")
     @Expose

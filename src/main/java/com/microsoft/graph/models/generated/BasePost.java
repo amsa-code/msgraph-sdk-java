@@ -3,19 +3,32 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ItemBody;
+import com.microsoft.graph.models.extensions.Recipient;
+import com.microsoft.graph.models.extensions.Recipient;
+import com.microsoft.graph.models.extensions.Recipient;
+import com.microsoft.graph.models.extensions.Extension;
+import com.microsoft.graph.models.extensions.Post;
+import com.microsoft.graph.models.extensions.Attachment;
+import com.microsoft.graph.models.extensions.SingleValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.MultiValueLegacyExtendedProperty;
+import com.microsoft.graph.models.extensions.OutlookItem;
+import com.microsoft.graph.requests.generated.BaseExtensionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ExtensionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseAttachmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.AttachmentCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSingleValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.SingleValueLegacyExtendedPropertyCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMultiValueLegacyExtendedPropertyCollectionResponse;
+import com.microsoft.graph.requests.extensions.MultiValueLegacyExtendedPropertyCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +46,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Body.
-     * The contents of the post. This is a default property. This property can be null.
+     * 
      */
     @SerializedName("body")
     @Expose
@@ -41,7 +54,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Received Date Time.
-     * Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("receivedDateTime")
     @Expose
@@ -49,7 +62,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Has Attachments.
-     * Indicates whether the post has at least one attachment. This is a default property.
+     * 
      */
     @SerializedName("hasAttachments")
     @Expose
@@ -57,7 +70,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The From.
-     * Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.
+     * 
      */
     @SerializedName("from")
     @Expose
@@ -65,7 +78,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Sender.
-     * Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.
+     * 
      */
     @SerializedName("sender")
     @Expose
@@ -73,7 +86,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Conversation Thread Id.
-     * Unique ID of the conversation thread. Read-only.
+     * 
      */
     @SerializedName("conversationThreadId")
     @Expose
@@ -81,7 +94,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The New Participants.
-     * Conversation participants that were added to the thread as part of this post.
+     * 
      */
     @SerializedName("newParticipants")
     @Expose
@@ -89,7 +102,7 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Conversation Id.
-     * Unique ID of the conversation. Read-only.
+     * 
      */
     @SerializedName("conversationId")
     @Expose
@@ -97,13 +110,13 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Extensions.
-     * The collection of open extensions defined for the post. Read-only. Nullable.
+     * 
      */
     public ExtensionCollectionPage extensions;
 
     /**
      * The In Reply To.
-     * Read-only.
+     * 
      */
     @SerializedName("inReplyTo")
     @Expose
@@ -111,19 +124,19 @@ public class BasePost extends OutlookItem implements IJsonBackedObject {
 
     /**
      * The Attachments.
-     * Read-only. Nullable.
+     * 
      */
     public AttachmentCollectionPage attachments;
 
     /**
      * The Single Value Extended Properties.
-     * The collection of single-value extended properties defined for the post. Read-only. Nullable.
+     * 
      */
     public SingleValueLegacyExtendedPropertyCollectionPage singleValueExtendedProperties;
 
     /**
      * The Multi Value Extended Properties.
-     * The collection of multi-value extended properties defined for the post. Read-only. Nullable.
+     * 
      */
     public MultiValueLegacyExtendedPropertyCollectionPage multiValueExtendedProperties;
 

@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.extensions.ItemReference;
+import com.microsoft.graph.models.extensions.SharingInvitation;
+import com.microsoft.graph.models.extensions.SharingLink;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BasePermission extends Entity implements IJsonBackedObject {
 
     /**
      * The Granted To.
-     * For user type permissions, the details of the users &amp; applications for this permission. Read-only.
+     * 
      */
     @SerializedName("grantedTo")
     @Expose
@@ -41,7 +41,7 @@ public class BasePermission extends Entity implements IJsonBackedObject {
 
     /**
      * The Inherited From.
-     * Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
+     * 
      */
     @SerializedName("inheritedFrom")
     @Expose
@@ -49,7 +49,7 @@ public class BasePermission extends Entity implements IJsonBackedObject {
 
     /**
      * The Invitation.
-     * Details of any associated sharing invitation for this permission. Read-only.
+     * 
      */
     @SerializedName("invitation")
     @Expose
@@ -57,7 +57,7 @@ public class BasePermission extends Entity implements IJsonBackedObject {
 
     /**
      * The Link.
-     * Provides the link details of the current permission, if it is a link type permissions. Read-only.
+     * 
      */
     @SerializedName("link")
     @Expose
@@ -73,7 +73,7 @@ public class BasePermission extends Entity implements IJsonBackedObject {
 
     /**
      * The Share Id.
-     * A unique token that can be used to access this shared item via the **shares** API. Read-only.
+     * 
      */
     @SerializedName("shareId")
     @Expose

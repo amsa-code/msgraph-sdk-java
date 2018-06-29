@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Display Name.
-     * The name of the policy.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Compliant Device Count.
-     * Number of compliant devices.
+     * 
      */
     @SerializedName("compliantDeviceCount")
     @Expose
@@ -49,7 +45,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Non Compliant Device Count.
-     * Number of non compliant devices.
+     * 
      */
     @SerializedName("nonCompliantDeviceCount")
     @Expose
@@ -57,7 +53,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Remediated Device Count.
-     * Number of remediated devices.
+     * 
      */
     @SerializedName("remediatedDeviceCount")
     @Expose
@@ -65,7 +61,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Error Device Count.
-     * Number of devices had error.
+     * 
      */
     @SerializedName("errorDeviceCount")
     @Expose
@@ -73,7 +69,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Unknown Device Count.
-     * Number of unknown devices.
+     * 
      */
     @SerializedName("unknownDeviceCount")
     @Expose
@@ -81,7 +77,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Conflict Device Count.
-     * Number of conflict devices.
+     * 
      */
     @SerializedName("conflictDeviceCount")
     @Expose
@@ -89,7 +85,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Not Applicable Device Count.
-     * Number of not applicable devices.
+     * 
      */
     @SerializedName("notApplicableDeviceCount")
     @Expose
@@ -97,7 +93,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Compliant User Count.
-     * Number of compliant users.
+     * 
      */
     @SerializedName("compliantUserCount")
     @Expose
@@ -105,7 +101,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Non Compliant User Count.
-     * Number of non compliant users.
+     * 
      */
     @SerializedName("nonCompliantUserCount")
     @Expose
@@ -113,7 +109,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Remediated User Count.
-     * Number of remediated users.
+     * 
      */
     @SerializedName("remediatedUserCount")
     @Expose
@@ -121,7 +117,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Error User Count.
-     * Number of users had error.
+     * 
      */
     @SerializedName("errorUserCount")
     @Expose
@@ -129,7 +125,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Unknown User Count.
-     * Number of unknown users.
+     * 
      */
     @SerializedName("unknownUserCount")
     @Expose
@@ -137,7 +133,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Conflict User Count.
-     * Number of conflict users.
+     * 
      */
     @SerializedName("conflictUserCount")
     @Expose
@@ -145,7 +141,7 @@ public class BaseSoftwareUpdateStatusSummary extends Entity implements IJsonBack
 
     /**
      * The Not Applicable User Count.
-     * Number of not applicable users.
+     * 
      */
     @SerializedName("notApplicableUserCount")
     @Expose

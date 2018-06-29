@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseAttachment extends Entity implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -41,7 +37,7 @@ public class BaseAttachment extends Entity implements IJsonBackedObject {
 
     /**
      * The Name.
-     * The attachment's file name.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -49,7 +45,7 @@ public class BaseAttachment extends Entity implements IJsonBackedObject {
 
     /**
      * The Content Type.
-     * The MIME type.
+     * 
      */
     @SerializedName("contentType")
     @Expose
@@ -57,7 +53,7 @@ public class BaseAttachment extends Entity implements IJsonBackedObject {
 
     /**
      * The Size.
-     * The length of the attachment in bytes.
+     * 
      */
     @SerializedName("size")
     @Expose
@@ -65,7 +61,7 @@ public class BaseAttachment extends Entity implements IJsonBackedObject {
 
     /**
      * The Is Inline.
-     * true if the attachment is an inline attachment; otherwise, false.
+     * 
      */
     @SerializedName("isInline")
     @Expose

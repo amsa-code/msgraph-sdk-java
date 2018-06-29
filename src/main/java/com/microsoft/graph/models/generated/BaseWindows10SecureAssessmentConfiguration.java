@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseWindows10SecureAssessmentConfiguration extends DeviceConfigurat
 
     /**
      * The Launch Uri.
-     * Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a valid Url (http[s]://msdn.microsoft.com/).
+     * 
      */
     @SerializedName("launchUri")
     @Expose
@@ -41,7 +37,7 @@ public class BaseWindows10SecureAssessmentConfiguration extends DeviceConfigurat
 
     /**
      * The Configuration Account.
-     * The account used to configure the Windows device for taking the test. The user can be a domain account (domain&#92;user), an AAD account (username@tenant.com) or a local account (username).
+     * 
      */
     @SerializedName("configurationAccount")
     @Expose
@@ -49,7 +45,7 @@ public class BaseWindows10SecureAssessmentConfiguration extends DeviceConfigurat
 
     /**
      * The Allow Printing.
-     * Indicates whether or not to allow the app from printing during the test.
+     * 
      */
     @SerializedName("allowPrinting")
     @Expose
@@ -57,7 +53,7 @@ public class BaseWindows10SecureAssessmentConfiguration extends DeviceConfigurat
 
     /**
      * The Allow Screen Capture.
-     * Indicates whether or not to allow screen capture capability during a test.
+     * 
      */
     @SerializedName("allowScreenCapture")
     @Expose
@@ -65,7 +61,7 @@ public class BaseWindows10SecureAssessmentConfiguration extends DeviceConfigurat
 
     /**
      * The Allow Text Suggestion.
-     * Indicates whether or not to allow text suggestions during the test.
+     * 
      */
     @SerializedName("allowTextSuggestion")
     @Expose

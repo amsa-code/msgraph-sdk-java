@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseOnPremisesConditionalAccessSettings extends Entity implements I
 
     /**
      * The Enabled.
-     * Indicates if on premises conditional access is enabled for this organization
+     * 
      */
     @SerializedName("enabled")
     @Expose
@@ -41,7 +37,7 @@ public class BaseOnPremisesConditionalAccessSettings extends Entity implements I
 
     /**
      * The Included Groups.
-     * User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
+     * 
      */
     @SerializedName("includedGroups")
     @Expose
@@ -49,7 +45,7 @@ public class BaseOnPremisesConditionalAccessSettings extends Entity implements I
 
     /**
      * The Excluded Groups.
-     * User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
+     * 
      */
     @SerializedName("excludedGroups")
     @Expose
@@ -57,7 +53,7 @@ public class BaseOnPremisesConditionalAccessSettings extends Entity implements I
 
     /**
      * The Override Default Rule.
-     * Override the default access rule when allowing a device to ensure access is granted.
+     * 
      */
     @SerializedName("overrideDefaultRule")
     @Expose

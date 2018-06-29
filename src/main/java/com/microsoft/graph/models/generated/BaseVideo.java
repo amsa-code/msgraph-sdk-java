@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Audio Bits Per Sample.
-     * Number of audio bits per sample.
+     * 
      */
     @SerializedName("audioBitsPerSample")
     @Expose
@@ -51,7 +46,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Audio Channels.
-     * Number of audio channels.
+     * 
      */
     @SerializedName("audioChannels")
     @Expose
@@ -59,7 +54,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Audio Format.
-     * Name of the audio format (AAC, MP3, etc.).
+     * 
      */
     @SerializedName("audioFormat")
     @Expose
@@ -67,7 +62,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Audio Samples Per Second.
-     * Number of audio samples per second.
+     * 
      */
     @SerializedName("audioSamplesPerSecond")
     @Expose
@@ -75,7 +70,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Bitrate.
-     * Bit rate of the video in bits per second.
+     * 
      */
     @SerializedName("bitrate")
     @Expose
@@ -83,7 +78,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Duration.
-     * Duration of the file in milliseconds.
+     * 
      */
     @SerializedName("duration")
     @Expose
@@ -91,7 +86,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Four CC.
-     * "Four character code" name of the video format.
+     * 
      */
     @SerializedName("fourCC")
     @Expose
@@ -107,7 +102,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Height.
-     * Height of the video, in pixels.
+     * 
      */
     @SerializedName("height")
     @Expose
@@ -115,7 +110,7 @@ public class BaseVideo implements IJsonBackedObject {
 
     /**
      * The Width.
-     * Width of the video, in pixels.
+     * 
      */
     @SerializedName("width")
     @Expose

@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.LicenseUnitsDetail;
+import com.microsoft.graph.models.extensions.ServicePlanInfo;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Capability Status.
-     * For example, "Enabled".
+     * 
      */
     @SerializedName("capabilityStatus")
     @Expose
@@ -41,7 +39,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Consumed Units.
-     * The number of licenses that have been assigned.
+     * 
      */
     @SerializedName("consumedUnits")
     @Expose
@@ -49,7 +47,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Prepaid Units.
-     * Information about the number and status of prepaid licenses.
+     * 
      */
     @SerializedName("prepaidUnits")
     @Expose
@@ -57,7 +55,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Service Plans.
-     * Information about the service plans that are available with the SKU. Not nullable
+     * 
      */
     @SerializedName("servicePlans")
     @Expose
@@ -65,7 +63,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Sku Id.
-     * The unique identifier (GUID) for the service SKU.
+     * 
      */
     @SerializedName("skuId")
     @Expose
@@ -73,7 +71,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Sku Part Number.
-     * The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC".
+     * 
      */
     @SerializedName("skuPartNumber")
     @Expose
@@ -81,7 +79,7 @@ public class BaseSubscribedSku extends Entity implements IJsonBackedObject {
 
     /**
      * The Applies To.
-     * For example, "User" or "Company".
+     * 
      */
     @SerializedName("appliesTo")
     @Expose

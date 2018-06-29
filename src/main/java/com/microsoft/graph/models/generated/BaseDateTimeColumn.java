@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDateTimeColumn implements IJsonBackedObject {
 
     /**
      * The Display As.
-     * How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default.
+     * 
      */
     @SerializedName("displayAs")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDateTimeColumn implements IJsonBackedObject {
 
     /**
      * The Format.
-     * Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
+     * 
      */
     @SerializedName("format")
     @Expose

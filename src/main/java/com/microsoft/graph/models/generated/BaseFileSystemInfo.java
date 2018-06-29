@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseFileSystemInfo implements IJsonBackedObject {
 
     /**
      * The Created Date Time.
-     * The UTC date and time the file was created on a client.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -51,7 +46,7 @@ public class BaseFileSystemInfo implements IJsonBackedObject {
 
     /**
      * The Last Accessed Date Time.
-     * The UTC date and time the file was last accessed. Available for the recent file list only.
+     * 
      */
     @SerializedName("lastAccessedDateTime")
     @Expose
@@ -59,7 +54,7 @@ public class BaseFileSystemInfo implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * The UTC date and time the file was last modified on a client.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose

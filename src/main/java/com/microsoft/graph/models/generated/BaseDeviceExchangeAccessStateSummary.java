@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseDeviceExchangeAccessStateSummary implements IJsonBackedObject {
 
     /**
      * The Allowed Device Count.
-     * Total count of devices with Exchange Access State: Allowed.
+     * 
      */
     @SerializedName("allowedDeviceCount")
     @Expose
@@ -51,7 +46,7 @@ public class BaseDeviceExchangeAccessStateSummary implements IJsonBackedObject {
 
     /**
      * The Blocked Device Count.
-     * Total count of devices with Exchange Access State: Blocked.
+     * 
      */
     @SerializedName("blockedDeviceCount")
     @Expose
@@ -59,7 +54,7 @@ public class BaseDeviceExchangeAccessStateSummary implements IJsonBackedObject {
 
     /**
      * The Quarantined Device Count.
-     * Total count of devices with Exchange Access State: Quarantined.
+     * 
      */
     @SerializedName("quarantinedDeviceCount")
     @Expose
@@ -67,7 +62,7 @@ public class BaseDeviceExchangeAccessStateSummary implements IJsonBackedObject {
 
     /**
      * The Unknown Device Count.
-     * Total count of devices with Exchange Access State: Unknown.
+     * 
      */
     @SerializedName("unknownDeviceCount")
     @Expose
@@ -75,7 +70,7 @@ public class BaseDeviceExchangeAccessStateSummary implements IJsonBackedObject {
 
     /**
      * The Unavailable Device Count.
-     * Total count of devices for which no Exchange Access State could be found.
+     * 
      */
     @SerializedName("unavailableDeviceCount")
     @Expose

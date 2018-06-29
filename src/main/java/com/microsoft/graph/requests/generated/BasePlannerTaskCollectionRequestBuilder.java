@@ -25,7 +25,7 @@ import java.util.EnumSet;
 public class BasePlannerTaskCollectionRequestBuilder extends BaseRequestBuilder implements IBasePlannerTaskCollectionRequestBuilder {
 
     /**
-     * The request builder for this collection of PlannerBucket
+     * The request builder for this collection of Planner
      *
      * @param requestUrl     the request URL
      * @param client         the service client

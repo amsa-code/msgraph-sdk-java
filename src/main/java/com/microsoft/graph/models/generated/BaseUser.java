@@ -3,19 +3,93 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AssignedLicense;
+import com.microsoft.graph.models.extensions.AssignedPlan;
+import com.microsoft.graph.models.extensions.PasswordProfile;
+import com.microsoft.graph.models.extensions.ProvisionedPlan;
+import com.microsoft.graph.models.extensions.MailboxSettings;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.models.extensions.LicenseDetails;
+import com.microsoft.graph.models.extensions.Extension;
+import com.microsoft.graph.models.extensions.Message;
+import com.microsoft.graph.models.extensions.MailFolder;
+import com.microsoft.graph.models.extensions.Calendar;
+import com.microsoft.graph.models.extensions.Calendar;
+import com.microsoft.graph.models.extensions.CalendarGroup;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Event;
+import com.microsoft.graph.models.extensions.Person;
+import com.microsoft.graph.models.extensions.Contact;
+import com.microsoft.graph.models.extensions.ContactFolder;
+import com.microsoft.graph.models.extensions.InferenceClassification;
+import com.microsoft.graph.models.extensions.ProfilePhoto;
+import com.microsoft.graph.models.extensions.ProfilePhoto;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.PlannerUser;
+import com.microsoft.graph.models.extensions.Onenote;
+import com.microsoft.graph.models.extensions.ManagedDevice;
+import com.microsoft.graph.models.extensions.ManagedAppRegistration;
+import com.microsoft.graph.models.extensions.DeviceManagementTroubleshootingEvent;
+import com.microsoft.graph.models.extensions.DirectoryObject;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDirectoryObjectCollectionResponse;
+import com.microsoft.graph.requests.extensions.DirectoryObjectCollectionPage;
+import com.microsoft.graph.requests.generated.BaseLicenseDetailsCollectionResponse;
+import com.microsoft.graph.requests.extensions.LicenseDetailsCollectionPage;
+import com.microsoft.graph.requests.generated.BaseExtensionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ExtensionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMessageCollectionResponse;
+import com.microsoft.graph.requests.extensions.MessageCollectionPage;
+import com.microsoft.graph.requests.generated.BaseMailFolderCollectionResponse;
+import com.microsoft.graph.requests.extensions.MailFolderCollectionPage;
+import com.microsoft.graph.requests.generated.BaseCalendarCollectionResponse;
+import com.microsoft.graph.requests.extensions.CalendarCollectionPage;
+import com.microsoft.graph.requests.generated.BaseCalendarGroupCollectionResponse;
+import com.microsoft.graph.requests.extensions.CalendarGroupCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.EventCollectionPage;
+import com.microsoft.graph.requests.generated.BasePersonCollectionResponse;
+import com.microsoft.graph.requests.extensions.PersonCollectionPage;
+import com.microsoft.graph.requests.generated.BaseContactCollectionResponse;
+import com.microsoft.graph.requests.extensions.ContactCollectionPage;
+import com.microsoft.graph.requests.generated.BaseContactFolderCollectionResponse;
+import com.microsoft.graph.requests.extensions.ContactFolderCollectionPage;
+import com.microsoft.graph.requests.generated.BaseProfilePhotoCollectionResponse;
+import com.microsoft.graph.requests.extensions.ProfilePhotoCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDriveCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedDeviceCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedDeviceCollectionPage;
+import com.microsoft.graph.requests.generated.BaseManagedAppRegistrationCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedAppRegistrationCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceManagementTroubleshootingEventCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceManagementTroubleshootingEventCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +107,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Account Enabled.
-     * true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter.
+     * 
      */
     @SerializedName("accountEnabled")
     @Expose
@@ -41,7 +115,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Assigned Licenses.
-     * The licenses that are assigned to the user. Not nullable.
+     * 
      */
     @SerializedName("assignedLicenses")
     @Expose
@@ -49,7 +123,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Assigned Plans.
-     * The plans that are assigned to the user. Read-only. Not nullable.
+     * 
      */
     @SerializedName("assignedPlans")
     @Expose
@@ -57,7 +131,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Business Phones.
-     * The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.
+     * 
      */
     @SerializedName("businessPhones")
     @Expose
@@ -65,7 +139,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The City.
-     * The city in which the user is located. Supports $filter.
+     * 
      */
     @SerializedName("city")
     @Expose
@@ -73,7 +147,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Company Name.
-     * The company name which the user is associated. Read-only.
+     * 
      */
     @SerializedName("companyName")
     @Expose
@@ -81,7 +155,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Country.
-     * The country/region in which the user is located; for example, "US" or "UK". Supports $filter.
+     * 
      */
     @SerializedName("country")
     @Expose
@@ -89,7 +163,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Department.
-     * The name for the department in which the user works. Supports $filter.
+     * 
      */
     @SerializedName("department")
     @Expose
@@ -97,7 +171,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -105,7 +179,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Given Name.
-     * The given name (first name) of the user. Supports $filter.
+     * 
      */
     @SerializedName("givenName")
     @Expose
@@ -121,7 +195,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Job Title.
-     * The user's job title. Supports $filter.
+     * 
      */
     @SerializedName("jobTitle")
     @Expose
@@ -129,7 +203,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mail.
-     * The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.
+     * 
      */
     @SerializedName("mail")
     @Expose
@@ -137,7 +211,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mail Nickname.
-     * The mail alias for the user. This property must be specified when a user is created. Supports $filter.
+     * 
      */
     @SerializedName("mailNickname")
     @Expose
@@ -145,7 +219,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mobile Phone.
-     * The primary cellular telephone number for the user.
+     * 
      */
     @SerializedName("mobilePhone")
     @Expose
@@ -153,7 +227,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Immutable Id.
-     * This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Important: The $ and  characters cannot be used when specifying this property. Supports $filter.
+     * 
      */
     @SerializedName("onPremisesImmutableId")
     @Expose
@@ -161,7 +235,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Last Sync Date Time.
-     * Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+     * 
      */
     @SerializedName("onPremisesLastSyncDateTime")
     @Expose
@@ -169,7 +243,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Security Identifier.
-     * Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.
+     * 
      */
     @SerializedName("onPremisesSecurityIdentifier")
     @Expose
@@ -177,7 +251,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The On Premises Sync Enabled.
-     * true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only
+     * 
      */
     @SerializedName("onPremisesSyncEnabled")
     @Expose
@@ -185,7 +259,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Password Policies.
-     * Specifies password policies for the user. This value is an enumeration with one possible value being "DisableStrongPassword", which allows weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".
+     * 
      */
     @SerializedName("passwordPolicies")
     @Expose
@@ -193,7 +267,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Password Profile.
-     * Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies property. By default, a strong password is required.
+     * 
      */
     @SerializedName("passwordProfile")
     @Expose
@@ -201,7 +275,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Office Location.
-     * The office location in the user's place of business.
+     * 
      */
     @SerializedName("officeLocation")
     @Expose
@@ -209,7 +283,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Postal Code.
-     * The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.
+     * 
      */
     @SerializedName("postalCode")
     @Expose
@@ -217,7 +291,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Preferred Language.
-     * The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".
+     * 
      */
     @SerializedName("preferredLanguage")
     @Expose
@@ -225,7 +299,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Provisioned Plans.
-     * The plans that are provisioned for the user. Read-only. Not nullable.
+     * 
      */
     @SerializedName("provisionedPlans")
     @Expose
@@ -233,7 +307,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Proxy Addresses.
-     * For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"] The any operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.
+     * 
      */
     @SerializedName("proxyAddresses")
     @Expose
@@ -241,7 +315,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The State.
-     * The state or province in the user's address. Supports $filter.
+     * 
      */
     @SerializedName("state")
     @Expose
@@ -249,7 +323,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Street Address.
-     * The street address of the user's place of business.
+     * 
      */
     @SerializedName("streetAddress")
     @Expose
@@ -257,7 +331,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Surname.
-     * The user's surname (family name or last name). Supports $filter.
+     * 
      */
     @SerializedName("surname")
     @Expose
@@ -265,7 +339,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Usage Location.
-     * A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.
+     * 
      */
     @SerializedName("usageLocation")
     @Expose
@@ -273,7 +347,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The User Principal Name.
-     * The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. Supports $filter and $orderby.
+     * 
      */
     @SerializedName("userPrincipalName")
     @Expose
@@ -281,7 +355,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The User Type.
-     * A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports $filter.
+     * 
      */
     @SerializedName("userType")
     @Expose
@@ -289,7 +363,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Mailbox Settings.
-     * Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+     * 
      */
     @SerializedName("mailboxSettings")
     @Expose
@@ -297,7 +371,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The About Me.
-     * A freeform text entry field for the user to describe themselves.
+     * 
      */
     @SerializedName("aboutMe")
     @Expose
@@ -305,7 +379,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Birthday.
-     * The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("birthday")
     @Expose
@@ -313,7 +387,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Hire Date.
-     * The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("hireDate")
     @Expose
@@ -321,7 +395,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Interests.
-     * A list for the user to describe their interests.
+     * 
      */
     @SerializedName("interests")
     @Expose
@@ -329,7 +403,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The My Site.
-     * The URL for the user's personal site.
+     * 
      */
     @SerializedName("mySite")
     @Expose
@@ -337,7 +411,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Past Projects.
-     * A list for the user to enumerate their past projects.
+     * 
      */
     @SerializedName("pastProjects")
     @Expose
@@ -345,7 +419,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Preferred Name.
-     * The preferred name for the user.
+     * 
      */
     @SerializedName("preferredName")
     @Expose
@@ -353,7 +427,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Responsibilities.
-     * A list for the user to enumerate their responsibilities.
+     * 
      */
     @SerializedName("responsibilities")
     @Expose
@@ -361,7 +435,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Schools.
-     * A list for the user to enumerate the schools they have attended.
+     * 
      */
     @SerializedName("schools")
     @Expose
@@ -369,7 +443,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Skills.
-     * A list for the user to enumerate their skills.
+     * 
      */
     @SerializedName("skills")
     @Expose
@@ -377,7 +451,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Device Enrollment Limit.
-     * The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
+     * 
      */
     @SerializedName("deviceEnrollmentLimit")
     @Expose
@@ -385,19 +459,19 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Owned Devices.
-     * Devices that are owned by the user. Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage ownedDevices;
 
     /**
      * The Registered Devices.
-     * Devices that are registered for the user. Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage registeredDevices;
 
     /**
      * The Manager.
-     * The user or contact that is this user's manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)
+     * 
      */
     @SerializedName("manager")
     @Expose
@@ -405,25 +479,25 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Direct Reports.
-     * The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage directReports;
 
     /**
      * The Member Of.
-     * The groups and directory roles that the user is a member of. Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage memberOf;
 
     /**
      * The Created Objects.
-     * Directory objects that were created by the user. Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage createdObjects;
 
     /**
      * The Owned Objects.
-     * Directory objects that are owned by the user. Read-only. Nullable.
+     * 
      */
     public DirectoryObjectCollectionPage ownedObjects;
 
@@ -435,25 +509,25 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Extensions.
-     * The collection of open extensions defined for the user. Read-only. Nullable.
+     * 
      */
     public ExtensionCollectionPage extensions;
 
     /**
      * The Messages.
-     * The messages in a mailbox or folder. Read-only. Nullable.
+     * 
      */
     public MessageCollectionPage messages;
 
     /**
      * The Mail Folders.
-     * The user's mail folders. Read-only. Nullable.
+     * 
      */
     public MailFolderCollectionPage mailFolders;
 
     /**
      * The Calendar.
-     * The user's primary calendar. Read-only.
+     * 
      */
     @SerializedName("calendar")
     @Expose
@@ -461,25 +535,25 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Calendars.
-     * The user's calendars. Read-only. Nullable.
+     * 
      */
     public CalendarCollectionPage calendars;
 
     /**
      * The Calendar Groups.
-     * The user's calendar groups. Read-only. Nullable.
+     * 
      */
     public CalendarGroupCollectionPage calendarGroups;
 
     /**
      * The Calendar View.
-     * The calendar view for the calendar. Read-only. Nullable.
+     * 
      */
     public EventCollectionPage calendarView;
 
     /**
      * The Events.
-     * The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.
+     * 
      */
     public EventCollectionPage events;
 
@@ -491,19 +565,19 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Contacts.
-     * The user's contacts. Read-only. Nullable.
+     * 
      */
     public ContactCollectionPage contacts;
 
     /**
      * The Contact Folders.
-     * The user's contacts folders. Read-only. Nullable.
+     * 
      */
     public ContactFolderCollectionPage contactFolders;
 
     /**
      * The Inference Classification.
-     * Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+     * 
      */
     @SerializedName("inferenceClassification")
     @Expose
@@ -511,7 +585,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Photo.
-     * The user's profile photo. Read-only.
+     * 
      */
     @SerializedName("photo")
     @Expose
@@ -525,7 +599,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Drive.
-     * The user's OneDrive. Read-only.
+     * 
      */
     @SerializedName("drive")
     @Expose
@@ -533,7 +607,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Drives.
-     * A collection of drives available for this user. Read-only.
+     * 
      */
     public DriveCollectionPage drives;
 
@@ -547,7 +621,7 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Onenote.
-     * Read-only.
+     * 
      */
     @SerializedName("onenote")
     @Expose
@@ -555,19 +629,19 @@ public class BaseUser extends DirectoryObject implements IJsonBackedObject {
 
     /**
      * The Managed Devices.
-     * The managed devices associated with the user.
+     * 
      */
     public ManagedDeviceCollectionPage managedDevices;
 
     /**
      * The Managed App Registrations.
-     * Zero or more managed app registrations that belong to the user.
+     * 
      */
     public ManagedAppRegistrationCollectionPage managedAppRegistrations;
 
     /**
      * The Device Management Troubleshooting Events.
-     * The list of troubleshooting events for this user.
+     * 
      */
     public DeviceManagementTroubleshootingEventCollectionPage deviceManagementTroubleshootingEvents;
 

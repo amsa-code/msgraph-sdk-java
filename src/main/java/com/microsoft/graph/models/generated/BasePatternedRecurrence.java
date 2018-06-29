@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.RecurrencePattern;
+import com.microsoft.graph.models.extensions.RecurrenceRange;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +40,7 @@ public class BasePatternedRecurrence implements IJsonBackedObject {
 
     /**
      * The Pattern.
-     * The frequency of an event.
+     * 
      */
     @SerializedName("pattern")
     @Expose
@@ -51,7 +48,7 @@ public class BasePatternedRecurrence implements IJsonBackedObject {
 
     /**
      * The Range.
-     * The duration of an event.
+     * 
      */
     @SerializedName("range")
     @Expose

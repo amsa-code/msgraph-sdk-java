@@ -3,19 +3,38 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Root;
+import com.microsoft.graph.models.extensions.SharepointIds;
+import com.microsoft.graph.models.extensions.SiteCollection;
+import com.microsoft.graph.models.extensions.ColumnDefinition;
+import com.microsoft.graph.models.extensions.ContentType;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.Drive;
+import com.microsoft.graph.models.extensions.BaseItem;
+import com.microsoft.graph.models.extensions.List;
+import com.microsoft.graph.models.extensions.Site;
+import com.microsoft.graph.models.extensions.Onenote;
+import com.microsoft.graph.models.extensions.BaseItem;
+import com.microsoft.graph.requests.generated.BaseColumnDefinitionCollectionResponse;
+import com.microsoft.graph.requests.extensions.ColumnDefinitionCollectionPage;
+import com.microsoft.graph.requests.generated.BaseContentTypeCollectionResponse;
+import com.microsoft.graph.requests.extensions.ContentTypeCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDriveCollectionResponse;
+import com.microsoft.graph.requests.extensions.DriveCollectionPage;
+import com.microsoft.graph.requests.generated.BaseBaseItemCollectionResponse;
+import com.microsoft.graph.requests.extensions.BaseItemCollectionPage;
+import com.microsoft.graph.requests.generated.BaseListCollectionResponse;
+import com.microsoft.graph.requests.extensions.ListCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSiteCollectionResponse;
+import com.microsoft.graph.requests.extensions.SiteCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +52,7 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The full title for the site. Read-only.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +60,7 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Root.
-     * If present, indicates that this is the root site in the site collection. Read-only.
+     * 
      */
     @SerializedName("root")
     @Expose
@@ -49,7 +68,7 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Sharepoint Ids.
-     * Returns identifiers useful for SharePoint REST compatibility. Read-only.
+     * 
      */
     @SerializedName("sharepointIds")
     @Expose
@@ -57,7 +76,7 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Site Collection.
-     * Provides details about the site's site collection. Available only on the root site. Read-only.
+     * 
      */
     @SerializedName("siteCollection")
     @Expose
@@ -65,19 +84,19 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Columns.
-     * The collection of column definitions reusable across lists under this site.
+     * 
      */
     public ColumnDefinitionCollectionPage columns;
 
     /**
      * The Content Types.
-     * The collection of content types defined for this site.
+     * 
      */
     public ContentTypeCollectionPage contentTypes;
 
     /**
      * The Drive.
-     * The default drive (document library) for this site.
+     * 
      */
     @SerializedName("drive")
     @Expose
@@ -85,31 +104,31 @@ public class BaseSite extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Drives.
-     * The collection of drives (document libraries) under this site.
+     * 
      */
     public DriveCollectionPage drives;
 
     /**
      * The Items.
-     * Used to address any item contained in this site. This collection cannot be enumerated.
+     * 
      */
     public BaseItemCollectionPage items;
 
     /**
      * The Lists.
-     * The collection of lists under this site.
+     * 
      */
     public ListCollectionPage lists;
 
     /**
      * The Sites.
-     * The collection of the sub-sites under this site.
+     * 
      */
     public SiteCollectionPage sites;
 
     /**
      * The Onenote.
-     * Calls the OneNote service for notebook related operations.
+     * 
      */
     @SerializedName("onenote")
     @Expose

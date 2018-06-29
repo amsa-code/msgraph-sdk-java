@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Calendar;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseCalendarCollectionResponse;
+import com.microsoft.graph.requests.extensions.CalendarCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseCalendarGroup extends Entity implements IJsonBackedObject {
 
     /**
      * The Name.
-     * The group name.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -41,7 +40,7 @@ public class BaseCalendarGroup extends Entity implements IJsonBackedObject {
 
     /**
      * The Class Id.
-     * The class identifier. Read-only.
+     * 
      */
     @SerializedName("classId")
     @Expose
@@ -49,7 +48,7 @@ public class BaseCalendarGroup extends Entity implements IJsonBackedObject {
 
     /**
      * The Change Key.
-     * Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+     * 
      */
     @SerializedName("changeKey")
     @Expose
@@ -57,7 +56,7 @@ public class BaseCalendarGroup extends Entity implements IJsonBackedObject {
 
     /**
      * The Calendars.
-     * The calendars in the calendar group. Navigation property. Read-only. Nullable.
+     * 
      */
     public CalendarCollectionPage calendars;
 

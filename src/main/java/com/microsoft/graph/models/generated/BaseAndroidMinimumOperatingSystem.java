@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_0.
-     * Version 4.0 or later.
+     * 
      */
     @SerializedName("v4_0")
     @Expose
@@ -51,7 +46,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_0_3.
-     * Version 4.0.3 or later.
+     * 
      */
     @SerializedName("v4_0_3")
     @Expose
@@ -59,7 +54,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_1.
-     * Version 4.1 or later.
+     * 
      */
     @SerializedName("v4_1")
     @Expose
@@ -67,7 +62,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_2.
-     * Version 4.2 or later.
+     * 
      */
     @SerializedName("v4_2")
     @Expose
@@ -75,7 +70,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_3.
-     * Version 4.3 or later.
+     * 
      */
     @SerializedName("v4_3")
     @Expose
@@ -83,7 +78,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V4_4.
-     * Version 4.4 or later.
+     * 
      */
     @SerializedName("v4_4")
     @Expose
@@ -91,7 +86,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V5_0.
-     * Version 5.0 or later.
+     * 
      */
     @SerializedName("v5_0")
     @Expose
@@ -99,7 +94,7 @@ public class BaseAndroidMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V5_1.
-     * Version 5.1 or later.
+     * 
      */
     @SerializedName("v5_1")
     @Expose

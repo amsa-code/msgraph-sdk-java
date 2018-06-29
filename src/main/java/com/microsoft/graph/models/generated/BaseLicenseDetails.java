@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ServicePlanInfo;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseLicenseDetails extends Entity implements IJsonBackedObject {
 
     /**
      * The Service Plans.
-     * Information about the service plans assigned with the license. Read-only, Not nullable
+     * 
      */
     @SerializedName("servicePlans")
     @Expose
@@ -41,7 +38,7 @@ public class BaseLicenseDetails extends Entity implements IJsonBackedObject {
 
     /**
      * The Sku Id.
-     * Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
+     * 
      */
     @SerializedName("skuId")
     @Expose
@@ -49,7 +46,7 @@ public class BaseLicenseDetails extends Entity implements IJsonBackedObject {
 
     /**
      * The Sku Part Number.
-     * Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: "AAD_Premium". Read-only
+     * 
      */
     @SerializedName("skuPartNumber")
     @Expose

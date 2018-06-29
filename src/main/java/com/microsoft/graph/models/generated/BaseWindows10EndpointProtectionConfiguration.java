@@ -3,19 +3,25 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.FirewallPreSharedKeyEncodingMethodType;
+import com.microsoft.graph.models.generated.FirewallCertificateRevocationListCheckMethodType;
+import com.microsoft.graph.models.generated.FirewallPacketQueueingMethodType;
+import com.microsoft.graph.models.extensions.WindowsFirewallNetworkProfile;
+import com.microsoft.graph.models.extensions.WindowsFirewallNetworkProfile;
+import com.microsoft.graph.models.extensions.WindowsFirewallNetworkProfile;
+import com.microsoft.graph.models.generated.AppLockerApplicationControlType;
+import com.microsoft.graph.models.generated.ApplicationGuardBlockFileTransferType;
+import com.microsoft.graph.models.generated.ApplicationGuardBlockClipboardSharingType;
+import com.microsoft.graph.models.extensions.BitLockerRemovableDrivePolicy;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +39,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Block Stateful FTP.
-     * Blocks stateful FTP connections to the device
+     * 
      */
     @SerializedName("firewallBlockStatefulFTP")
     @Expose
@@ -41,7 +47,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Idle Timeout For Security Association In Seconds.
-     * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600
+     * 
      */
     @SerializedName("firewallIdleTimeoutForSecurityAssociationInSeconds")
     @Expose
@@ -49,7 +55,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Pre Shared Key Encoding Method.
-     * Select the preshared key encoding to be used Possible values are: deviceDefault, none, utF8.
+     * 
      */
     @SerializedName("firewallPreSharedKeyEncodingMethod")
     @Expose
@@ -57,7 +63,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall IPSec Exemptions Allow Neighbor Discovery.
-     * Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
+     * 
      */
     @SerializedName("firewallIPSecExemptionsAllowNeighborDiscovery")
     @Expose
@@ -65,7 +71,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall IPSec Exemptions Allow ICMP.
-     * Configures IPSec exemptions to allow ICMP
+     * 
      */
     @SerializedName("firewallIPSecExemptionsAllowICMP")
     @Expose
@@ -73,7 +79,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall IPSec Exemptions Allow Router Discovery.
-     * Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
+     * 
      */
     @SerializedName("firewallIPSecExemptionsAllowRouterDiscovery")
     @Expose
@@ -81,7 +87,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall IPSec Exemptions Allow DHCP.
-     * Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
+     * 
      */
     @SerializedName("firewallIPSecExemptionsAllowDHCP")
     @Expose
@@ -89,7 +95,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Certificate Revocation List Check Method.
-     * Specify how the certificate revocation list is to be enforced Possible values are: deviceDefault, none, attempt, require.
+     * 
      */
     @SerializedName("firewallCertificateRevocationListCheckMethod")
     @Expose
@@ -97,7 +103,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Merge Keying Module Settings.
-     * If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set
+     * 
      */
     @SerializedName("firewallMergeKeyingModuleSettings")
     @Expose
@@ -105,7 +111,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Packet Queueing Method.
-     * Configures how packet queueing should be applied in the tunnel gateway scenario Possible values are: deviceDefault, disabled, queueInbound, queueOutbound, queueBoth.
+     * 
      */
     @SerializedName("firewallPacketQueueingMethod")
     @Expose
@@ -113,7 +119,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Profile Domain.
-     * Configures the firewall profile settings for domain networks
+     * 
      */
     @SerializedName("firewallProfileDomain")
     @Expose
@@ -121,7 +127,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Profile Public.
-     * Configures the firewall profile settings for public networks
+     * 
      */
     @SerializedName("firewallProfilePublic")
     @Expose
@@ -129,7 +135,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Firewall Profile Private.
-     * Configures the firewall profile settings for private networks
+     * 
      */
     @SerializedName("firewallProfilePrivate")
     @Expose
@@ -137,7 +143,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Attack Surface Reduction Excluded Paths.
-     * List of exe files and folders to be excluded from attack surface reduction rules
+     * 
      */
     @SerializedName("defenderAttackSurfaceReductionExcludedPaths")
     @Expose
@@ -145,7 +151,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Guarded Folders Allowed App Paths.
-     * List of paths to exe that are allowed to access protected folders
+     * 
      */
     @SerializedName("defenderGuardedFoldersAllowedAppPaths")
     @Expose
@@ -153,7 +159,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Additional Guarded Folders.
-     * List of folder paths to be added to the list of protected folders
+     * 
      */
     @SerializedName("defenderAdditionalGuardedFolders")
     @Expose
@@ -161,7 +167,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Exploit Protection Xml.
-     * Xml content containing information regarding exploit protection details.
+     * 
      */
     @SerializedName("defenderExploitProtectionXml")
     @Expose
@@ -169,7 +175,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Exploit Protection Xml File Name.
-     * Name of the file from which DefenderExploitProtectionXml was obtained.
+     * 
      */
     @SerializedName("defenderExploitProtectionXmlFileName")
     @Expose
@@ -177,7 +183,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Defender Security Center Block Exploit Protection Override.
-     * Indicates whether or not to block user from overriding Exploit Protection settings.
+     * 
      */
     @SerializedName("defenderSecurityCenterBlockExploitProtectionOverride")
     @Expose
@@ -185,7 +191,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The App Locker Application Control.
-     * Enables the Admin to choose what types of app to allow on devices. Possible values are: notConfigured, enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker, auditComponentsStoreAppsAndSmartlocker.
+     * 
      */
     @SerializedName("appLockerApplicationControl")
     @Expose
@@ -193,7 +199,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Smart Screen Enable In Shell.
-     * Allows IT Admins to configure SmartScreen for Windows.
+     * 
      */
     @SerializedName("smartScreenEnableInShell")
     @Expose
@@ -201,7 +207,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Smart Screen Block Override For Files.
-     * Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+     * 
      */
     @SerializedName("smartScreenBlockOverrideForFiles")
     @Expose
@@ -209,7 +215,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Enabled.
-     * Enable Windows Defender Application Guard
+     * 
      */
     @SerializedName("applicationGuardEnabled")
     @Expose
@@ -217,7 +223,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Block File Transfer.
-     * Block clipboard to transfer image file, text file or neither of them Possible values are: notConfigured, blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
+     * 
      */
     @SerializedName("applicationGuardBlockFileTransfer")
     @Expose
@@ -225,7 +231,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Block Non Enterprise Content.
-     * Block enterprise sites to load non-enterprise content, such as third party plug-ins
+     * 
      */
     @SerializedName("applicationGuardBlockNonEnterpriseContent")
     @Expose
@@ -233,7 +239,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Allow Persistence.
-     * Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
+     * 
      */
     @SerializedName("applicationGuardAllowPersistence")
     @Expose
@@ -241,7 +247,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Force Auditing.
-     * Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)
+     * 
      */
     @SerializedName("applicationGuardForceAuditing")
     @Expose
@@ -249,7 +255,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Block Clipboard Sharing.
-     * Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
+     * 
      */
     @SerializedName("applicationGuardBlockClipboardSharing")
     @Expose
@@ -257,7 +263,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Allow Print To PDF.
-     * Allow printing to PDF from Container
+     * 
      */
     @SerializedName("applicationGuardAllowPrintToPDF")
     @Expose
@@ -265,7 +271,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Allow Print To XPS.
-     * Allow printing to XPS from Container
+     * 
      */
     @SerializedName("applicationGuardAllowPrintToXPS")
     @Expose
@@ -273,7 +279,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Allow Print To Local Printers.
-     * Allow printing to Local Printers from Container
+     * 
      */
     @SerializedName("applicationGuardAllowPrintToLocalPrinters")
     @Expose
@@ -281,7 +287,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Application Guard Allow Print To Network Printers.
-     * Allow printing to Network Printers from Container
+     * 
      */
     @SerializedName("applicationGuardAllowPrintToNetworkPrinters")
     @Expose
@@ -289,7 +295,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Bit Locker Disable Warning For Other Disk Encryption.
-     * Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
+     * 
      */
     @SerializedName("bitLockerDisableWarningForOtherDiskEncryption")
     @Expose
@@ -297,7 +303,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Bit Locker Enable Storage Card Encryption On Mobile.
-     * Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
+     * 
      */
     @SerializedName("bitLockerEnableStorageCardEncryptionOnMobile")
     @Expose
@@ -305,7 +311,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Bit Locker Encrypt Device.
-     * Allows the admin to require encryption to be turned on using BitLocker.
+     * 
      */
     @SerializedName("bitLockerEncryptDevice")
     @Expose
@@ -313,7 +319,7 @@ public class BaseWindows10EndpointProtectionConfiguration extends DeviceConfigur
 
     /**
      * The Bit Locker Removable Drive Policy.
-     * BitLocker Removable Drive Policy.
+     * 
      */
     @SerializedName("bitLockerRemovableDrivePolicy")
     @Expose

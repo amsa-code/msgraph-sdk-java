@@ -3,19 +3,32 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceComplianceScheduledActionForRule;
+import com.microsoft.graph.models.extensions.DeviceComplianceDeviceStatus;
+import com.microsoft.graph.models.extensions.DeviceComplianceUserStatus;
+import com.microsoft.graph.models.extensions.DeviceComplianceDeviceOverview;
+import com.microsoft.graph.models.extensions.DeviceComplianceUserOverview;
+import com.microsoft.graph.models.extensions.SettingStateDeviceSummary;
+import com.microsoft.graph.models.extensions.DeviceCompliancePolicyAssignment;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseDeviceComplianceScheduledActionForRuleCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceComplianceScheduledActionForRuleCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceComplianceDeviceStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceComplianceDeviceStatusCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceComplianceUserStatusCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceComplianceUserStatusCollectionPage;
+import com.microsoft.graph.requests.generated.BaseSettingStateDeviceSummaryCollectionResponse;
+import com.microsoft.graph.requests.extensions.SettingStateDeviceSummaryCollectionPage;
+import com.microsoft.graph.requests.generated.BaseDeviceCompliancePolicyAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.DeviceCompliancePolicyAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +46,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Created Date Time.
-     * DateTime the object was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -41,7 +54,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Description.
-     * Admin provided description of the Device Configuration.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +62,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Last Modified Date Time.
-     * DateTime the object was last modified.
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose
@@ -57,7 +70,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Display Name.
-     * Admin provided name of the device configuration.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -65,7 +78,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Version.
-     * Version of the device configuration.
+     * 
      */
     @SerializedName("version")
     @Expose
@@ -73,25 +86,25 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Scheduled Actions For Rule.
-     * The list of scheduled action for this rule
+     * 
      */
     public DeviceComplianceScheduledActionForRuleCollectionPage scheduledActionsForRule;
 
     /**
      * The Device Statuses.
-     * List of DeviceComplianceDeviceStatus.
+     * 
      */
     public DeviceComplianceDeviceStatusCollectionPage deviceStatuses;
 
     /**
      * The User Statuses.
-     * List of DeviceComplianceUserStatus.
+     * 
      */
     public DeviceComplianceUserStatusCollectionPage userStatuses;
 
     /**
      * The Device Status Overview.
-     * Device compliance devices status overview
+     * 
      */
     @SerializedName("deviceStatusOverview")
     @Expose
@@ -99,7 +112,7 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The User Status Overview.
-     * Device compliance users status overview
+     * 
      */
     @SerializedName("userStatusOverview")
     @Expose
@@ -107,13 +120,13 @@ public class BaseDeviceCompliancePolicy extends Entity implements IJsonBackedObj
 
     /**
      * The Device Setting State Summaries.
-     * Compliance Setting State Device Summary
+     * 
      */
     public SettingStateDeviceSummaryCollectionPage deviceSettingStateSummaries;
 
     /**
      * The Assignments.
-     * The collection of assignments for this compliance policy.
+     * 
      */
     public DeviceCompliancePolicyAssignmentCollectionPage assignments;
 

@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.SharepointIds;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Drive Id.
-     * Unique identifier of the drive instance that contains the item. Read-only.
+     * 
      */
     @SerializedName("driveId")
     @Expose
@@ -51,7 +47,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Drive Type.
-     * Identifies the type of drive. See [drive][] resource for values.
+     * 
      */
     @SerializedName("driveType")
     @Expose
@@ -59,7 +55,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Id.
-     * Unique identifier of the item in the drive. Read-only.
+     * 
      */
     @SerializedName("id")
     @Expose
@@ -67,7 +63,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Name.
-     * The name of the item being referenced. Read-only.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -75,7 +71,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Path.
-     * Path that can be used to navigate to the item. Read-only.
+     * 
      */
     @SerializedName("path")
     @Expose
@@ -83,7 +79,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Share Id.
-     * A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+     * 
      */
     @SerializedName("shareId")
     @Expose
@@ -91,7 +87,7 @@ public class BaseItemReference implements IJsonBackedObject {
 
     /**
      * The Sharepoint Ids.
-     * Returns identifiers useful for SharePoint REST compatibility. Read-only.
+     * 
      */
     @SerializedName("sharepointIds")
     @Expose

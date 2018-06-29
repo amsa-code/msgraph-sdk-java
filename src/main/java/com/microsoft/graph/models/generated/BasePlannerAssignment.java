@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BasePlannerAssignment implements IJsonBackedObject {
 
     /**
      * The Assigned By.
-     * The identity of the user that performed the assignment of the task, i.e. the assignor.
+     * 
      */
     @SerializedName("assignedBy")
     @Expose
@@ -51,7 +47,7 @@ public class BasePlannerAssignment implements IJsonBackedObject {
 
     /**
      * The Assigned Date Time.
-     * The time at which the task was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("assignedDateTime")
     @Expose
@@ -59,7 +55,7 @@ public class BasePlannerAssignment implements IJsonBackedObject {
 
     /**
      * The Order Hint.
-     * Hint used to order assignees in a task. The format is defined as outlined here.
+     * 
      */
     @SerializedName("orderHint")
     @Expose

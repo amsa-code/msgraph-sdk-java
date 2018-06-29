@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.WindowsArchitecture;
+import com.microsoft.graph.models.generated.WindowsDeviceType;
+import com.microsoft.graph.models.extensions.WindowsMinimumOperatingSystem;
+import com.microsoft.graph.models.extensions.MobileLobApp;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +32,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Applicable Architectures.
-     * The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral.
+     * 
      */
     @SerializedName("applicableArchitectures")
     @Expose
@@ -41,7 +40,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Applicable Device Types.
-     * The Windows device type(s) for which this app can run on. Possible values are: none, desktop, mobile, holographic, team.
+     * 
      */
     @SerializedName("applicableDeviceTypes")
     @Expose
@@ -49,7 +48,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Identity Name.
-     * The Identity Name.
+     * 
      */
     @SerializedName("identityName")
     @Expose
@@ -57,7 +56,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Identity Publisher Hash.
-     * The Identity Publisher Hash.
+     * 
      */
     @SerializedName("identityPublisherHash")
     @Expose
@@ -65,7 +64,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Identity Resource Identifier.
-     * The Identity Resource Identifier.
+     * 
      */
     @SerializedName("identityResourceIdentifier")
     @Expose
@@ -73,7 +72,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Is Bundle.
-     * Whether or not the app is a bundle.
+     * 
      */
     @SerializedName("isBundle")
     @Expose
@@ -81,7 +80,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Minimum Supported Operating System.
-     * The value for the minimum applicable operating system.
+     * 
      */
     @SerializedName("minimumSupportedOperatingSystem")
     @Expose
@@ -89,7 +88,7 @@ public class BaseWindowsUniversalAppX extends MobileLobApp implements IJsonBacke
 
     /**
      * The Identity Version.
-     * The identity version.
+     * 
      */
     @SerializedName("identityVersion")
     @Expose

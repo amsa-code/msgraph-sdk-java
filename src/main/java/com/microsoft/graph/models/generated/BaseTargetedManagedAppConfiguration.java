@@ -3,19 +3,22 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ManagedMobileApp;
+import com.microsoft.graph.models.extensions.ManagedAppPolicyDeploymentSummary;
+import com.microsoft.graph.models.extensions.TargetedManagedAppPolicyAssignment;
+import com.microsoft.graph.models.extensions.ManagedAppConfiguration;
+import com.microsoft.graph.requests.generated.BaseManagedMobileAppCollectionResponse;
+import com.microsoft.graph.requests.extensions.ManagedMobileAppCollectionPage;
+import com.microsoft.graph.requests.generated.BaseTargetedManagedAppPolicyAssignmentCollectionResponse;
+import com.microsoft.graph.requests.extensions.TargetedManagedAppPolicyAssignmentCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +36,7 @@ public class BaseTargetedManagedAppConfiguration extends ManagedAppConfiguration
 
     /**
      * The Deployed App Count.
-     * Count of apps to which the current policy is deployed.
+     * 
      */
     @SerializedName("deployedAppCount")
     @Expose
@@ -41,7 +44,7 @@ public class BaseTargetedManagedAppConfiguration extends ManagedAppConfiguration
 
     /**
      * The Is Assigned.
-     * Indicates if the policy is deployed to any inclusion groups or not.
+     * 
      */
     @SerializedName("isAssigned")
     @Expose
@@ -49,13 +52,13 @@ public class BaseTargetedManagedAppConfiguration extends ManagedAppConfiguration
 
     /**
      * The Apps.
-     * List of apps to which the policy is deployed.
+     * 
      */
     public ManagedMobileAppCollectionPage apps;
 
     /**
      * The Deployment Summary.
-     * Navigation property to deployment summary of the configuration.
+     * 
      */
     @SerializedName("deploymentSummary")
     @Expose
@@ -63,7 +66,7 @@ public class BaseTargetedManagedAppConfiguration extends ManagedAppConfiguration
 
     /**
      * The Assignments.
-     * Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+     * 
      */
     public TargetedManagedAppPolicyAssignmentCollectionPage assignments;
 

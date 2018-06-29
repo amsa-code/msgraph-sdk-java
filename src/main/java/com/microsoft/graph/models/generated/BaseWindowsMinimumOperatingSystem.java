@@ -3,19 +3,14 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +38,7 @@ public class BaseWindowsMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V8_0.
-     * Windows version 8.0 or later.
+     * 
      */
     @SerializedName("v8_0")
     @Expose
@@ -51,7 +46,7 @@ public class BaseWindowsMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V8_1.
-     * Windows version 8.1 or later.
+     * 
      */
     @SerializedName("v8_1")
     @Expose
@@ -59,7 +54,7 @@ public class BaseWindowsMinimumOperatingSystem implements IJsonBackedObject {
 
     /**
      * The V10_0.
-     * Windows version 10.0 or later.
+     * 
      */
     @SerializedName("v10_0")
     @Expose

@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BasePlannerExternalReference implements IJsonBackedObject {
 
     /**
      * The Alias.
-     * A name alias to describe the reference.
+     * 
      */
     @SerializedName("alias")
     @Expose
@@ -51,7 +47,7 @@ public class BasePlannerExternalReference implements IJsonBackedObject {
 
     /**
      * The Type.
-     * Used to describe the type of the reference. Types include: PowerPoint, Word, Excel, Other.
+     * 
      */
     @SerializedName("type")
     @Expose
@@ -59,7 +55,7 @@ public class BasePlannerExternalReference implements IJsonBackedObject {
 
     /**
      * The Preview Priority.
-     * Used to set the relative priority order in which the reference will be shown as a preview on the task.
+     * 
      */
     @SerializedName("previewPriority")
     @Expose
@@ -67,7 +63,7 @@ public class BasePlannerExternalReference implements IJsonBackedObject {
 
     /**
      * The Last Modified By.
-     * Read-only. User ID by which this is last modified.
+     * 
      */
     @SerializedName("lastModifiedBy")
     @Expose
@@ -75,7 +71,7 @@ public class BasePlannerExternalReference implements IJsonBackedObject {
 
     /**
      * The Last Modified Date Time.
-     * Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+     * 
      */
     @SerializedName("lastModifiedDateTime")
     @Expose

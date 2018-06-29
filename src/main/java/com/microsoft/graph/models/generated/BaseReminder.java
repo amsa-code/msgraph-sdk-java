@@ -3,19 +3,18 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DateTimeTimeZone;
+import com.microsoft.graph.models.extensions.DateTimeTimeZone;
+import com.microsoft.graph.models.extensions.Location;
+import com.microsoft.graph.models.extensions.DateTimeTimeZone;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +42,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event Id.
-     * The unique ID of the event. Read only.
+     * 
      */
     @SerializedName("eventId")
     @Expose
@@ -51,7 +50,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event Start Time.
-     * The date, time, and time zone that the event starts.
+     * 
      */
     @SerializedName("eventStartTime")
     @Expose
@@ -59,7 +58,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event End Time.
-     * The date, time and time zone that the event ends.
+     * 
      */
     @SerializedName("eventEndTime")
     @Expose
@@ -67,7 +66,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Change Key.
-     * Identifies the version of the reminder. Every time the reminder is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object.
+     * 
      */
     @SerializedName("changeKey")
     @Expose
@@ -75,7 +74,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event Subject.
-     * The text of the event's subject line.
+     * 
      */
     @SerializedName("eventSubject")
     @Expose
@@ -83,7 +82,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event Location.
-     * The location of the event.
+     * 
      */
     @SerializedName("eventLocation")
     @Expose
@@ -91,7 +90,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Event Web Link.
-     * The URL to open the event in Outlook on the web.The event will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL can be accessed from within an iFrame.
+     * 
      */
     @SerializedName("eventWebLink")
     @Expose
@@ -99,7 +98,7 @@ public class BaseReminder implements IJsonBackedObject {
 
     /**
      * The Reminder Fire Time.
-     * The date, time, and time zone that the reminder is set to occur.
+     * 
      */
     @SerializedName("reminderFireTime")
     @Expose

@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Installed Device Count.
-     * Number of Devices that have successfully installed this book.
+     * 
      */
     @SerializedName("installedDeviceCount")
     @Expose
@@ -41,7 +37,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Failed Device Count.
-     * Number of Devices that have failed to install this book.
+     * 
      */
     @SerializedName("failedDeviceCount")
     @Expose
@@ -49,7 +45,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Not Installed Device Count.
-     * Number of Devices that does not have this book installed.
+     * 
      */
     @SerializedName("notInstalledDeviceCount")
     @Expose
@@ -57,7 +53,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Installed User Count.
-     * Number of Users whose devices have all succeeded to install this book.
+     * 
      */
     @SerializedName("installedUserCount")
     @Expose
@@ -65,7 +61,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Failed User Count.
-     * Number of Users that have 1 or more device that failed to install this book.
+     * 
      */
     @SerializedName("failedUserCount")
     @Expose
@@ -73,7 +69,7 @@ public class BaseEBookInstallSummary extends Entity implements IJsonBackedObject
 
     /**
      * The Not Installed User Count.
-     * Number of Users that did not install this book.
+     * 
      */
     @SerializedName("notInstalledUserCount")
     @Expose

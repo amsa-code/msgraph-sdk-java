@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.MobileAppContentFileUploadState;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Azure Storage Uri.
-     * The Azure Storage URI.
+     * 
      */
     @SerializedName("azureStorageUri")
     @Expose
@@ -41,7 +38,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Is Committed.
-     * A value indicating whether the file is committed.
+     * 
      */
     @SerializedName("isCommitted")
     @Expose
@@ -49,7 +46,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Created Date Time.
-     * The time the file was created.
+     * 
      */
     @SerializedName("createdDateTime")
     @Expose
@@ -57,7 +54,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Name.
-     * the file name.
+     * 
      */
     @SerializedName("name")
     @Expose
@@ -65,7 +62,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Size.
-     * The size of the file prior to encryption.
+     * 
      */
     @SerializedName("size")
     @Expose
@@ -73,7 +70,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Size Encrypted.
-     * The size of the file after encryption.
+     * 
      */
     @SerializedName("sizeEncrypted")
     @Expose
@@ -81,7 +78,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Azure Storage Uri Expiration Date Time.
-     * The time the Azure storage Uri expires.
+     * 
      */
     @SerializedName("azureStorageUriExpirationDateTime")
     @Expose
@@ -89,7 +86,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Manifest.
-     * The manifest information.
+     * 
      */
     @SerializedName("manifest")
     @Expose
@@ -97,7 +94,7 @@ public class BaseMobileAppContentFile extends Entity implements IJsonBackedObjec
 
     /**
      * The Upload State.
-     * The state of the current upload request. Possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut.
+     * 
      */
     @SerializedName("uploadState")
     @Expose

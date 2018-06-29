@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.AppListItem;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseIosNetworkUsageRule implements IJsonBackedObject {
 
     /**
      * The Managed Apps.
-     * Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements.
+     * 
      */
     @SerializedName("managedApps")
     @Expose
@@ -51,7 +47,7 @@ public class BaseIosNetworkUsageRule implements IJsonBackedObject {
 
     /**
      * The Cellular Data Block When Roaming.
-     * If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.
+     * 
      */
     @SerializedName("cellularDataBlockWhenRoaming")
     @Expose
@@ -59,7 +55,7 @@ public class BaseIosNetworkUsageRule implements IJsonBackedObject {
 
     /**
      * The Cellular Data Blocked.
-     * If set to true, corresponding managed apps will not be allowed to use cellular data at any time.
+     * 
      */
     @SerializedName("cellularDataBlocked")
     @Expose

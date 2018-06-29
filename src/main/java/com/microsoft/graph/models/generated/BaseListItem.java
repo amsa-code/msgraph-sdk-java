@@ -3,19 +3,19 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.ContentTypeInfo;
+import com.microsoft.graph.models.extensions.SharepointIds;
+import com.microsoft.graph.models.extensions.DriveItem;
+import com.microsoft.graph.models.extensions.FieldValueSet;
+import com.microsoft.graph.models.extensions.BaseItem;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +33,7 @@ public class BaseListItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Content Type.
-     * The content type of this list item
+     * 
      */
     @SerializedName("contentType")
     @Expose
@@ -49,7 +49,7 @@ public class BaseListItem extends BaseItem implements IJsonBackedObject {
 
     /**
      * The Drive Item.
-     * For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+     * 
      */
     @SerializedName("driveItem")
     @Expose

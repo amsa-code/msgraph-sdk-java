@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -43,7 +39,7 @@ public class BaseSharingInvitation implements IJsonBackedObject {
 
     /**
      * The Email.
-     * The email address provided for the recipient of the sharing invitation. Read-only.
+     * 
      */
     @SerializedName("email")
     @Expose
@@ -51,7 +47,7 @@ public class BaseSharingInvitation implements IJsonBackedObject {
 
     /**
      * The Invited By.
-     * Provides information about who sent the invitation that created this permission, if that information is available. Read-only.
+     * 
      */
     @SerializedName("invitedBy")
     @Expose
@@ -67,7 +63,7 @@ public class BaseSharingInvitation implements IJsonBackedObject {
 
     /**
      * The Sign In Required.
-     * If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
+     * 
      */
     @SerializedName("signInRequired")
     @Expose

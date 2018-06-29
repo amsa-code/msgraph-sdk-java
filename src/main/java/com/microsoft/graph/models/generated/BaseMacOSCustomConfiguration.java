@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceConfiguration;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseMacOSCustomConfiguration extends DeviceConfiguration implements
 
     /**
      * The Payload Name.
-     * Name that is displayed to the user.
+     * 
      */
     @SerializedName("payloadName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseMacOSCustomConfiguration extends DeviceConfiguration implements
 
     /**
      * The Payload File Name.
-     * Payload file name (.mobileconfig
+     * 
      */
     @SerializedName("payloadFileName")
     @Expose
@@ -49,7 +45,7 @@ public class BaseMacOSCustomConfiguration extends DeviceConfiguration implements
 
     /**
      * The Payload.
-     * Payload. (UTF8 encoded byte array)
+     * 
      */
     @SerializedName("payload")
     @Expose

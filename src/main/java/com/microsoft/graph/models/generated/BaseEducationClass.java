@@ -3,19 +3,28 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.IdentitySet;
+import com.microsoft.graph.models.generated.EducationExternalSource;
+import com.microsoft.graph.models.extensions.EducationTerm;
+import com.microsoft.graph.models.extensions.EducationSchool;
+import com.microsoft.graph.models.extensions.EducationUser;
+import com.microsoft.graph.models.extensions.EducationUser;
+import com.microsoft.graph.models.extensions.Group;
+import com.microsoft.graph.models.extensions.Entity;
+import com.microsoft.graph.requests.generated.BaseEducationSchoolCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationSchoolCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEducationUserCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationUserCollectionPage;
+import com.microsoft.graph.requests.generated.BaseEducationUserCollectionResponse;
+import com.microsoft.graph.requests.extensions.EducationUserCollectionPage;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +42,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * Name of the class.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +50,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Mail Nickname.
-     * Mail name for sending email to all members, if this is enabled.
+     * 
      */
     @SerializedName("mailNickname")
     @Expose
@@ -49,7 +58,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Description.
-     * Description of the class.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -57,7 +66,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Created By.
-     * Entity who created the class
+     * 
      */
     @SerializedName("createdBy")
     @Expose
@@ -65,7 +74,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Class Code.
-     * Class code used by the school to identify the class.
+     * 
      */
     @SerializedName("classCode")
     @Expose
@@ -73,7 +82,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The External Name.
-     * Name of the class in the syncing system.
+     * 
      */
     @SerializedName("externalName")
     @Expose
@@ -81,7 +90,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The External Id.
-     * ID of the class from the syncing system.
+     * 
      */
     @SerializedName("externalId")
     @Expose
@@ -89,7 +98,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The External Source.
-     * How this class was created. Possible values are: sis, manual, unknownFutureValue.
+     * 
      */
     @SerializedName("externalSource")
     @Expose
@@ -97,7 +106,7 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Term.
-     * Term for this class.
+     * 
      */
     @SerializedName("term")
     @Expose
@@ -105,19 +114,19 @@ public class BaseEducationClass extends Entity implements IJsonBackedObject {
 
     /**
      * The Schools.
-     * All schools that this class is associated with. Nullable.
+     * 
      */
     public EducationSchoolCollectionPage schools;
 
     /**
      * The Members.
-     * All users in the class. Nullable.
+     * 
      */
     public EducationUserCollectionPage members;
 
     /**
      * The Teachers.
-     * All teachers in the class. Nullable.
+     * 
      */
     public EducationUserCollectionPage teachers;
 

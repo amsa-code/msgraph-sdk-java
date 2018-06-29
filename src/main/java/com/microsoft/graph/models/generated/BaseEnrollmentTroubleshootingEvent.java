@@ -3,19 +3,17 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DeviceEnrollmentType;
+import com.microsoft.graph.models.generated.DeviceEnrollmentFailureReason;
+import com.microsoft.graph.models.extensions.DeviceManagementTroubleshootingEvent;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +31,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Managed Device Identifier.
-     * Device identifier created or collected by Intune.
+     * 
      */
     @SerializedName("managedDeviceIdentifier")
     @Expose
@@ -41,7 +39,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Operating System.
-     * Operating System.
+     * 
      */
     @SerializedName("operatingSystem")
     @Expose
@@ -49,7 +47,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Os Version.
-     * OS Version.
+     * 
      */
     @SerializedName("osVersion")
     @Expose
@@ -57,7 +55,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The User Id.
-     * Identifier for the user that tried to enroll the device.
+     * 
      */
     @SerializedName("userId")
     @Expose
@@ -65,7 +63,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Device Id.
-     * Azure AD device identifier.
+     * 
      */
     @SerializedName("deviceId")
     @Expose
@@ -73,7 +71,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Enrollment Type.
-     * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+     * 
      */
     @SerializedName("enrollmentType")
     @Expose
@@ -81,7 +79,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Failure Category.
-     * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected.
+     * 
      */
     @SerializedName("failureCategory")
     @Expose
@@ -89,7 +87,7 @@ public class BaseEnrollmentTroubleshootingEvent extends DeviceManagementTroubles
 
     /**
      * The Failure Reason.
-     * Detailed failure reason.
+     * 
      */
     @SerializedName("failureReason")
     @Expose

@@ -3,19 +3,16 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.RoleDefinition;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +30,7 @@ public class BaseRoleAssignment extends Entity implements IJsonBackedObject {
 
     /**
      * The Display Name.
-     * The display or friendly name of the role Assignment.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +38,7 @@ public class BaseRoleAssignment extends Entity implements IJsonBackedObject {
 
     /**
      * The Description.
-     * Description of the Role Assignment.
+     * 
      */
     @SerializedName("description")
     @Expose
@@ -49,7 +46,7 @@ public class BaseRoleAssignment extends Entity implements IJsonBackedObject {
 
     /**
      * The Resource Scopes.
-     * List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
+     * 
      */
     @SerializedName("resourceScopes")
     @Expose
@@ -57,7 +54,7 @@ public class BaseRoleAssignment extends Entity implements IJsonBackedObject {
 
     /**
      * The Role Definition.
-     * Role definition this assignment is part of.
+     * 
      */
     @SerializedName("roleDefinition")
     @Expose

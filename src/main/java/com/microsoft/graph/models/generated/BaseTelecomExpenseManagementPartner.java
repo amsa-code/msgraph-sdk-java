@@ -3,19 +3,15 @@
 // ------------------------------------------------------------------------------
 
 package com.microsoft.graph.models.generated;
-
 import com.microsoft.graph.concurrency.*;
 import com.microsoft.graph.core.*;
-import com.microsoft.graph.models.extensions.*;
-import com.microsoft.graph.models.generated.*;
 import com.microsoft.graph.http.*;
-import com.microsoft.graph.requests.extensions.*;
-import com.microsoft.graph.requests.generated.*;
 import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
-
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.Entity;
+
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
@@ -33,7 +29,7 @@ public class BaseTelecomExpenseManagementPartner extends Entity implements IJson
 
     /**
      * The Display Name.
-     * Display name of the TEM partner.
+     * 
      */
     @SerializedName("displayName")
     @Expose
@@ -41,7 +37,7 @@ public class BaseTelecomExpenseManagementPartner extends Entity implements IJson
 
     /**
      * The Url.
-     * URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
+     * 
      */
     @SerializedName("url")
     @Expose
@@ -49,7 +45,7 @@ public class BaseTelecomExpenseManagementPartner extends Entity implements IJson
 
     /**
      * The App Authorized.
-     * Whether the partner's AAD app has been authorized to access Intune.
+     * 
      */
     @SerializedName("appAuthorized")
     @Expose
@@ -57,7 +53,7 @@ public class BaseTelecomExpenseManagementPartner extends Entity implements IJson
 
     /**
      * The Enabled.
-     * Whether Intune's connection to the TEM service is currently enabled or disabled.
+     * 
      */
     @SerializedName("enabled")
     @Expose
@@ -65,7 +61,7 @@ public class BaseTelecomExpenseManagementPartner extends Entity implements IJson
 
     /**
      * The Last Connection Date Time.
-     * Timestamp of the last request sent to Intune by the TEM partner.
+     * 
      */
     @SerializedName("lastConnectionDateTime")
     @Expose
