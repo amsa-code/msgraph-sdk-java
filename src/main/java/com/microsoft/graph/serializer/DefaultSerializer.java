@@ -100,7 +100,9 @@ public class DefaultSerializer implements ISerializer {
             }
             
             jsonBackedObject.additionalDataManager().setAdditionalData(rawObject);
-            setChildAdditionalData(jsonBackedObject,rawObject);
+            // waiting for PR #114 to be reviewed
+            // (this code was merged before proper review by @deepak2016)
+            // setChildAdditionalData(jsonBackedObject,rawObject);
             return jo;
         } else {
             logger.logDebug("Deserializing a non-IJsonBackedObject type " + clazz.getSimpleName());
