@@ -33,12 +33,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Wrapper around HttpUrlConnection for testability
  */
 public class UrlConnection implements IConnection {
 
+    public static final String OPTION_READ_TIMEOUT_MS = "msgraph.read.timeout.ms";
+    public static final String OPTION_CONNECT_TIMEOUT_MS = "msgraph.connect.timeout.ms";
     /**
      * Default connection read timeout
      */
@@ -71,8 +74,22 @@ public class UrlConnection implements IConnection {
         }
 
         connection.setUseCaches(request.getUseCaches());
-        connection.setConnectTimeout(DEFAULT_CONNECT_TIMEOUT_MS);
-        connection.setReadTimeout(DEFAULT_CONNECTION_READ_TIMEOUT_MS);
+        
+        Optional<Integer> connectTimeoutMs = request //
+                .getOptions() //
+                .stream() //
+                .filter(option -> option.getName().equals(OPTION_CONNECT_TIMEOUT_MS)) //
+                .map(option -> Integer.valueOf(option.getValue().toString())) //
+                .findFirst();
+        connection.setConnectTimeout(connectTimeoutMs.orElse(DEFAULT_CONNECT_TIMEOUT_MS));
+        
+        Optional<Integer> readTimeoutMs = request //
+                .getOptions() //
+                .stream() //
+                .filter(option -> option.getName().equals(OPTION_READ_TIMEOUT_MS)) //
+                .map(option -> Integer.valueOf(option.getValue().toString())) //
+                .findFirst();
+        connection.setReadTimeout(readTimeoutMs.orElse(DEFAULT_CONNECTION_READ_TIMEOUT_MS));
 
         try {
             connection.setRequestMethod(request.getHttpMethod().toString());
